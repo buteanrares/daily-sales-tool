@@ -13,6 +13,7 @@ import { useRouter } from "next/navigation";
 import { useReportStore } from "@/utils/state/store";
 
 const Home = () => {
+  // @ts-ignore
   const { setSelectedReport } = useReportStore();
 
   const router = useRouter();
@@ -82,6 +83,7 @@ const Home = () => {
 
   const years = selectedCenter
     ? [
+        // @ts-ignore
         ...new Set(
           selectedCenter.report_versions
             .map((version) => version.year)

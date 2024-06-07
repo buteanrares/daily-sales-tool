@@ -17,6 +17,7 @@ import { useReportStore } from "@/utils/state/store";
 const PASSWORD = "S&Pisthe**";
 
 export default function Navbar() {
+  // @ts-ignore
   const { selectedReport } = useReportStore();
 
   useEffect(() => {
