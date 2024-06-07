@@ -11,7 +11,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2018",
+      DATE: "1/2/2018",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -19,7 +19,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "3/1/2018",
+      DATE: "1/3/2018",
       EVENT: "",
       TURNOVER: "322,723",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -27,7 +27,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "4/1/2018",
+      DATE: "1/4/2018",
       EVENT: "",
       TURNOVER: "341,003",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -35,7 +35,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/1/2018",
+      DATE: "1/5/2018",
       EVENT: "",
       TURNOVER: "304,364",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -43,7 +43,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "6/1/2018",
+      DATE: "1/6/2018",
       EVENT: "",
       TURNOVER: "604,196",
       TO_WEIGHT_vs_MONTH: "7%",
@@ -51,7 +51,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "7/1/2018",
+      DATE: "1/7/2018",
       EVENT: "",
       TURNOVER: "539,833",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -59,7 +59,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "8/1/2018",
+      DATE: "1/8/2018",
       EVENT: "",
       TURNOVER: "209,145",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -67,7 +67,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/1/2018",
+      DATE: "1/9/2018",
       EVENT: "",
       TURNOVER: "184,740",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -75,7 +75,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/1/2018",
+      DATE: "1/10/2018",
       EVENT: "",
       TURNOVER: "203,690",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -83,7 +83,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/1/2018",
+      DATE: "1/11/2018",
       EVENT: "",
       TURNOVER: "225,818",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -91,7 +91,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "12/1/2018",
+      DATE: "1/12/2018",
       EVENT: "",
       TURNOVER: "245,658",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -99,7 +99,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "13/1/2018",
+      DATE: "1/13/2018",
       EVENT: "",
       TURNOVER: "513,810",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -107,7 +107,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "14/1/2018",
+      DATE: "1/14/2018",
       EVENT: "",
       TURNOVER: "494,607",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -115,7 +115,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "15/1/2018",
+      DATE: "1/15/2018",
       EVENT: "",
       TURNOVER: "172,486",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -123,7 +123,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/1/2018",
+      DATE: "1/16/2018",
       EVENT: "",
       TURNOVER: "166,793",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -131,7 +131,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/1/2018",
+      DATE: "1/17/2018",
       EVENT: "",
       TURNOVER: "187,302",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -139,7 +139,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/1/2018",
+      DATE: "1/18/2018",
       EVENT: "",
       TURNOVER: "199,690",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -147,7 +147,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/1/2018",
+      DATE: "1/19/2018",
       EVENT: "",
       TURNOVER: "215,538",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -155,7 +155,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/1/2018",
+      DATE: "1/20/2018",
       EVENT: "",
       TURNOVER: "508,673",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -163,7 +163,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "21/1/2018",
+      DATE: "1/21/2018",
       EVENT: "",
       TURNOVER: "426,491",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -171,7 +171,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "22/1/2018",
+      DATE: "1/22/2018",
       EVENT: "",
       TURNOVER: "155,923",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -179,7 +179,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/1/2018",
+      DATE: "1/23/2018",
       EVENT: "",
       TURNOVER: "151,956",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -187,7 +187,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/1/2018",
+      DATE: "1/24/2018",
       EVENT: "",
       TURNOVER: "159,448",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -195,7 +195,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/1/2018",
+      DATE: "1/25/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "549,234",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -203,7 +203,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "26/1/2018",
+      DATE: "1/26/2018",
       EVENT: "",
       TURNOVER: "194,924",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -211,7 +211,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "27/1/2018",
+      DATE: "1/27/2018",
       EVENT: "",
       TURNOVER: "451,731",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -219,7 +219,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "28/1/2018",
+      DATE: "1/28/2018",
       EVENT: "",
       TURNOVER: "405,627",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -227,7 +227,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "29/1/2018",
+      DATE: "1/29/2018",
       EVENT: "",
       TURNOVER: "156,197",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -235,7 +235,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "30/1/2018",
+      DATE: "1/30/2018",
       EVENT: "",
       TURNOVER: "146,453",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -243,7 +243,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "31/1/2018",
+      DATE: "1/31/2018",
       EVENT: "",
       TURNOVER: "172,201",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -251,7 +251,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "1/2/2018",
+      DATE: "2/1/2018",
       EVENT: "",
       TURNOVER: "194,314",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -267,7 +267,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "3/2/2018",
+      DATE: "2/3/2018",
       EVENT: "",
       TURNOVER: "441,095",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -275,7 +275,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "4/2/2018",
+      DATE: "2/4/2018",
       EVENT: "",
       TURNOVER: "420,449",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -283,7 +283,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "5/2/2018",
+      DATE: "2/5/2018",
       EVENT: "",
       TURNOVER: "147,286",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -291,7 +291,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/2/2018",
+      DATE: "2/6/2018",
       EVENT: "",
       TURNOVER: "146,507",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -299,7 +299,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "7/2/2018",
+      DATE: "2/7/2018",
       EVENT: "",
       TURNOVER: "153,150",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -307,7 +307,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/2/2018",
+      DATE: "2/8/2018",
       EVENT: "",
       TURNOVER: "170,303",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -315,7 +315,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/2/2018",
+      DATE: "2/9/2018",
       EVENT: "",
       TURNOVER: "191,416",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -323,7 +323,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "10/2/2018",
+      DATE: "2/10/2018",
       EVENT: "",
       TURNOVER: "436,639",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -331,7 +331,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "11/2/2018",
+      DATE: "2/11/2018",
       EVENT: "",
       TURNOVER: "443,547",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -339,7 +339,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "12/2/2018",
+      DATE: "2/12/2018",
       EVENT: "Carnival",
       TURNOVER: "331,046",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -347,7 +347,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "13/2/2018",
+      DATE: "2/13/2018",
       EVENT: "Carnival",
       TURNOVER: "379,832",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -355,7 +355,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "14/2/2018",
+      DATE: "2/14/2018",
       EVENT: "Carnival",
       TURNOVER: "208,107",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -363,7 +363,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "15/2/2018",
+      DATE: "2/15/2018",
       EVENT: "",
       TURNOVER: "151,142",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -371,7 +371,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/2/2018",
+      DATE: "2/16/2018",
       EVENT: "",
       TURNOVER: "177,134",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -379,7 +379,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "17/2/2018",
+      DATE: "2/17/2018",
       EVENT: "",
       TURNOVER: "348,796",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -387,7 +387,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "18/2/2018",
+      DATE: "2/18/2018",
       EVENT: "",
       TURNOVER: "352,986",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -395,7 +395,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "19/2/2018",
+      DATE: "2/19/2018",
       EVENT: "",
       TURNOVER: "136,332",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -403,7 +403,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/2/2018",
+      DATE: "2/20/2018",
       EVENT: "",
       TURNOVER: "130,673",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -411,7 +411,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/2/2018",
+      DATE: "2/21/2018",
       EVENT: "",
       TURNOVER: "146,342",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -419,7 +419,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/2/2018",
+      DATE: "2/22/2018",
       EVENT: "Fab Week",
       TURNOVER: "379,739",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -427,7 +427,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "23/2/2018",
+      DATE: "2/23/2018",
       EVENT: "FAB Week",
       TURNOVER: "201,036",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -435,7 +435,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "24/2/2018",
+      DATE: "2/24/2018",
       EVENT: "FAB Week",
       TURNOVER: "412,087",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -443,7 +443,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "25/2/2018",
+      DATE: "2/25/2018",
       EVENT: "FAB Week",
       TURNOVER: "431,287",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -451,7 +451,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "26/2/2018",
+      DATE: "2/26/2018",
       EVENT: "FAB Week",
       TURNOVER: "161,604",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -459,7 +459,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "27/2/2018",
+      DATE: "2/27/2018",
       EVENT: "FAB Week",
       TURNOVER: "171,643",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -467,7 +467,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "28/2/2018",
+      DATE: "2/28/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "196,949",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -475,7 +475,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "1/3/2018",
+      DATE: "3/1/2018",
       EVENT: "",
       TURNOVER: "162,189",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -483,7 +483,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "2/3/2018",
+      DATE: "3/2/2018",
       EVENT: "",
       TURNOVER: "170,387",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -499,7 +499,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "4/3/2018",
+      DATE: "3/4/2018",
       EVENT: "",
       TURNOVER: "398,747",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -507,7 +507,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "5/3/2018",
+      DATE: "3/5/2018",
       EVENT: "",
       TURNOVER: "157,599",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -515,7 +515,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/3/2018",
+      DATE: "3/6/2018",
       EVENT: "",
       TURNOVER: "148,395",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -523,7 +523,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "7/3/2018",
+      DATE: "3/7/2018",
       EVENT: "",
       TURNOVER: "154,162",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -531,7 +531,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/3/2018",
+      DATE: "3/8/2018",
       EVENT: "",
       TURNOVER: "157,194",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -539,7 +539,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/3/2018",
+      DATE: "3/9/2018",
       EVENT: "",
       TURNOVER: "185,091",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -547,7 +547,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/3/2018",
+      DATE: "3/10/2018",
       EVENT: "",
       TURNOVER: "385,844",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -555,7 +555,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "11/3/2018",
+      DATE: "3/11/2018",
       EVENT: "",
       TURNOVER: "354,561",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -563,7 +563,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "12/3/2018",
+      DATE: "3/12/2018",
       EVENT: "",
       TURNOVER: "149,507",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -571,7 +571,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/3/2018",
+      DATE: "3/13/2018",
       EVENT: "",
       TURNOVER: "145,614",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -579,7 +579,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/3/2018",
+      DATE: "3/14/2018",
       EVENT: "",
       TURNOVER: "139,798",
       TO_WEIGHT_vs_MONTH: "1%",
@@ -587,7 +587,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/3/2018",
+      DATE: "3/15/2018",
       EVENT: "",
       TURNOVER: "163,495",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -595,7 +595,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/3/2018",
+      DATE: "3/16/2018",
       EVENT: "",
       TURNOVER: "215,156",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -603,7 +603,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/3/2018",
+      DATE: "3/17/2018",
       EVENT: "",
       TURNOVER: "476,549",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -611,7 +611,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "18/3/2018",
+      DATE: "3/18/2018",
       EVENT: "",
       TURNOVER: "470,033",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -619,7 +619,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "19/3/2018",
+      DATE: "3/19/2018",
       EVENT: "",
       TURNOVER: "182,313",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -627,7 +627,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/3/2018",
+      DATE: "3/20/2018",
       EVENT: "",
       TURNOVER: "150,638",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -635,7 +635,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/3/2018",
+      DATE: "3/21/2018",
       EVENT: "",
       TURNOVER: "159,736",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -643,7 +643,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/3/2018",
+      DATE: "3/22/2018",
       EVENT: "",
       TURNOVER: "207,657",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -651,7 +651,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/3/2018",
+      DATE: "3/23/2018",
       EVENT: "",
       TURNOVER: "213,282",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -659,7 +659,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/3/2018",
+      DATE: "3/24/2018",
       EVENT: "",
       TURNOVER: "521,471",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -667,7 +667,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "25/3/2018",
+      DATE: "3/25/2018",
       EVENT: "",
       TURNOVER: "483,801",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -675,7 +675,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "26/3/2018",
+      DATE: "3/26/2018",
       EVENT: "",
       TURNOVER: "261,262",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -683,7 +683,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "27/3/2018",
+      DATE: "3/27/2018",
       EVENT: "",
       TURNOVER: "274,350",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -691,7 +691,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "28/3/2018",
+      DATE: "3/28/2018",
       EVENT: "",
       TURNOVER: "344,442",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -699,7 +699,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "29/3/2018",
+      DATE: "3/29/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "1,068,589",
       TO_WEIGHT_vs_MONTH: "11%",
@@ -707,7 +707,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "9%",
     },
     {
-      DATE: "30/3/2018",
+      DATE: "3/30/2018",
       EVENT: "Easter - Good Friday",
       TURNOVER: "677,097",
       TO_WEIGHT_vs_MONTH: "7%",
@@ -715,7 +715,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "7%",
     },
     {
-      DATE: "31/3/2018",
+      DATE: "3/31/2018",
       EVENT: "Easter - Saturday",
       TURNOVER: "559,040",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -723,7 +723,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "1/4/2018",
+      DATE: "4/1/2018",
       EVENT: "Easter - Sunday",
       TURNOVER: "203,270",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -731,7 +731,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "2/4/2018",
+      DATE: "4/2/2018",
       EVENT: "",
       TURNOVER: "446,845",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -739,7 +739,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "3/4/2018",
+      DATE: "4/3/2018",
       EVENT: "",
       TURNOVER: "235,746",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -755,7 +755,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/4/2018",
+      DATE: "4/5/2018",
       EVENT: "",
       TURNOVER: "255,233",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -763,7 +763,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "6/4/2018",
+      DATE: "4/6/2018",
       EVENT: "",
       TURNOVER: "289,845",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -771,7 +771,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "7/4/2018",
+      DATE: "4/7/2018",
       EVENT: "",
       TURNOVER: "483,779",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -779,7 +779,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "8/4/2018",
+      DATE: "4/8/2018",
       EVENT: "",
       TURNOVER: "412,671",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -787,7 +787,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "9/4/2018",
+      DATE: "4/9/2018",
       EVENT: "",
       TURNOVER: "165,511",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -795,7 +795,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/4/2018",
+      DATE: "4/10/2018",
       EVENT: "",
       TURNOVER: "156,269",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -803,7 +803,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/4/2018",
+      DATE: "4/11/2018",
       EVENT: "",
       TURNOVER: "173,951",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -811,7 +811,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "12/4/2018",
+      DATE: "4/12/2018",
       EVENT: "Mid Season",
       TURNOVER: "179,429",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -819,7 +819,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/4/2018",
+      DATE: "4/13/2018",
       EVENT: "Mid Season",
       TURNOVER: "215,700",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -827,7 +827,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/4/2018",
+      DATE: "4/14/2018",
       EVENT: "Mid Season",
       TURNOVER: "441,203",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -835,7 +835,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "15/4/2018",
+      DATE: "4/15/2018",
       EVENT: "Mid Season",
       TURNOVER: "397,856",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -843,7 +843,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "16/4/2018",
+      DATE: "4/16/2018",
       EVENT: "Mid Season",
       TURNOVER: "185,636",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -851,7 +851,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/4/2018",
+      DATE: "4/17/2018",
       EVENT: "Mid Season",
       TURNOVER: "167,322",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -859,7 +859,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/4/2018",
+      DATE: "4/18/2018",
       EVENT: "Mid Season",
       TURNOVER: "181,197",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -867,7 +867,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/4/2018",
+      DATE: "4/19/2018",
       EVENT: "Mid Season",
       TURNOVER: "238,332",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -875,7 +875,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/4/2018",
+      DATE: "4/20/2018",
       EVENT: "Mid Season",
       TURNOVER: "241,427",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -883,7 +883,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/4/2018",
+      DATE: "4/21/2018",
       EVENT: "Mid Season",
       TURNOVER: "560,928",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -891,7 +891,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "22/4/2018",
+      DATE: "4/22/2018",
       EVENT: "Mid Season",
       TURNOVER: "544,423",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -899,7 +899,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "23/4/2018",
+      DATE: "4/23/2018",
       EVENT: "",
       TURNOVER: "204,665",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -907,7 +907,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/4/2018",
+      DATE: "4/24/2018",
       EVENT: "",
       TURNOVER: "227,458",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -915,7 +915,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/4/2018",
+      DATE: "4/25/2018",
       EVENT: "National Holiday",
       TURNOVER: "608,923",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -923,7 +923,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "26/4/2018",
+      DATE: "4/26/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "782,824",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -931,7 +931,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "27/4/2018",
+      DATE: "4/27/2018",
       EVENT: "",
       TURNOVER: "264,576",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -939,7 +939,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "28/4/2018",
+      DATE: "4/28/2018",
       EVENT: "",
       TURNOVER: "509,682",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -947,7 +947,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "29/4/2018",
+      DATE: "4/29/2018",
       EVENT: "",
       TURNOVER: "536,922",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -955,7 +955,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "30/4/2018",
+      DATE: "4/30/2018",
       EVENT: "",
       TURNOVER: "430,978",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -963,7 +963,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "1/5/2018",
+      DATE: "5/1/2018",
       EVENT: "National Holiday",
       TURNOVER: "576,217",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -971,7 +971,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "2/5/2018",
+      DATE: "5/2/2018",
       EVENT: "",
       TURNOVER: "220,872",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -979,7 +979,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "3/5/2018",
+      DATE: "5/3/2018",
       EVENT: "",
       TURNOVER: "260,535",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -987,7 +987,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/5/2018",
+      DATE: "5/4/2018",
       EVENT: "",
       TURNOVER: "281,172",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1003,7 +1003,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "6/5/2018",
+      DATE: "5/6/2018",
       EVENT: "",
       TURNOVER: "450,058",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1011,7 +1011,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "7/5/2018",
+      DATE: "5/7/2018",
       EVENT: "",
       TURNOVER: "213,955",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1019,7 +1019,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/5/2018",
+      DATE: "5/8/2018",
       EVENT: "",
       TURNOVER: "219,340",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1027,7 +1027,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/5/2018",
+      DATE: "5/9/2018",
       EVENT: "",
       TURNOVER: "263,310",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1035,7 +1035,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/5/2018",
+      DATE: "5/10/2018",
       EVENT: "",
       TURNOVER: "275,222",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1043,7 +1043,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/5/2018",
+      DATE: "5/11/2018",
       EVENT: "",
       TURNOVER: "284,799",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1051,7 +1051,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "12/5/2018",
+      DATE: "5/12/2018",
       EVENT: "",
       TURNOVER: "563,318",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1059,7 +1059,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "13/5/2018",
+      DATE: "5/13/2018",
       EVENT: "",
       TURNOVER: "519,106",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1067,7 +1067,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "14/5/2018",
+      DATE: "5/14/2018",
       EVENT: "",
       TURNOVER: "199,915",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1075,7 +1075,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/5/2018",
+      DATE: "5/15/2018",
       EVENT: "",
       TURNOVER: "189,039",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1083,7 +1083,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/5/2018",
+      DATE: "5/16/2018",
       EVENT: "",
       TURNOVER: "208,215",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1091,7 +1091,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/5/2018",
+      DATE: "5/17/2018",
       EVENT: "",
       TURNOVER: "275,820",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1099,7 +1099,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/5/2018",
+      DATE: "5/18/2018",
       EVENT: "",
       TURNOVER: "263,374",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1107,7 +1107,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/5/2018",
+      DATE: "5/19/2018",
       EVENT: "",
       TURNOVER: "504,415",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1115,7 +1115,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "20/5/2018",
+      DATE: "5/20/2018",
       EVENT: "",
       TURNOVER: "489,518",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1123,7 +1123,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "21/5/2018",
+      DATE: "5/21/2018",
       EVENT: "",
       TURNOVER: "235,202",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1131,7 +1131,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/5/2018",
+      DATE: "5/22/2018",
       EVENT: "",
       TURNOVER: "218,679",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1139,7 +1139,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/5/2018",
+      DATE: "5/23/2018",
       EVENT: "",
       TURNOVER: "207,133",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1147,7 +1147,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/5/2018",
+      DATE: "5/24/2018",
       EVENT: "",
       TURNOVER: "277,352",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1155,7 +1155,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/5/2018",
+      DATE: "5/25/2018",
       EVENT: "",
       TURNOVER: "287,717",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1163,7 +1163,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "26/5/2018",
+      DATE: "5/26/2018",
       EVENT: "",
       TURNOVER: "537,689",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1171,7 +1171,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "27/5/2018",
+      DATE: "5/27/2018",
       EVENT: "",
       TURNOVER: "531,929",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1179,7 +1179,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "28/5/2018",
+      DATE: "5/28/2018",
       EVENT: "",
       TURNOVER: "219,378",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1187,7 +1187,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "29/5/2018",
+      DATE: "5/29/2018",
       EVENT: "",
       TURNOVER: "259,030",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1195,7 +1195,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "30/5/2018",
+      DATE: "5/30/2018",
       EVENT: "Saturday",
       TURNOVER: "260,370",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1203,7 +1203,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "31/5/2018",
+      DATE: "5/31/2018",
       EVENT: "National Holiday & FAB Thursday",
       TURNOVER: "1,424,616",
       TO_WEIGHT_vs_MONTH: "13%",
@@ -1211,7 +1211,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "11%",
     },
     {
-      DATE: "1/6/2018",
+      DATE: "6/1/2018",
       EVENT: "FAB Days",
       TURNOVER: "532,186",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1219,7 +1219,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "2/6/2018",
+      DATE: "6/2/2018",
       EVENT: "",
       TURNOVER: "478,436",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1227,7 +1227,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "3/6/2018",
+      DATE: "6/3/2018",
       EVENT: "",
       TURNOVER: "475,122",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1235,7 +1235,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "4/6/2018",
+      DATE: "6/4/2018",
       EVENT: "",
       TURNOVER: "206,832",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1243,7 +1243,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "5/6/2018",
+      DATE: "6/5/2018",
       EVENT: "",
       TURNOVER: "198,170",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1259,7 +1259,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "7/6/2018",
+      DATE: "6/7/2018",
       EVENT: "",
       TURNOVER: "225,752",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1267,7 +1267,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/6/2018",
+      DATE: "6/8/2018",
       EVENT: "",
       TURNOVER: "250,081",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1275,7 +1275,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "9/6/2018",
+      DATE: "6/9/2018",
       EVENT: "",
       TURNOVER: "532,413",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1283,7 +1283,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "10/6/2018",
+      DATE: "6/10/2018",
       EVENT: "National Holiday",
       TURNOVER: "516,451",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1291,7 +1291,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "11/6/2018",
+      DATE: "6/11/2018",
       EVENT: "",
       TURNOVER: "215,282",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1299,7 +1299,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "12/6/2018",
+      DATE: "6/12/2018",
       EVENT: "",
       TURNOVER: "206,770",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1307,7 +1307,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/6/2018",
+      DATE: "6/13/2018",
       EVENT: "Local Holiday",
       TURNOVER: "234,668",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1315,7 +1315,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/6/2018",
+      DATE: "6/14/2018",
       EVENT: "",
       TURNOVER: "226,923",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1323,7 +1323,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/6/2018",
+      DATE: "6/15/2018",
       EVENT: "Black Days",
       TURNOVER: "247,965",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1331,7 +1331,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/6/2018",
+      DATE: "6/16/2018",
       EVENT: "Black Days",
       TURNOVER: "529,484",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1339,7 +1339,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "17/6/2018",
+      DATE: "6/17/2018",
       EVENT: "Black Days",
       TURNOVER: "510,853",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1347,7 +1347,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "18/6/2018",
+      DATE: "6/18/2018",
       EVENT: "",
       TURNOVER: "206,722",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1355,7 +1355,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/6/2018",
+      DATE: "6/19/2018",
       EVENT: "",
       TURNOVER: "201,380",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1363,7 +1363,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/6/2018",
+      DATE: "6/20/2018",
       EVENT: "",
       TURNOVER: "197,363",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1371,7 +1371,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/6/2018",
+      DATE: "6/21/2018",
       EVENT: "",
       TURNOVER: "292,413",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1379,7 +1379,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "22/6/2018",
+      DATE: "6/22/2018",
       EVENT: "",
       TURNOVER: "285,119",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1387,7 +1387,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "23/6/2018",
+      DATE: "6/23/2018",
       EVENT: "",
       TURNOVER: "370,784",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1395,7 +1395,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "24/6/2018",
+      DATE: "6/24/2018",
       EVENT: "Local Holiday",
       TURNOVER: "471,674",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1403,7 +1403,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "25/6/2018",
+      DATE: "6/25/2018",
       EVENT: "",
       TURNOVER: "242,139",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1411,7 +1411,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "26/6/2018",
+      DATE: "6/26/2018",
       EVENT: "",
       TURNOVER: "268,143",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1419,7 +1419,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "27/6/2018",
+      DATE: "6/27/2018",
       EVENT: "",
       TURNOVER: "279,816",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1427,7 +1427,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "28/6/2018",
+      DATE: "6/28/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "1,060,799",
       TO_WEIGHT_vs_MONTH: "10%",
@@ -1435,7 +1435,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "8%",
     },
     {
-      DATE: "29/6/2018",
+      DATE: "6/29/2018",
       EVENT: "Local Holiday",
       TURNOVER: "348,842",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1443,7 +1443,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "30/6/2018",
+      DATE: "6/30/2018",
       EVENT: "",
       TURNOVER: "499,188",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1451,7 +1451,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "1/7/2018",
+      DATE: "7/1/2018",
       EVENT: "",
       TURNOVER: "667,334",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1459,7 +1459,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "2/7/2018",
+      DATE: "7/2/2018",
       EVENT: "",
       TURNOVER: "320,676",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1467,7 +1467,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "3/7/2018",
+      DATE: "7/3/2018",
       EVENT: "",
       TURNOVER: "275,109",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1475,7 +1475,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/7/2018",
+      DATE: "7/4/2018",
       EVENT: "",
       TURNOVER: "337,641",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1483,7 +1483,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/7/2018",
+      DATE: "7/5/2018",
       EVENT: "",
       TURNOVER: "336,185",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1491,7 +1491,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/7/2018",
+      DATE: "7/6/2018",
       EVENT: "",
       TURNOVER: "293,741",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1507,7 +1507,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "8/7/2018",
+      DATE: "7/8/2018",
       EVENT: "",
       TURNOVER: "520,057",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1515,7 +1515,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "9/7/2018",
+      DATE: "7/9/2018",
       EVENT: "",
       TURNOVER: "307,349",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1523,7 +1523,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/7/2018",
+      DATE: "7/10/2018",
       EVENT: "",
       TURNOVER: "301,179",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1531,7 +1531,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/7/2018",
+      DATE: "7/11/2018",
       EVENT: "",
       TURNOVER: "344,378",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1539,7 +1539,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/7/2018",
+      DATE: "7/12/2018",
       EVENT: "",
       TURNOVER: "315,139",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1547,7 +1547,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/7/2018",
+      DATE: "7/13/2018",
       EVENT: "",
       TURNOVER: "337,406",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1555,7 +1555,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "14/7/2018",
+      DATE: "7/14/2018",
       EVENT: "",
       TURNOVER: "546,476",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1563,7 +1563,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "15/7/2018",
+      DATE: "7/15/2018",
       EVENT: "",
       TURNOVER: "506,789",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1571,7 +1571,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "16/7/2018",
+      DATE: "7/16/2018",
       EVENT: "",
       TURNOVER: "316,678",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1579,7 +1579,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/7/2018",
+      DATE: "7/17/2018",
       EVENT: "",
       TURNOVER: "290,046",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1587,7 +1587,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/7/2018",
+      DATE: "7/18/2018",
       EVENT: "",
       TURNOVER: "363,028",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1595,7 +1595,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "19/7/2018",
+      DATE: "7/19/2018",
       EVENT: "",
       TURNOVER: "371,022",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1603,7 +1603,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "20/7/2018",
+      DATE: "7/20/2018",
       EVENT: "",
       TURNOVER: "365,367",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1611,7 +1611,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "21/7/2018",
+      DATE: "7/21/2018",
       EVENT: "",
       TURNOVER: "536,491",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1619,7 +1619,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "22/7/2018",
+      DATE: "7/22/2018",
       EVENT: "",
       TURNOVER: "485,759",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1627,7 +1627,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "23/7/2018",
+      DATE: "7/23/2018",
       EVENT: "",
       TURNOVER: "377,270",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1635,7 +1635,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "24/7/2018",
+      DATE: "7/24/2018",
       EVENT: "",
       TURNOVER: "360,467",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1643,7 +1643,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "25/7/2018",
+      DATE: "7/25/2018",
       EVENT: "",
       TURNOVER: "390,084",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1651,7 +1651,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "26/7/2018",
+      DATE: "7/26/2018",
       EVENT: "FAB Days",
       TURNOVER: "1,020,871",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -1659,7 +1659,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "27/7/2018",
+      DATE: "7/27/2018",
       EVENT: "FAB Days",
       TURNOVER: "398,338",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1667,7 +1667,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "28/7/2018",
+      DATE: "7/28/2018",
       EVENT: "FAB Days",
       TURNOVER: "523,724",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1675,7 +1675,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "29/7/2018",
+      DATE: "7/29/2018",
       EVENT: "FAB Days",
       TURNOVER: "582,495",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1683,7 +1683,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "30/7/2018",
+      DATE: "7/30/2018",
       EVENT: "",
       TURNOVER: "488,446",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1691,7 +1691,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "31/7/2018",
+      DATE: "7/31/2018",
       EVENT: "",
       TURNOVER: "417,151",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1699,7 +1699,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "1/8/2018",
+      DATE: "8/1/2018",
       EVENT: "",
       TURNOVER: "377,792",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1707,7 +1707,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "2/8/2018",
+      DATE: "8/2/2018",
       EVENT: "",
       TURNOVER: "401,139",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1715,7 +1715,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "3/8/2018",
+      DATE: "8/3/2018",
       EVENT: "",
       TURNOVER: "380,039",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1723,7 +1723,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/8/2018",
+      DATE: "8/4/2018",
       EVENT: "",
       TURNOVER: "474,199",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1731,7 +1731,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/8/2018",
+      DATE: "8/5/2018",
       EVENT: "",
       TURNOVER: "467,537",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1739,7 +1739,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "6/8/2018",
+      DATE: "8/6/2018",
       EVENT: "",
       TURNOVER: "553,913",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1747,7 +1747,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "7/8/2018",
+      DATE: "8/7/2018",
       EVENT: "",
       TURNOVER: "499,872",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1763,7 +1763,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "9/8/2018",
+      DATE: "8/9/2018",
       EVENT: "",
       TURNOVER: "551,738",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1771,7 +1771,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "10/8/2018",
+      DATE: "8/10/2018",
       EVENT: "",
       TURNOVER: "467,973",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1779,7 +1779,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "11/8/2018",
+      DATE: "8/11/2018",
       EVENT: "",
       TURNOVER: "521,385",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1787,7 +1787,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/8/2018",
+      DATE: "8/12/2018",
       EVENT: "",
       TURNOVER: "598,401",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1795,7 +1795,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "13/8/2018",
+      DATE: "8/13/2018",
       EVENT: "",
       TURNOVER: "619,877",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1803,7 +1803,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "14/8/2018",
+      DATE: "8/14/2018",
       EVENT: "",
       TURNOVER: "464,708",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1811,7 +1811,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "15/8/2018",
+      DATE: "8/15/2018",
       EVENT: "National Holiday",
       TURNOVER: "571,304",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1819,7 +1819,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "16/8/2018",
+      DATE: "8/16/2018",
       EVENT: "",
       TURNOVER: "625,542",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1827,7 +1827,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "17/8/2018",
+      DATE: "8/17/2018",
       EVENT: "",
       TURNOVER: "458,179",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1835,7 +1835,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "18/8/2018",
+      DATE: "8/18/2018",
       EVENT: "",
       TURNOVER: "435,190",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1843,7 +1843,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "19/8/2018",
+      DATE: "8/19/2018",
       EVENT: "",
       TURNOVER: "383,020",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1851,7 +1851,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "20/8/2018",
+      DATE: "8/20/2018",
       EVENT: "",
       TURNOVER: "436,385",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1859,7 +1859,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "21/8/2018",
+      DATE: "8/21/2018",
       EVENT: "",
       TURNOVER: "423,343",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1867,7 +1867,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "22/8/2018",
+      DATE: "8/22/2018",
       EVENT: "",
       TURNOVER: "517,326",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1875,7 +1875,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "23/8/2018",
+      DATE: "8/23/2018",
       EVENT: "FAB Week",
       TURNOVER: "614,300",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1883,7 +1883,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "24/8/2018",
+      DATE: "8/24/2018",
       EVENT: "FAB Week",
       TURNOVER: "405,189",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1891,7 +1891,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "25/8/2018",
+      DATE: "8/25/2018",
       EVENT: "FAB Week",
       TURNOVER: "426,627",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1899,7 +1899,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "26/8/2018",
+      DATE: "8/26/2018",
       EVENT: "FAB Week",
       TURNOVER: "416,935",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1907,7 +1907,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "27/8/2018",
+      DATE: "8/27/2018",
       EVENT: "FAB Week",
       TURNOVER: "392,917",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1915,7 +1915,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "28/8/2018",
+      DATE: "8/28/2018",
       EVENT: "FAB Week",
       TURNOVER: "495,197",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1923,7 +1923,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "29/8/2018",
+      DATE: "8/29/2018",
       EVENT: "FAB Week",
       TURNOVER: "402,871",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1931,7 +1931,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "30/8/2018",
+      DATE: "8/30/2018",
       EVENT: "FAB Week",
       TURNOVER: "1,134,614",
       TO_WEIGHT_vs_MONTH: "7%",
@@ -1939,7 +1939,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "31/8/2018",
+      DATE: "8/31/2018",
       EVENT: "",
       TURNOVER: "318,242",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1947,7 +1947,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "1/9/2018",
+      DATE: "9/1/2018",
       EVENT: "",
       TURNOVER: "362,527",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1955,7 +1955,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "2/9/2018",
+      DATE: "9/2/2018",
       EVENT: "",
       TURNOVER: "337,383",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1963,7 +1963,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "3/9/2018",
+      DATE: "9/3/2018",
       EVENT: "",
       TURNOVER: "320,622",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1971,7 +1971,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "4/9/2018",
+      DATE: "9/4/2018",
       EVENT: "",
       TURNOVER: "297,477",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1979,7 +1979,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/9/2018",
+      DATE: "9/5/2018",
       EVENT: "",
       TURNOVER: "287,697",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1987,7 +1987,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "6/9/2018",
+      DATE: "9/6/2018",
       EVENT: "",
       TURNOVER: "312,107",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1995,7 +1995,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "7/9/2018",
+      DATE: "9/7/2018",
       EVENT: "",
       TURNOVER: "272,893",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2003,7 +2003,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "8/9/2018",
+      DATE: "9/8/2018",
       EVENT: "",
       TURNOVER: "465,726",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2019,7 +2019,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "10/9/2018",
+      DATE: "9/10/2018",
       EVENT: "",
       TURNOVER: "218,881",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2027,7 +2027,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/9/2018",
+      DATE: "9/11/2018",
       EVENT: "",
       TURNOVER: "221,016",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2035,7 +2035,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/9/2018",
+      DATE: "9/12/2018",
       EVENT: "",
       TURNOVER: "241,453",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2043,7 +2043,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/9/2018",
+      DATE: "9/13/2018",
       EVENT: "",
       TURNOVER: "275,474",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2051,7 +2051,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "14/9/2018",
+      DATE: "9/14/2018",
       EVENT: "",
       TURNOVER: "264,281",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2059,7 +2059,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "15/9/2018",
+      DATE: "9/15/2018",
       EVENT: "",
       TURNOVER: "499,736",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2067,7 +2067,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "16/9/2018",
+      DATE: "9/16/2018",
       EVENT: "",
       TURNOVER: "486,544",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2075,7 +2075,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "17/9/2018",
+      DATE: "9/17/2018",
       EVENT: "",
       TURNOVER: "201,007",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2083,7 +2083,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/9/2018",
+      DATE: "9/18/2018",
       EVENT: "",
       TURNOVER: "199,278",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2091,7 +2091,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/9/2018",
+      DATE: "9/19/2018",
       EVENT: "",
       TURNOVER: "200,074",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2099,7 +2099,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/9/2018",
+      DATE: "9/20/2018",
       EVENT: "",
       TURNOVER: "220,578",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2107,7 +2107,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/9/2018",
+      DATE: "9/21/2018",
       EVENT: "",
       TURNOVER: "260,319",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2115,7 +2115,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/9/2018",
+      DATE: "9/22/2018",
       EVENT: "",
       TURNOVER: "483,871",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2123,7 +2123,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "23/9/2018",
+      DATE: "9/23/2018",
       EVENT: "",
       TURNOVER: "468,316",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2131,7 +2131,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "24/9/2018",
+      DATE: "9/24/2018",
       EVENT: "",
       TURNOVER: "173,209",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2139,7 +2139,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/9/2018",
+      DATE: "9/25/2018",
       EVENT: "",
       TURNOVER: "172,660",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2147,7 +2147,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "26/9/2018",
+      DATE: "9/26/2018",
       EVENT: "",
       TURNOVER: "179,103",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2155,7 +2155,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "27/9/2018",
+      DATE: "9/27/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "716,723",
       TO_WEIGHT_vs_MONTH: "7%",
@@ -2163,7 +2163,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "28/9/2018",
+      DATE: "9/28/2018",
       EVENT: "",
       TURNOVER: "228,656",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2171,7 +2171,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "29/9/2018",
+      DATE: "9/29/2018",
       EVENT: "",
       TURNOVER: "473,691",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2179,7 +2179,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "30/9/2018",
+      DATE: "9/30/2018",
       EVENT: "",
       TURNOVER: "501,737",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2187,7 +2187,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "1/10/2018",
+      DATE: "10/1/2018",
       EVENT: "",
       TURNOVER: "189,359",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2195,7 +2195,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "2/10/2018",
+      DATE: "10/2/2018",
       EVENT: "",
       TURNOVER: "191,465",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2203,7 +2203,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "3/10/2018",
+      DATE: "10/3/2018",
       EVENT: "",
       TURNOVER: "182,839",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2211,7 +2211,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/10/2018",
+      DATE: "10/4/2018",
       EVENT: "",
       TURNOVER: "237,972",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2219,7 +2219,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "5/10/2018",
+      DATE: "10/5/2018",
       EVENT: "National Holiday",
       TURNOVER: "662,277",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2227,7 +2227,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "6/10/2018",
+      DATE: "10/6/2018",
       EVENT: "",
       TURNOVER: "510,038",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2235,7 +2235,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "7/10/2018",
+      DATE: "10/7/2018",
       EVENT: "",
       TURNOVER: "428,259",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2243,7 +2243,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "8/10/2018",
+      DATE: "10/8/2018",
       EVENT: "",
       TURNOVER: "196,435",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2251,7 +2251,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/10/2018",
+      DATE: "10/9/2018",
       EVENT: "",
       TURNOVER: "184,717",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2267,7 +2267,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/10/2018",
+      DATE: "10/11/2018",
       EVENT: "Mid Season",
       TURNOVER: "244,708",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2275,7 +2275,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "12/10/2018",
+      DATE: "10/12/2018",
       EVENT: "Mid Season / Feriado Espanhol",
       TURNOVER: "382,243",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2283,7 +2283,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "13/10/2018",
+      DATE: "10/13/2018",
       EVENT: "Mid Season",
       TURNOVER: "565,239",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2291,7 +2291,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "14/10/2018",
+      DATE: "10/14/2018",
       EVENT: "Mid Season",
       TURNOVER: "577,230",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2299,7 +2299,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "15/10/2018",
+      DATE: "10/15/2018",
       EVENT: "Mid Season",
       TURNOVER: "217,829",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2307,7 +2307,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/10/2018",
+      DATE: "10/16/2018",
       EVENT: "Mid Season",
       TURNOVER: "202,428",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2315,7 +2315,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/10/2018",
+      DATE: "10/17/2018",
       EVENT: "Mid Season",
       TURNOVER: "212,205",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2323,7 +2323,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/10/2018",
+      DATE: "10/18/2018",
       EVENT: "Mid Season",
       TURNOVER: "238,999",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2331,7 +2331,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/10/2018",
+      DATE: "10/19/2018",
       EVENT: "Mid Season",
       TURNOVER: "295,927",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2339,7 +2339,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "20/10/2018",
+      DATE: "10/20/2018",
       EVENT: "Mid Season",
       TURNOVER: "564,355",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2347,7 +2347,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "21/10/2018",
+      DATE: "10/21/2018",
       EVENT: "Mid Season",
       TURNOVER: "532,501",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2355,7 +2355,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "22/10/2018",
+      DATE: "10/22/2018",
       EVENT: "",
       TURNOVER: "190,754",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2363,7 +2363,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/10/2018",
+      DATE: "10/23/2018",
       EVENT: "",
       TURNOVER: "165,881",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2371,7 +2371,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/10/2018",
+      DATE: "10/24/2018",
       EVENT: "",
       TURNOVER: "193,924",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2379,7 +2379,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/10/2018",
+      DATE: "10/25/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "820,818",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -2387,7 +2387,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "26/10/2018",
+      DATE: "10/26/2018",
       EVENT: "",
       TURNOVER: "293,923",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2395,7 +2395,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "27/10/2018",
+      DATE: "10/27/2018",
       EVENT: "",
       TURNOVER: "575,719",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2403,7 +2403,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "28/10/2018",
+      DATE: "10/28/2018",
       EVENT: "",
       TURNOVER: "536,131",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2411,7 +2411,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "29/10/2018",
+      DATE: "10/29/2018",
       EVENT: "",
       TURNOVER: "208,580",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2419,7 +2419,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "30/10/2018",
+      DATE: "10/30/2018",
       EVENT: "",
       TURNOVER: "250,499",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2427,7 +2427,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "31/10/2018",
+      DATE: "10/31/2018",
       EVENT: "",
       TURNOVER: "269,669",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2435,7 +2435,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "1/11/2018",
+      DATE: "11/1/2018",
       EVENT: "National Holiday",
       TURNOVER: "676,582",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2443,7 +2443,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "2/11/2018",
+      DATE: "11/2/2018",
       EVENT: "",
       TURNOVER: "564,993",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2451,7 +2451,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "3/11/2018",
+      DATE: "11/3/2018",
       EVENT: "",
       TURNOVER: "636,410",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2459,7 +2459,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "4/11/2018",
+      DATE: "11/4/2018",
       EVENT: "",
       TURNOVER: "524,736",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2467,7 +2467,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "5/11/2018",
+      DATE: "11/5/2018",
       EVENT: "",
       TURNOVER: "212,636",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2475,7 +2475,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/11/2018",
+      DATE: "11/6/2018",
       EVENT: "",
       TURNOVER: "214,054",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2483,7 +2483,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "7/11/2018",
+      DATE: "11/7/2018",
       EVENT: "",
       TURNOVER: "226,744",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2491,7 +2491,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/11/2018",
+      DATE: "11/8/2018",
       EVENT: "",
       TURNOVER: "246,796",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2499,7 +2499,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/11/2018",
+      DATE: "11/9/2018",
       EVENT: "",
       TURNOVER: "287,662",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2507,7 +2507,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/11/2018",
+      DATE: "11/10/2018",
       EVENT: "",
       TURNOVER: "604,888",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2523,7 +2523,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "12/11/2018",
+      DATE: "11/12/2018",
       EVENT: "",
       TURNOVER: "199,893",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2531,7 +2531,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/11/2018",
+      DATE: "11/13/2018",
       EVENT: "",
       TURNOVER: "185,337",
       TO_WEIGHT_vs_MONTH: "1%",
@@ -2539,7 +2539,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/11/2018",
+      DATE: "11/14/2018",
       EVENT: "",
       TURNOVER: "214,867",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2547,7 +2547,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/11/2018",
+      DATE: "11/15/2018",
       EVENT: "",
       TURNOVER: "238,085",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2555,7 +2555,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/11/2018",
+      DATE: "11/16/2018",
       EVENT: "",
       TURNOVER: "283,741",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2563,7 +2563,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/11/2018",
+      DATE: "11/17/2018",
       EVENT: "",
       TURNOVER: "595,149",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2571,7 +2571,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "18/11/2018",
+      DATE: "11/18/2018",
       EVENT: "",
       TURNOVER: "567,575",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2579,7 +2579,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "19/11/2018",
+      DATE: "11/19/2018",
       EVENT: "",
       TURNOVER: "208,647",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2587,7 +2587,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/11/2018",
+      DATE: "11/20/2018",
       EVENT: "",
       TURNOVER: "201,306",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2595,7 +2595,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/11/2018",
+      DATE: "11/21/2018",
       EVENT: "",
       TURNOVER: "259,366",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2603,7 +2603,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/11/2018",
+      DATE: "11/22/2018",
       EVENT: "",
       TURNOVER: "374,896",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2611,7 +2611,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "23/11/2018",
+      DATE: "11/23/2018",
       EVENT: "Black Week",
       TURNOVER: "1,041,919",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -2619,7 +2619,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "24/11/2018",
+      DATE: "11/24/2018",
       EVENT: "Black Week",
       TURNOVER: "973,961",
       TO_WEIGHT_vs_MONTH: "7%",
@@ -2627,7 +2627,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "25/11/2018",
+      DATE: "11/25/2018",
       EVENT: "Black Week",
       TURNOVER: "803,510",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2635,7 +2635,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "26/11/2018",
+      DATE: "11/26/2018",
       EVENT: "Black Week",
       TURNOVER: "317,015",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2643,7 +2643,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "27/11/2018",
+      DATE: "11/27/2018",
       EVENT: "Black Week",
       TURNOVER: "253,977",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2651,7 +2651,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "28/11/2018",
+      DATE: "11/28/2018",
       EVENT: "Black Week",
       TURNOVER: "287,424",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2659,7 +2659,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "29/11/2018",
+      DATE: "11/29/2018",
       EVENT: "Black Week",
       TURNOVER: "1,119,925",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -2667,7 +2667,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "30/11/2018",
+      DATE: "11/30/2018",
       EVENT: "Black Week",
       TURNOVER: "473,852",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2675,7 +2675,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "1/12/2018",
+      DATE: "12/1/2018",
       EVENT: "National Holiday",
       TURNOVER: "753,581",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2683,7 +2683,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "2/12/2018",
+      DATE: "12/2/2018",
       EVENT: "",
       TURNOVER: "643,236",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2691,7 +2691,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "3/12/2018",
+      DATE: "12/3/2018",
       EVENT: "",
       TURNOVER: "310,039",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2699,7 +2699,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/12/2018",
+      DATE: "12/4/2018",
       EVENT: "",
       TURNOVER: "295,718",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2707,7 +2707,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "5/12/2018",
+      DATE: "12/5/2018",
       EVENT: "",
       TURNOVER: "323,997",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2715,7 +2715,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/12/2018",
+      DATE: "12/6/2018",
       EVENT: "Feriado Espanhol",
       TURNOVER: "481,151",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2723,7 +2723,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "7/12/2018",
+      DATE: "12/7/2018",
       EVENT: "",
       TURNOVER: "437,950",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2731,7 +2731,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/12/2018",
+      DATE: "12/8/2018",
       EVENT: "National Holiday",
       TURNOVER: "959,233",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2739,7 +2739,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "9/12/2018",
+      DATE: "12/9/2018",
       EVENT: "",
       TURNOVER: "750,844",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2747,7 +2747,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "10/12/2018",
+      DATE: "12/10/2018",
       EVENT: "",
       TURNOVER: "368,435",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2755,7 +2755,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/12/2018",
+      DATE: "12/11/2018",
       EVENT: "",
       TURNOVER: "389,926",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2771,7 +2771,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/12/2018",
+      DATE: "12/13/2018",
       EVENT: "",
       TURNOVER: "479,764",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2779,7 +2779,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/12/2018",
+      DATE: "12/14/2018",
       EVENT: "",
       TURNOVER: "473,007",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2787,7 +2787,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/12/2018",
+      DATE: "12/15/2018",
       EVENT: "",
       TURNOVER: "826,370",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2795,7 +2795,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "16/12/2018",
+      DATE: "12/16/2018",
       EVENT: "",
       TURNOVER: "844,147",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2803,7 +2803,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "17/12/2018",
+      DATE: "12/17/2018",
       EVENT: "Xmas School Break",
       TURNOVER: "617,267",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2811,7 +2811,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "18/12/2018",
+      DATE: "12/18/2018",
       EVENT: "",
       TURNOVER: "579,268",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2819,7 +2819,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "19/12/2018",
+      DATE: "12/19/2018",
       EVENT: "",
       TURNOVER: "673,610",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2827,7 +2827,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "20/12/2018",
+      DATE: "12/20/2018",
       EVENT: "FAB Thursday",
       TURNOVER: "1,125,388",
       TO_WEIGHT_vs_MONTH: "5.82%",
@@ -2835,7 +2835,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "21/12/2018",
+      DATE: "12/21/2018",
       EVENT: "",
       TURNOVER: "761,997",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2843,7 +2843,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "22/12/2018",
+      DATE: "12/22/2018",
       EVENT: "",
       TURNOVER: "935,968",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2851,7 +2851,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "23/12/2018",
+      DATE: "12/23/2018",
       EVENT: "",
       TURNOVER: "856,424",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2859,7 +2859,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "24/12/2018",
+      DATE: "12/24/2018",
       EVENT: "Xmas Eve",
       TURNOVER: "400,610",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2867,7 +2867,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/12/2018",
+      DATE: "12/25/2018",
       EVENT: "Xmas Holiday",
       TURNOVER: 0,
       TO_WEIGHT_vs_MONTH: "0%",
@@ -2875,7 +2875,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "26/12/2018",
+      DATE: "12/26/2018",
       EVENT: "",
       TURNOVER: "707,444",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2883,7 +2883,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "27/12/2018",
+      DATE: "12/27/2018",
       EVENT: "FAB Thursday fake",
       TURNOVER: "1,321,958",
       TO_WEIGHT_vs_MONTH: "7%",
@@ -2891,7 +2891,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "7%",
     },
     {
-      DATE: "28/12/2018",
+      DATE: "12/28/2018",
       EVENT: "",
       TURNOVER: "754,922",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2899,7 +2899,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "29/12/2018",
+      DATE: "12/29/2018",
       EVENT: "",
       TURNOVER: "770,079",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2907,7 +2907,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "30/12/2018",
+      DATE: "12/30/2018",
       EVENT: "",
       TURNOVER: "761,448",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2915,7 +2915,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "31/12/2018",
+      DATE: "12/31/2018",
       EVENT: "New Years Eve",
       TURNOVER: "298,616",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2933,7 +2933,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2018",
+      DATE: "1/2/2018",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2951,7 +2951,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2018",
+      DATE: "1/2/2018",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2969,7 +2969,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2018",
+      DATE: "1/2/2018",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2987,7 +2987,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2018",
+      DATE: "1/2/2018",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -3005,7 +3005,7 @@ const data2018 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "1/2/2018",
+      DATE: "2/1/2018",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",

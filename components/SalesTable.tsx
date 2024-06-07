@@ -6,12 +6,19 @@ import {
   TableRow,
   TableCell,
   TableBody,
+  CircularProgress,
 } from "@mui/material";
-import React from "react";
+import { format } from "date-fns";
 
-export default function SalesTable({ rows }) {
-  console.log(rows);
-
+export default function SalesTable({ rows, loading }) {
+  if (loading)
+    return (
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "20px" }}
+      >
+        <CircularProgress />
+      </div>
+    );
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} size="small">
@@ -38,23 +45,22 @@ export default function SalesTable({ rows }) {
               key={index}
               sx={{
                 "&:last-child td, &:last-child th": { border: 0 },
-                backgroundColor:
-                  row.WEEKEND === "Weekend" ? "violet" : "inherit",
+                backgroundColor: row.weekend ? "#FADDF8" : "inherit",
               }}
             >
               <TableCell component="th" scope="row">
-                {row.QUARTER}
+                {row.quarter}
               </TableCell>
-              <TableCell>{row.WEEKEND}</TableCell>
-              <TableCell>{row.EVENT}</TableCell>
-              <TableCell>{row.MONTH}</TableCell>
-              <TableCell>{row.WEEK}</TableCell>
-              <TableCell>{row.WEEKDAY}</TableCell>
-              <TableCell>{row.DATE}</TableCell>
-              <TableCell>{row.TURNOVER}</TableCell>
-              <TableCell>{row.TO_WEIGHT_vs_MONTH}</TableCell>
-              <TableCell>{row.FF}</TableCell>
-              <TableCell>{row.FF_WEIGHT_vs_MONTH}</TableCell>
+              <TableCell>{row.weekend ? "Weekend" : "Weekday"}</TableCell>
+              <TableCell>{row.event}</TableCell>
+              <TableCell>{row.month}</TableCell>
+              <TableCell>{row.week}</TableCell>
+              <TableCell>{row.weekday}</TableCell>
+              <TableCell>{format(new Date(row.date), "dd/MM/yyyy")}</TableCell>
+              <TableCell>{row.turnover}</TableCell>
+              <TableCell>{row.to_weight_vs_month}</TableCell>
+              <TableCell>{row.ff}</TableCell>
+              <TableCell>{row.ff_weight_vs_month}</TableCell>
             </TableRow>
           ))}
         </TableBody>

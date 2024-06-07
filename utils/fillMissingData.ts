@@ -3,7 +3,7 @@ import { supabase } from "./supabase/client";
 
 export const fillMissingData = (data: any) => {
   const processRow = (row) => {
-    const date = parse(row.DATE, "d/M/yyyy", new Date());
+    const date = parse(row.DATE, "M/d/yyyy", new Date());
 
     const weekend = getDay(date) === 0 || getDay(date) === 6;
     const month = format(date, "MMMM");
@@ -24,6 +24,8 @@ export const fillMissingData = (data: any) => {
   Object.keys(data).forEach((key) => {
     data[key] = data[key].map(processRow);
   });
+
+  console.log(data);
 
   // insertData(data);
 

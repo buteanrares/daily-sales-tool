@@ -11,7 +11,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2022",
+      DATE: "1/2/2022",
       EVENT: "",
       TURNOVER: "376,291",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -19,7 +19,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "3/1/2022",
+      DATE: "1/3/2022",
       EVENT: "",
       TURNOVER: "271,111",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -27,7 +27,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "4/1/2022",
+      DATE: "1/4/2022",
       EVENT: "",
       TURNOVER: "252,056",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -35,7 +35,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/1/2022",
+      DATE: "1/5/2022",
       EVENT: "",
       TURNOVER: "221,358",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -43,7 +43,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "6/1/2022",
+      DATE: "1/6/2022",
       EVENT: "Spanish Holiday",
       TURNOVER: "232,643",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -51,7 +51,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "7/1/2022",
+      DATE: "1/7/2022",
       EVENT: "",
       TURNOVER: "234,634",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -59,7 +59,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "8/1/2022",
+      DATE: "1/8/2022",
       EVENT: "",
       TURNOVER: "335,692",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -67,7 +67,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "9/1/2022",
+      DATE: "1/9/2022",
       EVENT: "",
       TURNOVER: "275,927",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -75,7 +75,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "10/1/2022",
+      DATE: "1/10/2022",
       EVENT: "",
       TURNOVER: "338,708",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -83,7 +83,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "11/1/2022",
+      DATE: "1/11/2022",
       EVENT: "",
       TURNOVER: "303,789",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -91,7 +91,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/1/2022",
+      DATE: "1/12/2022",
       EVENT: "",
       TURNOVER: "288,300",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -99,7 +99,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "13/1/2022",
+      DATE: "1/13/2022",
       EVENT: "",
       TURNOVER: "295,598",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -107,7 +107,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "14/1/2022",
+      DATE: "1/14/2022",
       EVENT: "",
       TURNOVER: "299,084",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -115,7 +115,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "15/1/2022",
+      DATE: "1/15/2022",
       EVENT: "",
       TURNOVER: "594,890",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -123,7 +123,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "16/1/2022",
+      DATE: "1/16/2022",
       EVENT: "",
       TURNOVER: "517,870",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -131,7 +131,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "17/1/2022",
+      DATE: "1/17/2022",
       EVENT: "",
       TURNOVER: "220,402",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -139,7 +139,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/1/2022",
+      DATE: "1/18/2022",
       EVENT: "",
       TURNOVER: "194,066",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -147,7 +147,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/1/2022",
+      DATE: "1/19/2022",
       EVENT: "",
       TURNOVER: "214,483",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -155,7 +155,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/1/2022",
+      DATE: "1/20/2022",
       EVENT: "",
       TURNOVER: "240,853",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -163,7 +163,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/1/2022",
+      DATE: "1/21/2022",
       EVENT: "",
       TURNOVER: "239,874",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -171,7 +171,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/1/2022",
+      DATE: "1/22/2022",
       EVENT: "",
       TURNOVER: "512,416",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -179,7 +179,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "23/1/2022",
+      DATE: "1/23/2022",
       EVENT: "",
       TURNOVER: "398,643",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -187,7 +187,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "24/1/2022",
+      DATE: "1/24/2022",
       EVENT: "",
       TURNOVER: "180,970",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -195,7 +195,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/1/2022",
+      DATE: "1/25/2022",
       EVENT: "",
       TURNOVER: "172,388",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -203,7 +203,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "26/1/2022",
+      DATE: "1/26/2022",
       EVENT: "",
       TURNOVER: "196,018",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -211,7 +211,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "27/1/2022",
+      DATE: "1/27/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "512,059",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -219,7 +219,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "28/1/2022",
+      DATE: "1/28/2022",
       EVENT: "",
       TURNOVER: "255,697",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -227,7 +227,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "29/1/2022",
+      DATE: "1/29/2022",
       EVENT: "",
       TURNOVER: "496,843",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -235,7 +235,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "30/1/2022",
+      DATE: "1/30/2022",
       EVENT: "",
       TURNOVER: "405,085",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -243,7 +243,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "31/1/2022",
+      DATE: "1/31/2022",
       EVENT: "",
       TURNOVER: "199,444",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -251,7 +251,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "1/2/2022",
+      DATE: "2/1/2022",
       EVENT: "",
       TURNOVER: "175,223",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -267,7 +267,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "3/2/2022",
+      DATE: "2/3/2022",
       EVENT: "FAB Week",
       TURNOVER: "220,246",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -275,7 +275,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "4/2/2022",
+      DATE: "2/4/2022",
       EVENT: "FAB Week",
       TURNOVER: "239,152",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -283,7 +283,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/2/2022",
+      DATE: "2/5/2022",
       EVENT: "FAB Week",
       TURNOVER: "492,667",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -291,7 +291,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "6/2/2022",
+      DATE: "2/6/2022",
       EVENT: "FAB Week",
       TURNOVER: "460,417",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -299,7 +299,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "7/2/2022",
+      DATE: "2/7/2022",
       EVENT: "FAB Week",
       TURNOVER: "198,560",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -307,7 +307,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "8/2/2022",
+      DATE: "2/8/2022",
       EVENT: "FAB Week",
       TURNOVER: "189,151",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -315,7 +315,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/2/2022",
+      DATE: "2/9/2022",
       EVENT: "FAB Week",
       TURNOVER: "209,461",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -323,7 +323,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/2/2022",
+      DATE: "2/10/2022",
       EVENT: "FAB Week",
       TURNOVER: "255,098",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -331,7 +331,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "11/2/2022",
+      DATE: "2/11/2022",
       EVENT: "",
       TURNOVER: "233,365",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -339,7 +339,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/2/2022",
+      DATE: "2/12/2022",
       EVENT: "",
       TURNOVER: "484,088",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -347,7 +347,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "13/2/2022",
+      DATE: "2/13/2022",
       EVENT: "",
       TURNOVER: "426,861",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -355,7 +355,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "14/2/2022",
+      DATE: "2/14/2022",
       EVENT: "Valentine Day",
       TURNOVER: "247,096",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -363,7 +363,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "15/2/2022",
+      DATE: "2/15/2022",
       EVENT: "",
       TURNOVER: "176,974",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -371,7 +371,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/2/2022",
+      DATE: "2/16/2022",
       EVENT: "",
       TURNOVER: "187,638",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -379,7 +379,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/2/2022",
+      DATE: "2/17/2022",
       EVENT: "",
       TURNOVER: "198,183",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -387,7 +387,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/2/2022",
+      DATE: "2/18/2022",
       EVENT: "",
       TURNOVER: "230,869",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -395,7 +395,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "19/2/2022",
+      DATE: "2/19/2022",
       EVENT: "",
       TURNOVER: "445,005",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -403,7 +403,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "20/2/2022",
+      DATE: "2/20/2022",
       EVENT: "",
       TURNOVER: "423,802",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -411,7 +411,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "21/2/2022",
+      DATE: "2/21/2022",
       EVENT: "",
       TURNOVER: "192,633",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -419,7 +419,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/2/2022",
+      DATE: "2/22/2022",
       EVENT: "",
       TURNOVER: "175,147",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -427,7 +427,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/2/2022",
+      DATE: "2/23/2022",
       EVENT: "",
       TURNOVER: "180,311",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -435,7 +435,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/2/2022",
+      DATE: "2/24/2022",
       EVENT: "FAB Thursday | Beggining of war in Ukraine",
       TURNOVER: "423,750",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -443,7 +443,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "25/2/2022",
+      DATE: "2/25/2022",
       EVENT: "",
       TURNOVER: "209,308",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -451,7 +451,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "26/2/2022",
+      DATE: "2/26/2022",
       EVENT: "",
       TURNOVER: "450,704",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -459,7 +459,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "27/2/2022",
+      DATE: "2/27/2022",
       EVENT: "",
       TURNOVER: "421,356",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -467,7 +467,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "28/2/2022",
+      DATE: "2/28/2022",
       EVENT: "Carnival School Break",
       TURNOVER: "348,010",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -475,7 +475,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "1/3/2022",
+      DATE: "3/1/2022",
       EVENT: "Carnival",
       TURNOVER: "395,740",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -483,7 +483,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "2/3/2022",
+      DATE: "3/2/2022",
       EVENT: "Carnival School Break",
       TURNOVER: "188,521",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -499,7 +499,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/3/2022",
+      DATE: "3/4/2022",
       EVENT: "",
       TURNOVER: "203,852",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -507,7 +507,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/3/2022",
+      DATE: "3/5/2022",
       EVENT: "",
       TURNOVER: "401,785",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -515,7 +515,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "6/3/2022",
+      DATE: "3/6/2022",
       EVENT: "",
       TURNOVER: "385,300",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -523,7 +523,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "7/3/2022",
+      DATE: "3/7/2022",
       EVENT: "",
       TURNOVER: "165,117",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -531,7 +531,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/3/2022",
+      DATE: "3/8/2022",
       EVENT: "",
       TURNOVER: "191,062",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -539,7 +539,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/3/2022",
+      DATE: "3/9/2022",
       EVENT: "",
       TURNOVER: "162,161",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -547,7 +547,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/3/2022",
+      DATE: "3/10/2022",
       EVENT: "",
       TURNOVER: "184,225",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -555,7 +555,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/3/2022",
+      DATE: "3/11/2022",
       EVENT: "",
       TURNOVER: "219,406",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -563,7 +563,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "12/3/2022",
+      DATE: "3/12/2022",
       EVENT: "",
       TURNOVER: "414,663",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -571,7 +571,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "13/3/2022",
+      DATE: "3/13/2022",
       EVENT: "",
       TURNOVER: "392,801",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -579,7 +579,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "14/3/2022",
+      DATE: "3/14/2022",
       EVENT: "",
       TURNOVER: "173,655",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -587,7 +587,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/3/2022",
+      DATE: "3/15/2022",
       EVENT: "",
       TURNOVER: "169,112",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -595,7 +595,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/3/2022",
+      DATE: "3/16/2022",
       EVENT: "",
       TURNOVER: "196,076",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -603,7 +603,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "17/3/2022",
+      DATE: "3/17/2022",
       EVENT: "",
       TURNOVER: "226,683",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -611,7 +611,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/3/2022",
+      DATE: "3/18/2022",
       EVENT: "",
       TURNOVER: "255,360",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -619,7 +619,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "19/3/2022",
+      DATE: "3/19/2022",
       EVENT: "Fathers Day",
       TURNOVER: "428,214",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -627,7 +627,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "20/3/2022",
+      DATE: "3/20/2022",
       EVENT: "",
       TURNOVER: "381,890",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -635,7 +635,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "21/3/2022",
+      DATE: "3/21/2022",
       EVENT: "",
       TURNOVER: "180,232",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -643,7 +643,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/3/2022",
+      DATE: "3/22/2022",
       EVENT: "",
       TURNOVER: "167,762",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -651,7 +651,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/3/2022",
+      DATE: "3/23/2022",
       EVENT: "",
       TURNOVER: "193,269",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -659,7 +659,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/3/2022",
+      DATE: "3/24/2022",
       EVENT: "",
       TURNOVER: "246,062",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -667,7 +667,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/3/2022",
+      DATE: "3/25/2022",
       EVENT: "",
       TURNOVER: "244,848",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -675,7 +675,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "26/3/2022",
+      DATE: "3/26/2022",
       EVENT: "",
       TURNOVER: "500,813",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -683,7 +683,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "27/3/2022",
+      DATE: "3/27/2022",
       EVENT: "",
       TURNOVER: "430,557",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -691,7 +691,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "28/3/2022",
+      DATE: "3/28/2022",
       EVENT: "",
       TURNOVER: "214,988",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -699,7 +699,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "29/3/2022",
+      DATE: "3/29/2022",
       EVENT: "",
       TURNOVER: "191,398",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -707,7 +707,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "30/3/2022",
+      DATE: "3/30/2022",
       EVENT: "",
       TURNOVER: "234,599",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -715,7 +715,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "31/3/2022",
+      DATE: "3/31/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "665,278",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -723,7 +723,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "1/4/2022",
+      DATE: "4/1/2022",
       EVENT: "",
       TURNOVER: "279,708",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -731,7 +731,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "2/4/2022",
+      DATE: "4/2/2022",
       EVENT: "",
       TURNOVER: "581,013",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -739,7 +739,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "3/4/2022",
+      DATE: "4/3/2022",
       EVENT: "",
       TURNOVER: "584,712",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -755,7 +755,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "5/4/2022",
+      DATE: "4/5/2022",
       EVENT: "",
       TURNOVER: "226,640",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -763,7 +763,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/4/2022",
+      DATE: "4/6/2022",
       EVENT: "",
       TURNOVER: "253,024",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -771,7 +771,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "7/4/2022",
+      DATE: "4/7/2022",
       EVENT: "",
       TURNOVER: "282,198",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -779,7 +779,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/4/2022",
+      DATE: "4/8/2022",
       EVENT: "",
       TURNOVER: "313,057",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -787,7 +787,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/4/2022",
+      DATE: "4/9/2022",
       EVENT: "",
       TURNOVER: "689,460",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -795,7 +795,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "10/4/2022",
+      DATE: "4/10/2022",
       EVENT: "",
       TURNOVER: "576,971",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -803,7 +803,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "11/4/2022",
+      DATE: "4/11/2022",
       EVENT: "Easter - school break",
       TURNOVER: "404,206",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -811,7 +811,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/4/2022",
+      DATE: "4/12/2022",
       EVENT: "Easter - school break",
       TURNOVER: "427,901",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -819,7 +819,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "13/4/2022",
+      DATE: "4/13/2022",
       EVENT: "Easter - school break",
       TURNOVER: "462,068",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -827,7 +827,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "14/4/2022",
+      DATE: "4/14/2022",
       EVENT: "Easter - school break | FC Caça aos Ovos",
       TURNOVER: "581,002",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -835,7 +835,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "15/4/2022",
+      DATE: "4/15/2022",
       EVENT: "Easter - Good Friday | FC Caça aos Ovos",
       TURNOVER: "755,899",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -843,7 +843,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "16/4/2022",
+      DATE: "4/16/2022",
       EVENT: "Easter - Saturday | FC Caça aos Ovos",
       TURNOVER: "643,920",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -851,7 +851,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "17/4/2022",
+      DATE: "4/17/2022",
       EVENT: "Easter - Sunday | FC Caça aos Ovos",
       TURNOVER: "239,869",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -859,7 +859,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "18/4/2022",
+      DATE: "4/18/2022",
       EVENT: "Easter - Good Monday | School break",
       TURNOVER: "585,707",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -867,7 +867,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "19/4/2022",
+      DATE: "4/19/2022",
       EVENT: "",
       TURNOVER: "276,115",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -875,7 +875,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/4/2022",
+      DATE: "4/20/2022",
       EVENT: "",
       TURNOVER: "276,934",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -883,7 +883,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/4/2022",
+      DATE: "4/21/2022",
       EVENT: "",
       TURNOVER: "334,662",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -891,7 +891,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/4/2022",
+      DATE: "4/22/2022",
       EVENT: "",
       TURNOVER: "328,020",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -899,7 +899,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/4/2022",
+      DATE: "4/23/2022",
       EVENT: "",
       TURNOVER: "642,923",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -907,7 +907,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "24/4/2022",
+      DATE: "4/24/2022",
       EVENT: "",
       TURNOVER: "648,054",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -915,7 +915,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "25/4/2022",
+      DATE: "4/25/2022",
       EVENT: "National Holiday",
       TURNOVER: "581,580",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -923,7 +923,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "26/4/2022",
+      DATE: "4/26/2022",
       EVENT: "",
       TURNOVER: "264,341",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -931,7 +931,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "27/4/2022",
+      DATE: "4/27/2022",
       EVENT: "",
       TURNOVER: "263,961",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -939,7 +939,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "28/4/2022",
+      DATE: "4/28/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "819,454",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -947,7 +947,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "29/4/2022",
+      DATE: "4/29/2022",
       EVENT: "",
       TURNOVER: "363,663",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -955,7 +955,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "30/4/2022",
+      DATE: "4/30/2022",
       EVENT: "",
       TURNOVER: "645,114",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -963,7 +963,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "1/5/2022",
+      DATE: "5/1/2022",
       EVENT: "National Holiday",
       TURNOVER: "527,363",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -971,7 +971,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "2/5/2022",
+      DATE: "5/2/2022",
       EVENT: "",
       TURNOVER: "320,942",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -979,7 +979,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "3/5/2022",
+      DATE: "5/3/2022",
       EVENT: "",
       TURNOVER: "310,586",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -987,7 +987,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/5/2022",
+      DATE: "5/4/2022",
       EVENT: "",
       TURNOVER: "278,343",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1003,7 +1003,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/5/2022",
+      DATE: "5/6/2022",
       EVENT: "",
       TURNOVER: "335,287",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1011,7 +1011,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "7/5/2022",
+      DATE: "5/7/2022",
       EVENT: "",
       TURNOVER: "572,555",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1019,7 +1019,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "8/5/2022",
+      DATE: "5/8/2022",
       EVENT: "",
       TURNOVER: "603,517",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1027,7 +1027,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "9/5/2022",
+      DATE: "5/9/2022",
       EVENT: "",
       TURNOVER: "285,704",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1035,7 +1035,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/5/2022",
+      DATE: "5/10/2022",
       EVENT: "",
       TURNOVER: "279,334",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1043,7 +1043,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "11/5/2022",
+      DATE: "5/11/2022",
       EVENT: "",
       TURNOVER: "284,343",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1051,7 +1051,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "12/5/2022",
+      DATE: "5/12/2022",
       EVENT: "",
       TURNOVER: "348,342",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1059,7 +1059,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/5/2022",
+      DATE: "5/13/2022",
       EVENT: "",
       TURNOVER: "302,400",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1067,7 +1067,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/5/2022",
+      DATE: "5/14/2022",
       EVENT: "",
       TURNOVER: "606,234",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1075,7 +1075,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "15/5/2022",
+      DATE: "5/15/2022",
       EVENT: "",
       TURNOVER: "648,580",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1083,7 +1083,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "16/5/2022",
+      DATE: "5/16/2022",
       EVENT: "",
       TURNOVER: "329,839",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1091,7 +1091,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "17/5/2022",
+      DATE: "5/17/2022",
       EVENT: "",
       TURNOVER: "347,028",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1099,7 +1099,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "18/5/2022",
+      DATE: "5/18/2022",
       EVENT: "",
       TURNOVER: "280,365",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1107,7 +1107,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "19/5/2022",
+      DATE: "5/19/2022",
       EVENT: "",
       TURNOVER: "285,875",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1115,7 +1115,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/5/2022",
+      DATE: "5/20/2022",
       EVENT: "",
       TURNOVER: "323,105",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1123,7 +1123,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "21/5/2022",
+      DATE: "5/21/2022",
       EVENT: "",
       TURNOVER: "584,214",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1131,7 +1131,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "22/5/2022",
+      DATE: "5/22/2022",
       EVENT: "",
       TURNOVER: "548,936",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1139,7 +1139,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "23/5/2022",
+      DATE: "5/23/2022",
       EVENT: "",
       TURNOVER: "291,963",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1147,7 +1147,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/5/2022",
+      DATE: "5/24/2022",
       EVENT: "",
       TURNOVER: "262,700",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1155,7 +1155,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "25/5/2022",
+      DATE: "5/25/2022",
       EVENT: "",
       TURNOVER: "273,052",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1163,7 +1163,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "26/5/2022",
+      DATE: "5/26/2022",
       EVENT: "FAB Days",
       TURNOVER: "782,405",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -1171,7 +1171,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "27/5/2022",
+      DATE: "5/27/2022",
       EVENT: "FAB Days",
       TURNOVER: "373,198",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1179,7 +1179,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "28/5/2022",
+      DATE: "5/28/2022",
       EVENT: "FAB Days",
       TURNOVER: "593,816",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1187,7 +1187,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "29/5/2022",
+      DATE: "5/29/2022",
       EVENT: "FAB Days",
       TURNOVER: "654,747",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1195,7 +1195,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "30/5/2022",
+      DATE: "5/30/2022",
       EVENT: "",
       TURNOVER: "284,265",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1203,7 +1203,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "31/5/2022",
+      DATE: "5/31/2022",
       EVENT: "",
       TURNOVER: "279,604",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1211,7 +1211,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "1/6/2022",
+      DATE: "6/1/2022",
       EVENT: "",
       TURNOVER: "314,304",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1219,7 +1219,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "2/6/2022",
+      DATE: "6/2/2022",
       EVENT: "",
       TURNOVER: "301,119",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1227,7 +1227,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "3/6/2022",
+      DATE: "6/3/2022",
       EVENT: "",
       TURNOVER: "318,941",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1235,7 +1235,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "4/6/2022",
+      DATE: "6/4/2022",
       EVENT: "",
       TURNOVER: "682,589",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1243,7 +1243,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "5/6/2022",
+      DATE: "6/5/2022",
       EVENT: "",
       TURNOVER: "599,270",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1259,7 +1259,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "7/6/2022",
+      DATE: "6/7/2022",
       EVENT: "Summer School Holidays",
       TURNOVER: "279,949",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1267,7 +1267,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/6/2022",
+      DATE: "6/8/2022",
       EVENT: "",
       TURNOVER: "315,557",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1275,7 +1275,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/6/2022",
+      DATE: "6/9/2022",
       EVENT: "",
       TURNOVER: "296,222",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1283,7 +1283,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "10/6/2022",
+      DATE: "6/10/2022",
       EVENT: "National Holiday",
       TURNOVER: "692,986",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1291,7 +1291,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "11/6/2022",
+      DATE: "6/11/2022",
       EVENT: "",
       TURNOVER: "500,913",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1299,7 +1299,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "12/6/2022",
+      DATE: "6/12/2022",
       EVENT: "",
       TURNOVER: "426,364",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1307,7 +1307,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "13/6/2022",
+      DATE: "6/13/2022",
       EVENT: "Local Holiday",
       TURNOVER: "336,812",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1315,7 +1315,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/6/2022",
+      DATE: "6/14/2022",
       EVENT: "",
       TURNOVER: "308,169",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1323,7 +1323,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/6/2022",
+      DATE: "6/15/2022",
       EVENT: "",
       TURNOVER: "308,162",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1331,7 +1331,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "16/6/2022",
+      DATE: "6/16/2022",
       EVENT: "National Holiday",
       TURNOVER: "750,241",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -1339,7 +1339,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6%",
     },
     {
-      DATE: "17/6/2022",
+      DATE: "6/17/2022",
       EVENT: "",
       TURNOVER: "449,732",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1347,7 +1347,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "18/6/2022",
+      DATE: "6/18/2022",
       EVENT: "",
       TURNOVER: "477,379",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1355,7 +1355,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "19/6/2022",
+      DATE: "6/19/2022",
       EVENT: "",
       TURNOVER: "533,085",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1363,7 +1363,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "20/6/2022",
+      DATE: "6/20/2022",
       EVENT: "",
       TURNOVER: "273,556",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1371,7 +1371,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/6/2022",
+      DATE: "6/21/2022",
       EVENT: "",
       TURNOVER: "291,841",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1379,7 +1379,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "22/6/2022",
+      DATE: "6/22/2022",
       EVENT: "",
       TURNOVER: "293,355",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1387,7 +1387,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "23/6/2022",
+      DATE: "6/23/2022",
       EVENT: "",
       TURNOVER: "321,502",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1395,7 +1395,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "24/6/2022",
+      DATE: "6/24/2022",
       EVENT: "Local Holiday",
       TURNOVER: "538,974",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1403,7 +1403,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "25/6/2022",
+      DATE: "6/25/2022",
       EVENT: "",
       TURNOVER: "567,489",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1411,7 +1411,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "26/6/2022",
+      DATE: "6/26/2022",
       EVENT: "",
       TURNOVER: "580,476",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1419,7 +1419,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "27/6/2022",
+      DATE: "6/27/2022",
       EVENT: "",
       TURNOVER: "296,408",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1427,7 +1427,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "28/6/2022",
+      DATE: "6/28/2022",
       EVENT: "",
       TURNOVER: "284,818",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1435,7 +1435,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "29/6/2022",
+      DATE: "6/29/2022",
       EVENT: "Local Holiday",
       TURNOVER: "350,415",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1443,7 +1443,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "30/6/2022",
+      DATE: "6/30/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "1,019,258",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -1451,7 +1451,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "7%",
     },
     {
-      DATE: "1/7/2022",
+      DATE: "7/1/2022",
       EVENT: "",
       TURNOVER: "361,018",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1459,7 +1459,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "2/7/2022",
+      DATE: "7/2/2022",
       EVENT: "",
       TURNOVER: "605,103",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1467,7 +1467,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "3/7/2022",
+      DATE: "7/3/2022",
       EVENT: "",
       TURNOVER: "629,450",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1475,7 +1475,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "4/7/2022",
+      DATE: "7/4/2022",
       EVENT: "",
       TURNOVER: "360,888",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1483,7 +1483,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "5/7/2022",
+      DATE: "7/5/2022",
       EVENT: "",
       TURNOVER: "329,781",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1491,7 +1491,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "6/7/2022",
+      DATE: "7/6/2022",
       EVENT: "",
       TURNOVER: "314,001",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1507,7 +1507,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "8/7/2022",
+      DATE: "7/8/2022",
       EVENT: "",
       TURNOVER: "342,243",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1515,7 +1515,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "9/7/2022",
+      DATE: "7/9/2022",
       EVENT: "",
       TURNOVER: "503,667",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1523,7 +1523,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "10/7/2022",
+      DATE: "7/10/2022",
       EVENT: "",
       TURNOVER: "589,207",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1531,7 +1531,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "11/7/2022",
+      DATE: "7/11/2022",
       EVENT: "",
       TURNOVER: "446,390",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1539,7 +1539,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/7/2022",
+      DATE: "7/12/2022",
       EVENT: "",
       TURNOVER: "328,206",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1547,7 +1547,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "13/7/2022",
+      DATE: "7/13/2022",
       EVENT: "",
       TURNOVER: "346,817",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1555,7 +1555,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "14/7/2022",
+      DATE: "7/14/2022",
       EVENT: "",
       TURNOVER: "393,951",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1563,7 +1563,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "15/7/2022",
+      DATE: "7/15/2022",
       EVENT: "",
       TURNOVER: "421,729",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1571,7 +1571,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "16/7/2022",
+      DATE: "7/16/2022",
       EVENT: "",
       TURNOVER: "656,304",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1579,7 +1579,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "17/7/2022",
+      DATE: "7/17/2022",
       EVENT: "",
       TURNOVER: "633,963",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1587,7 +1587,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "18/7/2022",
+      DATE: "7/18/2022",
       EVENT: "",
       TURNOVER: "417,657",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1595,7 +1595,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "19/7/2022",
+      DATE: "7/19/2022",
       EVENT: "",
       TURNOVER: "504,070",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1603,7 +1603,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "20/7/2022",
+      DATE: "7/20/2022",
       EVENT: "",
       TURNOVER: "385,028",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1611,7 +1611,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "21/7/2022",
+      DATE: "7/21/2022",
       EVENT: "",
       TURNOVER: "458,521",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1619,7 +1619,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "22/7/2022",
+      DATE: "7/22/2022",
       EVENT: "",
       TURNOVER: "426,919",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1627,7 +1627,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "23/7/2022",
+      DATE: "7/23/2022",
       EVENT: "",
       TURNOVER: "558,973",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1635,7 +1635,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "24/7/2022",
+      DATE: "7/24/2022",
       EVENT: "",
       TURNOVER: "668,602",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1643,7 +1643,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "25/7/2022",
+      DATE: "7/25/2022",
       EVENT: "",
       TURNOVER: "470,338",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1651,7 +1651,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "26/7/2022",
+      DATE: "7/26/2022",
       EVENT: "",
       TURNOVER: "439,314",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1659,7 +1659,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "27/7/2022",
+      DATE: "7/27/2022",
       EVENT: "",
       TURNOVER: "450,889",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1667,7 +1667,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "28/7/2022",
+      DATE: "7/28/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "1,165,398",
       TO_WEIGHT_vs_MONTH: "8%",
@@ -1675,7 +1675,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "7%",
     },
     {
-      DATE: "29/7/2022",
+      DATE: "7/29/2022",
       EVENT: "",
       TURNOVER: "461,084",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1683,7 +1683,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "30/7/2022",
+      DATE: "7/30/2022",
       EVENT: "",
       TURNOVER: "571,870",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1691,7 +1691,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "31/7/2022",
+      DATE: "7/31/2022",
       EVENT: "",
       TURNOVER: "527,014",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1699,7 +1699,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "1/8/2022",
+      DATE: "8/1/2022",
       EVENT: "",
       TURNOVER: "504,544",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1707,7 +1707,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "2/8/2022",
+      DATE: "8/2/2022",
       EVENT: "",
       TURNOVER: "620,288",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1715,7 +1715,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "3/8/2022",
+      DATE: "8/3/2022",
       EVENT: "",
       TURNOVER: "624,244",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1723,7 +1723,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "4/8/2022",
+      DATE: "8/4/2022",
       EVENT: "",
       TURNOVER: "617,872",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1731,7 +1731,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "5/8/2022",
+      DATE: "8/5/2022",
       EVENT: "",
       TURNOVER: "573,176",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1739,7 +1739,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "6/8/2022",
+      DATE: "8/6/2022",
       EVENT: "",
       TURNOVER: "761,490",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1747,7 +1747,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "7/8/2022",
+      DATE: "8/7/2022",
       EVENT: "",
       TURNOVER: "754,314",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1763,7 +1763,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "9/8/2022",
+      DATE: "8/9/2022",
       EVENT: "",
       TURNOVER: "680,730",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1771,7 +1771,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "10/8/2022",
+      DATE: "8/10/2022",
       EVENT: "",
       TURNOVER: "669,396",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1779,7 +1779,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "11/8/2022",
+      DATE: "8/11/2022",
       EVENT: "",
       TURNOVER: "644,844",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1787,7 +1787,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "12/8/2022",
+      DATE: "8/12/2022",
       EVENT: "",
       TURNOVER: "517,442",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1795,7 +1795,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "13/8/2022",
+      DATE: "8/13/2022",
       EVENT: "",
       TURNOVER: "712,002",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1803,7 +1803,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "14/8/2022",
+      DATE: "8/14/2022",
       EVENT: "",
       TURNOVER: "637,642",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1811,7 +1811,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "15/8/2022",
+      DATE: "8/15/2022",
       EVENT: "National Holiday",
       TURNOVER: "731,523",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1819,7 +1819,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "16/8/2022",
+      DATE: "8/16/2022",
       EVENT: "",
       TURNOVER: "912,744",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1827,7 +1827,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "17/8/2022",
+      DATE: "8/17/2022",
       EVENT: "",
       TURNOVER: "679,061",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1835,7 +1835,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "18/8/2022",
+      DATE: "8/18/2022",
       EVENT: "",
       TURNOVER: "605,501",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1843,7 +1843,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "19/8/2022",
+      DATE: "8/19/2022",
       EVENT: "",
       TURNOVER: "469,989",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1851,7 +1851,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "20/8/2022",
+      DATE: "8/20/2022",
       EVENT: "",
       TURNOVER: "480,821",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1859,7 +1859,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "21/8/2022",
+      DATE: "8/21/2022",
       EVENT: "",
       TURNOVER: "515,979",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1867,7 +1867,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "22/8/2022",
+      DATE: "8/22/2022",
       EVENT: "",
       TURNOVER: "522,077",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1875,7 +1875,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "23/8/2022",
+      DATE: "8/23/2022",
       EVENT: "",
       TURNOVER: "495,715",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1883,7 +1883,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "24/8/2022",
+      DATE: "8/24/2022",
       EVENT: "",
       TURNOVER: "619,831",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1891,7 +1891,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "25/8/2022",
+      DATE: "8/25/2022",
       EVENT: "FAB Week",
       TURNOVER: "1,030,964",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1899,7 +1899,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "26/8/2022",
+      DATE: "8/26/2022",
       EVENT: "FAB Week",
       TURNOVER: "455,952",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1907,7 +1907,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "27/8/2022",
+      DATE: "8/27/2022",
       EVENT: "FAB Week",
       TURNOVER: "552,099",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1915,7 +1915,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "28/8/2022",
+      DATE: "8/28/2022",
       EVENT: "FAB Week",
       TURNOVER: "533,127",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1923,7 +1923,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "29/8/2022",
+      DATE: "8/29/2022",
       EVENT: "FAB Week",
       TURNOVER: "464,839",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1931,7 +1931,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "30/8/2022",
+      DATE: "8/30/2022",
       EVENT: "FAB Week",
       TURNOVER: "462,016",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -1939,7 +1939,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "31/8/2022",
+      DATE: "8/31/2022",
       EVENT: "FAB Week",
       TURNOVER: "501,435",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1947,7 +1947,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "1/9/2022",
+      DATE: "9/1/2022",
       EVENT: "",
       TURNOVER: "467,894",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1955,7 +1955,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "2/9/2022",
+      DATE: "9/2/2022",
       EVENT: "",
       TURNOVER: "392,413",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1963,7 +1963,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "3/9/2022",
+      DATE: "9/3/2022",
       EVENT: "",
       TURNOVER: "486,138",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -1971,7 +1971,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "4/9/2022",
+      DATE: "9/4/2022",
       EVENT: "",
       TURNOVER: "554,297",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -1979,7 +1979,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "5/9/2022",
+      DATE: "9/5/2022",
       EVENT: "",
       TURNOVER: "417,853",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1987,7 +1987,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "6/9/2022",
+      DATE: "9/6/2022",
       EVENT: "",
       TURNOVER: "362,780",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -1995,7 +1995,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "7/9/2022",
+      DATE: "9/7/2022",
       EVENT: "",
       TURNOVER: "380,143",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2003,7 +2003,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "8/9/2022",
+      DATE: "9/8/2022",
       EVENT: "",
       TURNOVER: "410,040",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2019,7 +2019,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "10/9/2022",
+      DATE: "9/10/2022",
       EVENT: "",
       TURNOVER: "527,920",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2027,7 +2027,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "11/9/2022",
+      DATE: "9/11/2022",
       EVENT: "",
       TURNOVER: "541,900",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2035,7 +2035,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "12/9/2022",
+      DATE: "9/12/2022",
       EVENT: "",
       TURNOVER: "343,108",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2043,7 +2043,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "13/9/2022",
+      DATE: "9/13/2022",
       EVENT: "",
       TURNOVER: "328,074",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2051,7 +2051,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "14/9/2022",
+      DATE: "9/14/2022",
       EVENT: "",
       TURNOVER: "353,839",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2059,7 +2059,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "15/9/2022",
+      DATE: "9/15/2022",
       EVENT: "",
       TURNOVER: "352,922",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2067,7 +2067,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "16/9/2022",
+      DATE: "9/16/2022",
       EVENT: "",
       TURNOVER: "302,517",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2075,7 +2075,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3%",
     },
     {
-      DATE: "17/9/2022",
+      DATE: "9/17/2022",
       EVENT: "",
       TURNOVER: "558,159",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2083,7 +2083,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4%",
     },
     {
-      DATE: "18/9/2022",
+      DATE: "9/18/2022",
       EVENT: "",
       TURNOVER: "498,471",
       TO_WEIGHT_vs_MONTH: "4%",
@@ -2091,7 +2091,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5%",
     },
     {
-      DATE: "19/9/2022",
+      DATE: "9/19/2022",
       EVENT: "",
       TURNOVER: "245,937",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2099,7 +2099,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "20/9/2022",
+      DATE: "9/20/2022",
       EVENT: "",
       TURNOVER: "247,372",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2107,7 +2107,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2%",
     },
     {
-      DATE: "21/9/2022",
+      DATE: "9/21/2022",
       EVENT: "",
       TURNOVER: "260,939",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2115,7 +2115,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.14%",
     },
     {
-      DATE: "22/9/2022",
+      DATE: "9/22/2022",
       EVENT: "",
       TURNOVER: "266,362",
       TO_WEIGHT_vs_MONTH: "2%",
@@ -2123,7 +2123,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.06%",
     },
     {
-      DATE: "23/9/2022",
+      DATE: "9/23/2022",
       EVENT: "",
       TURNOVER: "304,744",
       TO_WEIGHT_vs_MONTH: "3%",
@@ -2131,7 +2131,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.38%",
     },
     {
-      DATE: "24/9/2022",
+      DATE: "9/24/2022",
       EVENT: "",
       TURNOVER: "555,123",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2139,7 +2139,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.43%",
     },
     {
-      DATE: "25/9/2022",
+      DATE: "9/25/2022",
       EVENT: "",
       TURNOVER: "554,378",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2147,7 +2147,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.26%",
     },
     {
-      DATE: "26/9/2022",
+      DATE: "9/26/2022",
       EVENT: "",
       TURNOVER: "249,836",
       TO_WEIGHT_vs_MONTH: "2.09%",
@@ -2155,7 +2155,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.06%",
     },
     {
-      DATE: "27/9/2022",
+      DATE: "9/27/2022",
       EVENT: "",
       TURNOVER: "239,900",
       TO_WEIGHT_vs_MONTH: "2.00%",
@@ -2163,7 +2163,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.86%",
     },
     {
-      DATE: "28/9/2022",
+      DATE: "9/28/2022",
       EVENT: "",
       TURNOVER: "266,204",
       TO_WEIGHT_vs_MONTH: "2.22%",
@@ -2171,7 +2171,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.07%",
     },
     {
-      DATE: "29/9/2022",
+      DATE: "9/29/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "876,209",
       TO_WEIGHT_vs_MONTH: "7.31%",
@@ -2179,7 +2179,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.44%",
     },
     {
-      DATE: "30/9/2022",
+      DATE: "9/30/2022",
       EVENT: "",
       TURNOVER: "299,024",
       TO_WEIGHT_vs_MONTH: "2.50%",
@@ -2187,7 +2187,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.43%",
     },
     {
-      DATE: "1/10/2022",
+      DATE: "10/1/2022",
       EVENT: "",
       TURNOVER: "610,503",
       TO_WEIGHT_vs_MONTH: "4.62%",
@@ -2195,7 +2195,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.67%",
     },
     {
-      DATE: "2/10/2022",
+      DATE: "10/2/2022",
       EVENT: "",
       TURNOVER: "588,930",
       TO_WEIGHT_vs_MONTH: "4.46%",
@@ -2203,7 +2203,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.26%",
     },
     {
-      DATE: "3/10/2022",
+      DATE: "10/3/2022",
       EVENT: "",
       TURNOVER: "270,961",
       TO_WEIGHT_vs_MONTH: "2.05%",
@@ -2211,7 +2211,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.13%",
     },
     {
-      DATE: "4/10/2022",
+      DATE: "10/4/2022",
       EVENT: "",
       TURNOVER: "278,632",
       TO_WEIGHT_vs_MONTH: "2.11%",
@@ -2219,7 +2219,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.22%",
     },
     {
-      DATE: "5/10/2022",
+      DATE: "10/5/2022",
       EVENT: "National Holiday",
       TURNOVER: "708,034",
       TO_WEIGHT_vs_MONTH: "5.36%",
@@ -2227,7 +2227,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.66%",
     },
     {
-      DATE: "6/10/2022",
+      DATE: "10/6/2022",
       EVENT: "",
       TURNOVER: "287,606",
       TO_WEIGHT_vs_MONTH: "2.18%",
@@ -2235,7 +2235,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.13%",
     },
     {
-      DATE: "7/10/2022",
+      DATE: "10/7/2022",
       EVENT: "",
       TURNOVER: "292,473",
       TO_WEIGHT_vs_MONTH: "2.22%",
@@ -2243,7 +2243,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.28%",
     },
     {
-      DATE: "8/10/2022",
+      DATE: "10/8/2022",
       EVENT: "",
       TURNOVER: "559,253",
       TO_WEIGHT_vs_MONTH: "4.24%",
@@ -2251,7 +2251,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.20%",
     },
     {
-      DATE: "9/10/2022",
+      DATE: "10/9/2022",
       EVENT: "",
       TURNOVER: "527,884",
       TO_WEIGHT_vs_MONTH: "4.00%",
@@ -2267,7 +2267,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.10%",
     },
     {
-      DATE: "11/10/2022",
+      DATE: "10/11/2022",
       EVENT: "",
       TURNOVER: "244,079",
       TO_WEIGHT_vs_MONTH: "1.85%",
@@ -2275,7 +2275,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.82%",
     },
     {
-      DATE: "12/10/2022",
+      DATE: "10/12/2022",
       EVENT: "Feriado Espanhol",
       TURNOVER: "305,315",
       TO_WEIGHT_vs_MONTH: "2.31%",
@@ -2283,7 +2283,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.25%",
     },
     {
-      DATE: "13/10/2022",
+      DATE: "10/13/2022",
       EVENT: "",
       TURNOVER: "294,191",
       TO_WEIGHT_vs_MONTH: "2.23%",
@@ -2291,7 +2291,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.09%",
     },
     {
-      DATE: "14/10/2022",
+      DATE: "10/14/2022",
       EVENT: "Mid Season",
       TURNOVER: "305,983",
       TO_WEIGHT_vs_MONTH: "2.32%",
@@ -2299,7 +2299,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.25%",
     },
     {
-      DATE: "15/10/2022",
+      DATE: "10/15/2022",
       EVENT: "Mid Season",
       TURNOVER: "627,459",
       TO_WEIGHT_vs_MONTH: "4.75%",
@@ -2307,7 +2307,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.58%",
     },
     {
-      DATE: "16/10/2022",
+      DATE: "10/16/2022",
       EVENT: "Mid Season",
       TURNOVER: "599,156",
       TO_WEIGHT_vs_MONTH: "5%",
@@ -2315,7 +2315,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.09%",
     },
     {
-      DATE: "17/10/2022",
+      DATE: "10/17/2022",
       EVENT: "Mid Season",
       TURNOVER: "241,510",
       TO_WEIGHT_vs_MONTH: "1.83%",
@@ -2323,7 +2323,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.95%",
     },
     {
-      DATE: "18/10/2022",
+      DATE: "10/18/2022",
       EVENT: "Mid Season",
       TURNOVER: "240,714",
       TO_WEIGHT_vs_MONTH: "1.82%",
@@ -2331,7 +2331,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.79%",
     },
     {
-      DATE: "19/10/2022",
+      DATE: "10/19/2022",
       EVENT: "Mid Season",
       TURNOVER: "261,845",
       TO_WEIGHT_vs_MONTH: "1.98%",
@@ -2339,7 +2339,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.88%",
     },
     {
-      DATE: "20/10/2022",
+      DATE: "10/20/2022",
       EVENT: "Mid Season",
       TURNOVER: "296,032",
       TO_WEIGHT_vs_MONTH: "2.24%",
@@ -2347,7 +2347,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.05%",
     },
     {
-      DATE: "21/10/2022",
+      DATE: "10/21/2022",
       EVENT: "Mid Season",
       TURNOVER: "329,208",
       TO_WEIGHT_vs_MONTH: "2.49%",
@@ -2355,7 +2355,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.21%",
     },
     {
-      DATE: "22/10/2022",
+      DATE: "10/22/2022",
       EVENT: "Mid Season",
       TURNOVER: "654,431",
       TO_WEIGHT_vs_MONTH: "4.96%",
@@ -2363,7 +2363,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.59%",
     },
     {
-      DATE: "23/10/2022",
+      DATE: "10/23/2022",
       EVENT: "Mid Season",
       TURNOVER: "585,236",
       TO_WEIGHT_vs_MONTH: "4.43%",
@@ -2371,7 +2371,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.70%",
     },
     {
-      DATE: "24/10/2022",
+      DATE: "10/24/2022",
       EVENT: "",
       TURNOVER: "263,857",
       TO_WEIGHT_vs_MONTH: "2.00%",
@@ -2379,7 +2379,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.99%",
     },
     {
-      DATE: "25/10/2022",
+      DATE: "10/25/2022",
       EVENT: "",
       TURNOVER: "259,470",
       TO_WEIGHT_vs_MONTH: "1.97%",
@@ -2387,7 +2387,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.87%",
     },
     {
-      DATE: "26/10/2022",
+      DATE: "10/26/2022",
       EVENT: "",
       TURNOVER: "239,051",
       TO_WEIGHT_vs_MONTH: "1.81%",
@@ -2395,7 +2395,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.81%",
     },
     {
-      DATE: "27/10/2022",
+      DATE: "10/27/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "861,563",
       TO_WEIGHT_vs_MONTH: "6.53%",
@@ -2403,7 +2403,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.92%",
     },
     {
-      DATE: "28/10/2022",
+      DATE: "10/28/2022",
       EVENT: "",
       TURNOVER: "324,025",
       TO_WEIGHT_vs_MONTH: "2.45%",
@@ -2411,7 +2411,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.32%",
     },
     {
-      DATE: "29/10/2022",
+      DATE: "10/29/2022",
       EVENT: "",
       TURNOVER: "685,439",
       TO_WEIGHT_vs_MONTH: "5.19%",
@@ -2419,7 +2419,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.73%",
     },
     {
-      DATE: "30/10/2022",
+      DATE: "10/30/2022",
       EVENT: "",
       TURNOVER: "670,223",
       TO_WEIGHT_vs_MONTH: "5.08%",
@@ -2427,7 +2427,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.83%",
     },
     {
-      DATE: "31/10/2022",
+      DATE: "10/31/2022",
       EVENT: "",
       TURNOVER: "528,461",
       TO_WEIGHT_vs_MONTH: "4.00%",
@@ -2435,7 +2435,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.76%",
     },
     {
-      DATE: "1/11/2022",
+      DATE: "11/1/2022",
       EVENT: "National Holiday",
       TURNOVER: "547,127",
       TO_WEIGHT_vs_MONTH: "3.66%",
@@ -2443,7 +2443,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.38%",
     },
     {
-      DATE: "2/11/2022",
+      DATE: "11/2/2022",
       EVENT: "",
       TURNOVER: "310,895",
       TO_WEIGHT_vs_MONTH: "2.08%",
@@ -2451,7 +2451,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.23%",
     },
     {
-      DATE: "3/11/2022",
+      DATE: "11/3/2022",
       EVENT: "",
       TURNOVER: "319,739",
       TO_WEIGHT_vs_MONTH: "2.14%",
@@ -2459,7 +2459,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.26%",
     },
     {
-      DATE: "4/11/2022",
+      DATE: "11/4/2022",
       EVENT: "",
       TURNOVER: "337,174",
       TO_WEIGHT_vs_MONTH: "2.26%",
@@ -2467,7 +2467,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.41%",
     },
     {
-      DATE: "5/11/2022",
+      DATE: "11/5/2022",
       EVENT: "",
       TURNOVER: "641,256",
       TO_WEIGHT_vs_MONTH: "4.29%",
@@ -2475,7 +2475,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.64%",
     },
     {
-      DATE: "6/11/2022",
+      DATE: "11/6/2022",
       EVENT: "",
       TURNOVER: "640,472",
       TO_WEIGHT_vs_MONTH: "4.29%",
@@ -2483,7 +2483,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.41%",
     },
     {
-      DATE: "7/11/2022",
+      DATE: "11/7/2022",
       EVENT: "",
       TURNOVER: "281,564",
       TO_WEIGHT_vs_MONTH: "1.88%",
@@ -2491,7 +2491,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.06%",
     },
     {
-      DATE: "8/11/2022",
+      DATE: "11/8/2022",
       EVENT: "",
       TURNOVER: "277,723",
       TO_WEIGHT_vs_MONTH: "1.86%",
@@ -2499,7 +2499,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.00%",
     },
     {
-      DATE: "9/11/2022",
+      DATE: "11/9/2022",
       EVENT: "Feriado Espanhol",
       TURNOVER: "258,713",
       TO_WEIGHT_vs_MONTH: "1.73%",
@@ -2507,7 +2507,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.06%",
     },
     {
-      DATE: "10/11/2022",
+      DATE: "11/10/2022",
       EVENT: "",
       TURNOVER: "285,172",
       TO_WEIGHT_vs_MONTH: "1.91%",
@@ -2523,7 +2523,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.42%",
     },
     {
-      DATE: "12/11/2022",
+      DATE: "11/12/2022",
       EVENT: "",
       TURNOVER: "608,251",
       TO_WEIGHT_vs_MONTH: "4.07%",
@@ -2531,7 +2531,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.31%",
     },
     {
-      DATE: "13/11/2022",
+      DATE: "11/13/2022",
       EVENT: "",
       TURNOVER: "579,268",
       TO_WEIGHT_vs_MONTH: "3.88%",
@@ -2539,7 +2539,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.86%",
     },
     {
-      DATE: "14/11/2022",
+      DATE: "11/14/2022",
       EVENT: "",
       TURNOVER: "264,198",
       TO_WEIGHT_vs_MONTH: "1.77%",
@@ -2547,7 +2547,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.03%",
     },
     {
-      DATE: "15/11/2022",
+      DATE: "11/15/2022",
       EVENT: "",
       TURNOVER: "285,700",
       TO_WEIGHT_vs_MONTH: "1.91%",
@@ -2555,7 +2555,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.92%",
     },
     {
-      DATE: "16/11/2022",
+      DATE: "11/16/2022",
       EVENT: "",
       TURNOVER: "274,971",
       TO_WEIGHT_vs_MONTH: "1.84%",
@@ -2563,7 +2563,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.90%",
     },
     {
-      DATE: "17/11/2022",
+      DATE: "11/17/2022",
       EVENT: "",
       TURNOVER: "316,014",
       TO_WEIGHT_vs_MONTH: "2.12%",
@@ -2571,7 +2571,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.18%",
     },
     {
-      DATE: "18/11/2022",
+      DATE: "11/18/2022",
       EVENT: "Black Days",
       TURNOVER: "486,059",
       TO_WEIGHT_vs_MONTH: "3.25%",
@@ -2579,7 +2579,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.13%",
     },
     {
-      DATE: "19/11/2022",
+      DATE: "11/19/2022",
       EVENT: "Black Days",
       TURNOVER: "866,094",
       TO_WEIGHT_vs_MONTH: "5.80%",
@@ -2587,7 +2587,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.43%",
     },
     {
-      DATE: "20/11/2022",
+      DATE: "11/20/2022",
       EVENT: "Black Days",
       TURNOVER: "703,892",
       TO_WEIGHT_vs_MONTH: "4.71%",
@@ -2595,7 +2595,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.20%",
     },
     {
-      DATE: "21/11/2022",
+      DATE: "11/21/2022",
       EVENT: "Black Days",
       TURNOVER: "388,874",
       TO_WEIGHT_vs_MONTH: "2.60%",
@@ -2603,7 +2603,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.31%",
     },
     {
-      DATE: "22/11/2022",
+      DATE: "11/22/2022",
       EVENT: "Black Days",
       TURNOVER: "348,537",
       TO_WEIGHT_vs_MONTH: "2.33%",
@@ -2611,7 +2611,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.08%",
     },
     {
-      DATE: "23/11/2022",
+      DATE: "11/23/2022",
       EVENT: "Black Days",
       TURNOVER: "457,615",
       TO_WEIGHT_vs_MONTH: "3.06%",
@@ -2619,7 +2619,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.60%",
     },
     {
-      DATE: "24/11/2022",
+      DATE: "11/24/2022",
       EVENT: "Black Days | Fab Thursday",
       TURNOVER: "1,116,941",
       TO_WEIGHT_vs_MONTH: "7.48%",
@@ -2627,7 +2627,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "5.17%",
     },
     {
-      DATE: "25/11/2022",
+      DATE: "11/25/2022",
       EVENT: "Black Days | Black Friday",
       TURNOVER: "939,099",
       TO_WEIGHT_vs_MONTH: "6.29%",
@@ -2635,7 +2635,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.75%",
     },
     {
-      DATE: "26/11/2022",
+      DATE: "11/26/2022",
       EVENT: "Black Days",
       TURNOVER: "1,016,781",
       TO_WEIGHT_vs_MONTH: "6.81%",
@@ -2643,7 +2643,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6.16%",
     },
     {
-      DATE: "27/11/2022",
+      DATE: "11/27/2022",
       EVENT: "Black Days",
       TURNOVER: "904,120",
       TO_WEIGHT_vs_MONTH: "6.05%",
@@ -2651,7 +2651,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6.45%",
     },
     {
-      DATE: "28/11/2022",
+      DATE: "11/28/2022",
       EVENT: "Black Days",
       TURNOVER: "384,108",
       TO_WEIGHT_vs_MONTH: "2.57%",
@@ -2659,7 +2659,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.41%",
     },
     {
-      DATE: "29/11/2022",
+      DATE: "11/29/2022",
       EVENT: "",
       TURNOVER: "343,763",
       TO_WEIGHT_vs_MONTH: "2.30%",
@@ -2667,7 +2667,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.34%",
     },
     {
-      DATE: "30/11/2022",
+      DATE: "11/30/2022",
       EVENT: "",
       TURNOVER: "406,233",
       TO_WEIGHT_vs_MONTH: "2.72%",
@@ -2675,7 +2675,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.77%",
     },
     {
-      DATE: "1/12/2022",
+      DATE: "12/1/2022",
       EVENT: "National Holiday",
       TURNOVER: "974,108",
       TO_WEIGHT_vs_MONTH: "4.34%",
@@ -2683,7 +2683,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.42%",
     },
     {
-      DATE: "2/12/2022",
+      DATE: "12/2/2022",
       EVENT: "Football Match (World cup)",
       TURNOVER: "594,489",
       TO_WEIGHT_vs_MONTH: "2.65%",
@@ -2691,7 +2691,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.42%",
     },
     {
-      DATE: "3/12/2022",
+      DATE: "12/3/2022",
       EVENT: "",
       TURNOVER: "802,432",
       TO_WEIGHT_vs_MONTH: "3.57%",
@@ -2699,7 +2699,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.63%",
     },
     {
-      DATE: "4/12/2022",
+      DATE: "12/4/2022",
       EVENT: "",
       TURNOVER: "719,246",
       TO_WEIGHT_vs_MONTH: "3.20%",
@@ -2707,7 +2707,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.77%",
     },
     {
-      DATE: "5/12/2022",
+      DATE: "12/5/2022",
       EVENT: "",
       TURNOVER: "457,944",
       TO_WEIGHT_vs_MONTH: "2.04%",
@@ -2715,7 +2715,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.00%",
     },
     {
-      DATE: "6/12/2022",
+      DATE: "12/6/2022",
       EVENT: "Feriado Espanhol | Football Match (World cup)",
       TURNOVER: "448,099",
       TO_WEIGHT_vs_MONTH: "2.00%",
@@ -2723,7 +2723,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.86%",
     },
     {
-      DATE: "7/12/2022",
+      DATE: "12/7/2022",
       EVENT: "",
       TURNOVER: "505,137",
       TO_WEIGHT_vs_MONTH: "2.25%",
@@ -2731,7 +2731,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.19%",
     },
     {
-      DATE: "8/12/2022",
+      DATE: "12/8/2022",
       EVENT: "Private Sales (FC) | National Holiday",
       TURNOVER: "1,143,546",
       TO_WEIGHT_vs_MONTH: "5.09%",
@@ -2739,7 +2739,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.93%",
     },
     {
-      DATE: "9/12/2022",
+      DATE: "12/9/2022",
       EVENT: "Private Sales (FC)",
       TURNOVER: "829,352",
       TO_WEIGHT_vs_MONTH: "3.69%",
@@ -2747,7 +2747,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.16%",
     },
     {
-      DATE: "10/12/2022",
+      DATE: "12/10/2022",
       EVENT: "Private Sales (FC) | Football Match (World cup)",
       TURNOVER: "696,473",
       TO_WEIGHT_vs_MONTH: "3.10%",
@@ -2755,7 +2755,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.12%",
     },
     {
-      DATE: "11/12/2022",
+      DATE: "12/11/2022",
       EVENT: "Private Sales (FC)",
       TURNOVER: "877,270",
       TO_WEIGHT_vs_MONTH: "3.91%",
@@ -2771,7 +2771,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.93%",
     },
     {
-      DATE: "13/12/2022",
+      DATE: "12/13/2022",
       EVENT: "",
       TURNOVER: "491,245",
       TO_WEIGHT_vs_MONTH: "2.19%",
@@ -2779,7 +2779,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.94%",
     },
     {
-      DATE: "14/12/2022",
+      DATE: "12/14/2022",
       EVENT: "",
       TURNOVER: "542,151",
       TO_WEIGHT_vs_MONTH: "2.42%",
@@ -2787,7 +2787,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.11%",
     },
     {
-      DATE: "15/12/2022",
+      DATE: "12/15/2022",
       EVENT: "FAB Thursday",
       TURNOVER: "812,203",
       TO_WEIGHT_vs_MONTH: "3.62%",
@@ -2795,7 +2795,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.89%",
     },
     {
-      DATE: "16/12/2022",
+      DATE: "12/16/2022",
       EVENT: "",
       TURNOVER: "634,577",
       TO_WEIGHT_vs_MONTH: "2.83%",
@@ -2803,7 +2803,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "2.53%",
     },
     {
-      DATE: "17/12/2022",
+      DATE: "12/17/2022",
       EVENT: "",
       TURNOVER: "957,358",
       TO_WEIGHT_vs_MONTH: "4.26%",
@@ -2811,7 +2811,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.95%",
     },
     {
-      DATE: "18/12/2022",
+      DATE: "12/18/2022",
       EVENT: "",
       TURNOVER: "923,534",
       TO_WEIGHT_vs_MONTH: "4.11%",
@@ -2819,7 +2819,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.28%",
     },
     {
-      DATE: "19/12/2022",
+      DATE: "12/19/2022",
       EVENT: "Xmas School Break",
       TURNOVER: "787,989",
       TO_WEIGHT_vs_MONTH: "3.51%",
@@ -2827,7 +2827,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.22%",
     },
     {
-      DATE: "20/12/2022",
+      DATE: "12/20/2022",
       EVENT: "",
       TURNOVER: "888,722",
       TO_WEIGHT_vs_MONTH: "3.96%",
@@ -2835,7 +2835,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.39%",
     },
     {
-      DATE: "21/12/2022",
+      DATE: "12/21/2022",
       EVENT: "",
       TURNOVER: "953,623",
       TO_WEIGHT_vs_MONTH: "4.25%",
@@ -2843,7 +2843,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.55%",
     },
     {
-      DATE: "22/12/2022",
+      DATE: "12/22/2022",
       EVENT: "",
       TURNOVER: "972,985",
       TO_WEIGHT_vs_MONTH: "4.33%",
@@ -2851,7 +2851,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.77%",
     },
     {
-      DATE: "23/12/2022",
+      DATE: "12/23/2022",
       EVENT: "",
       TURNOVER: "975,333",
       TO_WEIGHT_vs_MONTH: "4.34%",
@@ -2859,7 +2859,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "3.83%",
     },
     {
-      DATE: "24/12/2022",
+      DATE: "12/24/2022",
       EVENT: "Xmas Eve",
       TURNOVER: "410,462",
       TO_WEIGHT_vs_MONTH: "1.83%",
@@ -2867,7 +2867,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.64%",
     },
     {
-      DATE: "25/12/2022",
+      DATE: "12/25/2022",
       EVENT: "Xmas Holiday",
       TURNOVER: 0,
       TO_WEIGHT_vs_MONTH: "0.00%",
@@ -2875,7 +2875,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "0.00%",
     },
     {
-      DATE: "26/12/2022",
+      DATE: "12/26/2022",
       EVENT: "",
       TURNOVER: "761,562",
       TO_WEIGHT_vs_MONTH: "3.39%",
@@ -2883,7 +2883,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.51%",
     },
     {
-      DATE: "27/12/2022",
+      DATE: "12/27/2022",
       EVENT: "",
       TURNOVER: "764,391",
       TO_WEIGHT_vs_MONTH: "3.41%",
@@ -2891,7 +2891,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.13%",
     },
     {
-      DATE: "28/12/2022",
+      DATE: "12/28/2022",
       EVENT: "",
       TURNOVER: "776,930",
       TO_WEIGHT_vs_MONTH: "3.46%",
@@ -2899,7 +2899,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.20%",
     },
     {
-      DATE: "29/12/2022",
+      DATE: "12/29/2022",
       EVENT: "FAB Thursday fake",
       TURNOVER: "1,260,596",
       TO_WEIGHT_vs_MONTH: "5.62%",
@@ -2907,7 +2907,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "6.45%",
     },
     {
-      DATE: "30/12/2022",
+      DATE: "12/30/2022",
       EVENT: "",
       TURNOVER: "755,609",
       TO_WEIGHT_vs_MONTH: "3.37%",
@@ -2915,7 +2915,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "4.31%",
     },
     {
-      DATE: "31/12/2022",
+      DATE: "12/31/2022",
       EVENT: "New Year Eve",
       TURNOVER: "295,347",
       TO_WEIGHT_vs_MONTH: "1.32%",
@@ -2923,7 +2923,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "1.68%",
     },
     {
-      DATE: "31/12/2022",
+      DATE: "12/31/2022",
       EVENT: "New Year Eve",
       TURNOVER: "295,347",
       TO_WEIGHT_vs_MONTH: "1.32%",
@@ -2941,7 +2941,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2022",
+      DATE: "1/2/2022",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2959,7 +2959,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2022",
+      DATE: "1/2/2022",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2977,7 +2977,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2022",
+      DATE: "1/2/2022",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -2995,7 +2995,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2022",
+      DATE: "1/2/2022",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
@@ -3013,7 +3013,7 @@ export const data2022 = {
       FF_WEIGHT_vs_MONTH: "0%",
     },
     {
-      DATE: "2/1/2022",
+      DATE: "1/2/2022",
       EVENT: "",
       TURNOVER: "549,750",
       TO_WEIGHT_vs_MONTH: "6%",
