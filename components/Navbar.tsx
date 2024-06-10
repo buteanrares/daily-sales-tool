@@ -20,13 +20,13 @@ export default function Navbar() {
   // @ts-ignore
   const { selectedReport } = useReportStore();
 
-  useEffect(() => {
-    const passwordInput = prompt("Please enter the password:");
-    if (passwordInput !== PASSWORD) {
-      alert("Password is required.");
-      window.location.href = "/";
-    }
-  }, []);
+  // useEffect(() => {
+  //   const passwordInput = prompt("Please enter the password:");
+  //   if (passwordInput !== PASSWORD) {
+  //     alert("Password is required.");
+  //     window.location.href = "/";
+  //   }
+  // }, []);
 
   return (
     <AppBar position="sticky" className="z-50">

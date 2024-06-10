@@ -1,6 +1,6 @@
 "use client";
 
-import SalesTable from "@/components/SalesTable";
+import SalesDataGrid from "@/components/DataGridView/SalesDataGrid";
 import { supabase } from "@/utils/supabase/client";
 import SystemUpdateAltIcon from "@mui/icons-material/SystemUpdateAlt";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -176,7 +176,7 @@ const ReportPage = () => {
           </Button>
         </div>
       </div>
-      <SalesTable rows={filteredData} loading={loading} />
+      <SalesDataGrid rows={filteredData} loading={loading} />
     </div>
   );
 };
