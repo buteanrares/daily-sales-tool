@@ -25,7 +25,10 @@ const Home = () => {
 
   useEffect(() => {
     const fetchReports = async () => {
-      const { data, error } = await supabase.from("reports").select(`
+      const { data, error } = await supabase
+        .from("reports")
+        .select(
+          `
           id, 
           name, 
           abbreviation,
@@ -35,7 +38,9 @@ const Home = () => {
             version, 
             visible
           )
-        `);
+        `
+        )
+        .order("name", { ascending: true });
 
       if (error) {
         console.error("Error fetching reports:", error);

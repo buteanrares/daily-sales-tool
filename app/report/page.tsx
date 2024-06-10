@@ -69,7 +69,8 @@ const ReportPage = () => {
       const { data, error } = await supabase
         .from("days")
         .select("*")
-        .eq("report_version_id", reportVersionId);
+        .eq("report_version_id", reportVersionId)
+        .order("date", { ascending: true });
 
       if (error) {
         throw new Error(`Error fetching days data: ${error.message}`);
@@ -176,7 +177,7 @@ const ReportPage = () => {
           </Button>
         </div>
       </div>
-      <SalesDataGrid rows={filteredData} loading={loading} />
+      <SalesDataGrid rows={filteredData} loading={loading} editable={true} />
     </div>
   );
 };

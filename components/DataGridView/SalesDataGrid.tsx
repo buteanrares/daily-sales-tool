@@ -82,18 +82,16 @@ export default function SalesDataGrid({ rows, loading, editable }) {
   }
 
   return (
-    <div className="w-4/5 mx-auto">
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        density="compact"
-        editMode="row"
-        rowModesModel={rowModesModel}
-        onRowModesModelChange={handleRowModesModelChange}
-        onRowEditStop={handleRowEditStop}
-        processRowUpdate={processRowUpdate}
-        autoHeight={false}
-      />
-    </div>
+    <DataGrid
+      rows={rows}
+      columns={columns}
+      density="compact"
+      editMode="row"
+      rowModesModel={rowModesModel}
+      onRowModesModelChange={handleRowModesModelChange}
+      onRowEditStop={handleRowEditStop}
+      processRowUpdate={processRowUpdate}
+      autoHeight={false}
+    />
   );
 }
