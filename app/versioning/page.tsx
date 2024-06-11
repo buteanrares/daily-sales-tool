@@ -11,6 +11,7 @@ import {
 import { supabase } from "@/utils/supabase/client";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import AddIcon from "@mui/icons-material/Add";
+import * as XLSX from "xlsx";
 
 async function getReports() {
   const { data: reports, error } = await supabase.from("reports").select(`
@@ -71,6 +72,59 @@ export default function Versioning() {
       alert(`Created new version: ${newVersion}`);
       setReports(await getReports());
     }
+  };
+
+  const handleFileUpload = (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+      if (e.target && e.target.result) {
+        const data = new Uint8Array(e.target.result as ArrayBuffer);
+        const workbook = XLSX.read(data, { type: "array" });
+        console.log(workbook);
+
+        const sheetName = workbook.SheetNames[0];
+        console.log(sheetName);
+
+        const sheet = workbook.Sheets[sheetName];
+        const parsedData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+        const headers = parsedData[0];
+
+        const relevantHeaders = [
+          "TO 2018",
+          "FF 2018",
+          "TO 2019",
+          "FF 2019",
+          "TO 2022",
+          "FF 2022",
+        ];
+        const relevantHeaderIndices = relevantHeaders.map((header) =>
+          headers.indexOf(header)
+        );
+
+        const fileData = {
+          "TO 2018": [],
+          "FF 2018": [],
+          "TO 2019": [],
+          "FF 2019": [],
+          "TO 2022": [],
+          "FF 2022": [],
+        };
+        console.log("ok");
+        console.log(s);
+
+        parsedData.slice(1).forEach((row: any[]) => {
+          relevantHeaderIndices.forEach((index, i) => {
+            fileData[relevantHeaders[i]].push(row[index]);
+          });
+        });
+
+        console.log(parsedData);
+      }
+    };
   };
 
   return (
@@ -136,13 +190,14 @@ export default function Versioning() {
         <div className="space-x-3">
           {selectedReport && (
             <>
-              <Button
-                variant="contained"
-                color="primary"
-                startIcon={<AddIcon />}
-                onClick={handleUpsertVersion}
-              >
-                New Version
+              <Button variant="contained" component="label">
+                Upload File
+                <input
+                  type="file"
+                  accept=".xlsx"
+                  onChange={handleFileUpload}
+                  hidden
+                />
               </Button>
               {selectedVersion && (
                 <Button

@@ -8,25 +8,48 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import via from "@/public/via.svg";
 import Link from "next/link";
 import { useReportStore } from "@/utils/state/store";
-
-const PASSWORD = "S&Pisthe**";
+import { useRouter, usePathname } from "next/navigation";
+import { supabase } from "@/utils/supabase/client";
 
 export default function Navbar() {
   // @ts-ignore
   const { selectedReport } = useReportStore();
+  const [user, setUser] = useState(null);
+  const [role, setRole] = useState("User");
+  const router = useRouter();
+  const pathname = usePathname();
 
-  // useEffect(() => {
-  //   const passwordInput = prompt("Please enter the password:");
-  //   if (passwordInput !== PASSWORD) {
-  //     alert("Password is required.");
-  //     window.location.href = "/";
-  //   }
-  // }, []);
+  useEffect(() => {
+    const checkUser = async () => {
+      const { data } = await supabase.auth.getUser();
+      // console.log("data", data);
+
+      setUser(data.user);
+      if (!data.user && pathname !== "/auth/signin") {
+        router.push("/auth/signin");
+      }
+    };
+
+    checkUser();
+
+    if (user) {
+
+      supabase
+        .from("profiles")
+        .select("role")
+        .single()
+        .then((res) => console.log(res));
+    }
+  }, [router, pathname]);
+
+  if (!user && pathname === "/auth/signin") {
+    return null;
+  }
 
   return (
     <AppBar position="sticky" className="z-50">

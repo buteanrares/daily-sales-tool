@@ -25,8 +25,6 @@ export const fillMissingData = (data: any) => {
     data[key] = data[key].map(processRow);
   });
 
-  console.log(data);
-
   // insertData(data);
 
   return data;
