@@ -62,15 +62,15 @@ export default function Versioning() {
       ) + 1;
     const newVersion = `v${newVersionNumber}`;
 
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from("report_versions")
       .insert([{ report_id: report.id, version: newVersion, year: 2023 }]);
 
     if (error) {
       console.error("Error creating new version:", error);
     } else {
-      alert(`Created new version: ${newVersion}`);
       setReports(await getReports());
+      return data;
     }
   };
 
@@ -83,11 +83,7 @@ export default function Versioning() {
       if (e.target && e.target.result) {
         const data = new Uint8Array(e.target.result as ArrayBuffer);
         const workbook = XLSX.read(data, { type: "array" });
-        console.log(workbook);
-
         const sheetName = workbook.SheetNames[0];
-        console.log(sheetName);
-
         const sheet = workbook.Sheets[sheetName];
         const parsedData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
 
@@ -113,8 +109,6 @@ export default function Versioning() {
           "TO 2022": [],
           "FF 2022": [],
         };
-        console.log("ok");
-        console.log(s);
 
         parsedData.slice(1).forEach((row: any[]) => {
           relevantHeaderIndices.forEach((index, i) => {
@@ -122,9 +116,66 @@ export default function Versioning() {
           });
         });
 
-        console.log(parsedData);
+        const report = reports.find((r) => r.id === parseInt(selectedReport));
+        const newVersionNumber =
+          Math.max(
+            ...report.report_versions.map((v) =>
+              parseInt(v.version.replace("v", ""))
+            ),
+            0
+          ) + 1;
+        const newVersion = `v${newVersionNumber}`;
+
+        (async () => {
+          const years = [2018, 2019, 2022, 2023];
+          const daysData = [];
+
+          for (let i = 0; i < years.length; i++) {
+            const year = years[i];
+            const startDate = new Date(`${year}-01-01`);
+            const endDate = new Date(`${year}-12-31`);
+            let currentDate = new Date(startDate);
+            console.log(startDate);
+            console.log(endDate);
+
+            const { data } = await supabase
+              .from("report_versions")
+              .insert([{ report_id: report.id, version: newVersion, year }])
+              .select()
+              .single();
+
+            while (currentDate <= endDate) {
+              const day = currentDate.getDate();
+              const month = currentDate.getMonth() + 1;
+              const year = currentDate.getFullYear();
+
+              let turnover = null;
+              let ff = null;
+
+              if (year !== 2023) {
+                const index = (currentDate - startDate) / (1000 * 60 * 60 * 24);
+                turnover = fileData[`TO ${year}`][index] || 0;
+                ff = fileData[`FF ${year}`][index] || 0;
+              }
+
+              daysData.push({
+                report_id: data.report_id,
+                report_version_id: data.id,
+                date: `${year}-${month}-${day}`,
+                turnover,
+                ff,
+              });
+
+              currentDate.setDate(currentDate.getDate() + 1);
+            }
+          }
+
+          console.log(daysData);
+          await supabase.from("days").insert(daysData);
+        })();
       }
     };
+    reader.readAsArrayBuffer(file);
   };
 
   return (

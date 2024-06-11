@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import SalesDataGrid from "@/components/DataGridView/SalesDataGrid";
 import { supabase } from "@/utils/supabase/client";
 import SystemUpdateAltIcon from "@mui/icons-material/SystemUpdateAlt";
-import { Button, Drawer, Tab, Tabs, TextField, styled } from "@mui/material";
+import { Button, Drawer, Tab, Tabs, TextField } from "@mui/material";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import dayjs from "dayjs";
-import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
 
 const ReportPage = ({ params }) => {
@@ -249,9 +248,12 @@ const ReportPage = ({ params }) => {
               <DatePicker
                 format="DD/MM/YYYY"
                 slotProps={{
-                  textField: { size: "small" },
+                  textField: {
+                    size: "small",
+                    variant: "standard",
+                    className: "w-36",
+                  },
                 }}
-                className="w-36"
                 minDate={dayjs(new Date("2023-01-01"))}
                 maxDate={dayjs(new Date("2023-12-31"))}
                 label="Cutoff date"

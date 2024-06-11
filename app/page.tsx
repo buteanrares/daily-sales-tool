@@ -80,9 +80,7 @@ const Home = () => {
 
       const selectedReportInfo = `${abbreviation} ${selectedYear} ${selectedVersion}`;
       setSelectedReport(selectedReportInfo);
-      router.push(
-        `/report?report_id=${selectedCenter.id}&year=${selectedYear}`
-      );
+      router.push(`/report/${version.id}`);
     }
   };
 
@@ -114,6 +112,7 @@ const Home = () => {
           labelId="center-label"
           value={selectedCenter ? selectedCenter.id : ""}
           onChange={handleCenterChange}
+          variant="standard"
         >
           <MenuItem value="">
             <em>Select Center</em>
@@ -132,6 +131,7 @@ const Home = () => {
           labelId="year-label"
           value={selectedYear}
           onChange={handleYearChange}
+          variant="standard"
         >
           <MenuItem value="">
             <em>Select Year</em>
@@ -150,6 +150,7 @@ const Home = () => {
           labelId="version-label"
           value={selectedVersion}
           onChange={handleVersionChange}
+          variant="standard"
         >
           <MenuItem value="">
             <em>Select Version</em>

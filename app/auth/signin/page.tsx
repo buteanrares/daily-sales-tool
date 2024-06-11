@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Container, TextField, Button, Typography, Box } from "@mui/material";
 import { supabase } from "@/utils/supabase/client";
+import via from "@/public/via.svg";
+import Image from "next/image";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -35,8 +37,20 @@ const SignIn = () => {
   };
 
   return (
-    <Container maxWidth="sm">
-      <Box mt={5}>
+    <Container
+      maxWidth="sm"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "75vh",
+      }}
+    >
+      <Box sx={{ transform: "scale(2)", mb: 15 }}>
+        <Image src={via} alt="logo" />
+      </Box>
+      <Box sx={{ width: "100%", textAlign: "center" }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Sign In
         </Typography>
