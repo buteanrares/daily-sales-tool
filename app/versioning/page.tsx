@@ -96,6 +96,10 @@ export default function Versioning() {
           "FF 2019",
           "TO 2022",
           "FF 2022",
+          "TO 2023",
+          "FF 2023",
+          "TO Budget 2023",
+          "FF Budget 2023",
         ];
         const relevantHeaderIndices = relevantHeaders.map((header) =>
           headers.indexOf(header)
@@ -108,6 +112,10 @@ export default function Versioning() {
           "FF 2019": [],
           "TO 2022": [],
           "FF 2022": [],
+          "TO 2023": [],
+          "FF 2023": [],
+          "TO Budget 2023": [],
+          "FF Budget 2023": [],
         };
 
         parsedData.slice(1).forEach((row: any[]) => {
@@ -135,8 +143,6 @@ export default function Versioning() {
             const startDate = new Date(`${year}-01-01`);
             const endDate = new Date(`${year}-12-31`);
             let currentDate = new Date(startDate);
-            console.log(startDate);
-            console.log(endDate);
 
             const { data } = await supabase
               .from("report_versions")
@@ -151,11 +157,16 @@ export default function Versioning() {
 
               let turnover = null;
               let ff = null;
+              let to_budget = null;
+              let ff_budget = null;
 
-              if (year !== 2023) {
-                const index = (currentDate - startDate) / (1000 * 60 * 60 * 24);
-                turnover = fileData[`TO ${year}`][index] || 0;
-                ff = fileData[`FF ${year}`][index] || 0;
+              const index = (currentDate - startDate) / (1000 * 60 * 60 * 24);
+              turnover = fileData[`TO ${year}`][index] || 0;
+              ff = fileData[`FF ${year}`][index] || 0;
+
+              if (year === 2023) {
+                to_budget = fileData[`TO Budget ${year}`][index] || 0;
+                ff_budget = fileData[`FF Budget ${year}`][index] || 0;
               }
 
               daysData.push({
@@ -164,13 +175,14 @@ export default function Versioning() {
                 date: `${year}-${month}-${day}`,
                 turnover,
                 ff,
+                to_budget,
+                ff_budget,
               });
 
               currentDate.setDate(currentDate.getDate() + 1);
             }
           }
 
-          console.log(daysData);
           await supabase.from("days").insert(daysData);
         })();
       }

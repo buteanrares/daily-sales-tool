@@ -12,7 +12,7 @@ import {
   Menu,
   MenuItem,
   Toolbar,
-  Typography
+  Typography,
 } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,13 +39,13 @@ export default function Navbar() {
 
     checkUser();
 
-    if (user) {
-      supabase
-        .from("profiles")
-        .select("role")
-        .single()
-        .then((res) => console.log(res));
-    }
+    // if (user) {
+    //   supabase
+    //     .from("profiles")
+    //     .select("role")
+    //     .single()
+    //     .then((res) => console.log(res));
+    // }
   }, [router, pathname]);
 
   if (!user && pathname === "/auth/signin") {
