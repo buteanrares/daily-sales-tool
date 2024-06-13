@@ -12,6 +12,7 @@ import { supabase } from "@/utils/supabase/client";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import AddIcon from "@mui/icons-material/Add";
 import * as XLSX from "xlsx";
+import toast from "react-hot-toast";
 
 async function getReports() {
   const { data: reports, error } = await supabase.from("reports").select(`
@@ -184,6 +185,7 @@ export default function Versioning() {
           }
 
           await supabase.from("days").insert(daysData);
+          toast.success("Report created successfully!");
         })();
       }
     };
