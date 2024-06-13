@@ -25,57 +25,7 @@ export const fillMissingData = (data: any) => {
     data[key] = data[key].map(processRow);
   });
 
-  console.log(data);
-
   // insertData(data);
 
   return data;
 };
-
-const reportId = 6; // example report ID
-const reportYearId = 13; // example report year ID
-const reportVersionId = 13; // example report version ID
-
-async function insertData(data) {
-  for (const entry of data.VCPFO) {
-    const {
-      DATE,
-      EVENT,
-      TURNOVER,
-      TO_WEIGHT_vs_MONTH,
-      FF,
-      FF_WEIGHT_vs_MONTH,
-      WEEKEND,
-      MONTH,
-      WEEK,
-      WEEKDAY,
-      QUARTER,
-    } = entry;
-    const weekend = WEEKEND ? true : false;
-
-    const { error } = await supabase.from("days").insert([
-      {
-        report_id: reportId,
-        report_year_id: reportYearId,
-        report_version_id: reportVersionId,
-        date: DATE,
-        event: EVENT,
-        turnover: TURNOVER,
-        to_weight_vs_month: TO_WEIGHT_vs_MONTH,
-        ff: FF,
-        ff_weight_vs_month: FF_WEIGHT_vs_MONTH,
-        weekend: weekend,
-        month: MONTH,
-        week: WEEK,
-        weekday: WEEKDAY,
-        quarter: QUARTER,
-      },
-    ]);
-
-    if (error) {
-      console.error("Error inserting data:", error);
-      break;
-    }
-  }
-  console.log("Data inserted successfully");
-}

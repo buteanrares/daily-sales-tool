@@ -1,5 +1,5 @@
 import { supabase } from "@/utils/supabase/client";
-import { LinearProgress } from "@mui/material";
+import { LinearProgress, styled } from "@mui/material";
 import {
   DataGrid,
   GridColDef,
@@ -8,11 +8,172 @@ import {
   GridRowModel,
   GridRowModesModel,
 } from "@mui/x-data-grid";
-import { format } from "date-fns";
-import { useState } from "react";
+import { format, getQuarter, getWeek, isWeekend } from "date-fns";
+import { useEffect, useState } from "react";
 
-export default function SalesDataGrid({ rows, loading, editable }) {
+const StyledDataGrid = styled(DataGrid)`
+  .weekend-row {
+    background-color: #fae3fa;
+  }
+  .cutoff-row {
+    background-color: #90ee90;
+  }
+`;
+
+export default function SalesDataGrid({
+  rows,
+  loading,
+  editable,
+  extended,
+  cutoffDate,
+}) {
+  const [dataGridRows, setDataGridRows] = useState(rows);
   const [rowModesModel, setRowModesModel] = useState<GridRowModesModel>({});
+
+  const calculateMonthData = (rows) => {
+    const monthData = {};
+
+    rows.forEach((row) => {
+      const date = new Date(row.date);
+      const month = format(date, "MMMM");
+
+      if (!monthData[month]) {
+        monthData[month] = {
+          turnover: 0,
+          ff: 0,
+          to_budget: 0,
+          ff_budget: 0,
+          to_forecast_initial_weight: 0,
+        };
+      }
+
+      monthData[month].turnover += row.turnover || 0;
+      monthData[month].ff += row.ff || 0;
+      monthData[month].to_budget += row.to_budget || 0;
+      monthData[month].ff_budget += row.ff_budget || 0;
+      monthData[month].to_forecast_initial_weight +=
+        row.to_forecast_initial_weight || 0;
+    });
+
+    return monthData;
+  };
+
+  const calculateWeights = (row, monthData) => {
+    const date = new Date(row.date);
+    const month = format(date, "MMMM");
+
+    const totalTurnover = monthData[month]?.turnover || 1;
+    const totalFF = monthData[month]?.ff || 1;
+    const totalToBudget = monthData[month]?.to_budget || 1;
+    const totalFFBudget = monthData[month]?.ff_budget || 1;
+    const totalToForecastInitialWeight =
+      monthData[month]?.to_forecast_initial_weight || 1;
+
+    const toWeightVsMonth =
+      totalTurnover !== 0
+        ? ((row.turnover / totalTurnover) * 100).toFixed(2) + "%"
+        : "0%";
+
+    const ffWeightVsMonth =
+      totalFF !== 0 ? ((row.ff / totalFF) * 100).toFixed(2) + "%" : "0%";
+
+    const toBudgetWeightVsMonth =
+      totalToBudget !== 0
+        ? ((row.to_budget / totalToBudget) * 100).toFixed(2) + "%"
+        : "0%";
+
+    const ffBudgetWeightVsMonth =
+      totalFFBudget !== 0
+        ? ((row.ff_budget / totalFFBudget) * 100).toFixed(2) + "%"
+        : "0%";
+
+    const toForecastInitialWeightVsMonth =
+      totalToForecastInitialWeight !== 0
+        ? (
+            (row.to_forecast_initial_weight / totalToForecastInitialWeight) *
+            100
+          ).toFixed(2) + "%"
+        : "0%";
+
+    return {
+      to_weight_vs_month: toWeightVsMonth,
+      ff_weight_vs_month: ffWeightVsMonth,
+      to_budget_weight_vs_month: toBudgetWeightVsMonth,
+      ff_budget_weight_vs_month: ffBudgetWeightVsMonth,
+      to_forecast_initial_weight_vs_month: toForecastInitialWeightVsMonth,
+    };
+  };
+
+  const calculateTotalToUpUntilDate = (rows, date) => {
+    const targetDate = new Date(date);
+    const targetMonth = targetDate.getMonth();
+
+    const totalTurnover = rows
+      .filter((entity) => new Date(entity.date) <= targetDate)
+      .reduce((sum, entity) => sum + entity.turnover, 0);
+
+    const totalTurnoverSameMonth = rows
+      .filter((entity) => {
+        const entityDate = new Date(entity.date);
+        return entityDate.getMonth() === targetMonth;
+      })
+      .reduce((sum, entity) => sum + entity.turnover, 0);
+
+    return { totalTurnover, totalTurnoverSameMonth };
+  };
+
+  useEffect(() => {
+    const monthData = calculateMonthData(rows);
+
+    const { totalTurnover, totalTurnoverSameMonth } =
+      calculateTotalToUpUntilDate(rows, cutoffDate);
+
+    const updatedRows = rows.map((row) => {
+      const date = new Date(row.date);
+      const month = format(date, "MMMM");
+      const week = getWeek(date);
+      const quarter = `Q${getQuarter(date)}`;
+      const weekend = isWeekend(date);
+      const weekday = format(date, "EEEE");
+
+      const {
+        to_weight_vs_month,
+        ff_weight_vs_month,
+        to_budget_weight_vs_month,
+        ff_budget_weight_vs_month,
+        to_forecast_initial_weight_vs_month,
+      } = calculateWeights(row, monthData);
+
+      const to_forecast_initial_weight_vs_month_number = parseFloat(
+        to_forecast_initial_weight_vs_month.replace("%", "")
+      );
+
+      const targetDate = new Date(cutoffDate);
+      targetDate.setDate(targetDate.getDate() + 1);
+
+      return {
+        ...row,
+        month,
+        week,
+        quarter,
+        weekend,
+        weekday,
+        to_weight_vs_month,
+        to_budget_weight_vs_month,
+        to_forecast_initial_weight_vs_month,
+        to_forecast:
+          date <= targetDate
+            ? row.turnover
+            : (
+                (to_forecast_initial_weight_vs_month_number / 100) *
+                (totalTurnoverSameMonth - totalTurnover)
+              ).toFixed(2),
+        ff_weight_vs_month,
+        ff_budget_weight_vs_month,
+      };
+    });
+    setDataGridRows(updatedRows);
+  }, [rows]);
 
   const handleRowEditStop: GridEventListener<"rowEditStop"> = (
     params,
@@ -24,15 +185,78 @@ export default function SalesDataGrid({ rows, loading, editable }) {
   };
 
   const processRowUpdate = async (newRow: GridRowModel) => {
+    newRow.turnover = parseInt(newRow.turnover);
+    newRow.ff = parseInt(newRow.ff);
+    newRow.to_forecast_initial_weight = parseInt(
+      newRow.to_forecast_initial_weight
+    );
+
     const updatedRow = { ...newRow, isNew: false };
     const { error } = await supabase
       .from("days")
-      .update(newRow)
+      .update({
+        event: newRow.event,
+        turnover: newRow.turnover,
+        to_budget: newRow.to_budget,
+        ff: newRow.ff,
+        ff_budget: newRow.ff_budget,
+        to_forecast_initial_weight: newRow.to_forecast_initial_weight,
+      })
       .eq("id", newRow.id)
       .single();
     if (error) {
       throw new Error(error.message);
     }
+
+    const updatedRows = dataGridRows.map((row) =>
+      row.id === newRow.id ? updatedRow : row
+    );
+    const monthData = calculateMonthData(updatedRows);
+    const { totalTurnoverSameMonth, totalTurnover } =
+      calculateTotalToUpUntilDate(rows, cutoffDate);
+
+    const recalculatedRows = updatedRows.map((row) => {
+      const date = new Date(row.date);
+      const month = format(date, "MMMM");
+      const week = getWeek(date);
+      const quarter = `Q${getQuarter(date)}`;
+      const weekend = isWeekend(date);
+      const weekday = format(date, "EEEE");
+
+      const {
+        to_weight_vs_month,
+        ff_weight_vs_month,
+        to_forecast_initial_weight_vs_month,
+      } = calculateWeights(row, monthData);
+
+      const to_forecast_initial_weight_vs_month_number = parseFloat(
+        to_forecast_initial_weight_vs_month.replace("%", "")
+      );
+
+      const targetDate = new Date(cutoffDate);
+      targetDate.setDate(targetDate.getDate() + 1);
+
+      return {
+        ...row,
+        month,
+        week,
+        quarter,
+        weekend,
+        weekday,
+        to_weight_vs_month,
+        ff_weight_vs_month,
+        to_forecast_initial_weight_vs_month,
+        to_forecast:
+          date <= targetDate
+            ? row.turnover
+            : (
+                (to_forecast_initial_weight_vs_month_number / 100) *
+                (totalTurnoverSameMonth - totalTurnover)
+              ).toFixed(2),
+      };
+    });
+
+    setDataGridRows(recalculatedRows);
     return updatedRow;
   };
 
@@ -40,36 +264,105 @@ export default function SalesDataGrid({ rows, loading, editable }) {
     setRowModesModel(newRowModesModel);
   };
 
+  const getRowClassName = (params) => {
+    if (params.row.date == cutoffDate?.format("YYYY-MM-DD"))
+      return "cutoff-row";
+    return params.row.weekend ? "weekend-row" : "";
+  };
+
   const columns: GridColDef[] = [
-    { field: "quarter", headerName: "Quarter", width: 100 },
+    { field: "quarter", headerName: "Quarter", width: 75 },
+    { field: "month", headerName: "Month", width: 75 },
+    { field: "week", headerName: "Week", width: 50 },
     {
       field: "weekend",
       headerName: "Weekend",
-      width: 100,
-      renderCell: (params) => (params.value ? "Weekend" : "Weekday"),
+      width: 80,
+      renderCell: (params) => (params.value ? "Weekend" : ""),
     },
-    { field: "event", headerName: "Event", width: 377, editable: editable },
-    { field: "month", headerName: "Month", width: 100 },
-    { field: "week", headerName: "Week", width: 100 },
     { field: "weekday", headerName: "Weekday", width: 100 },
+    { field: "event", headerName: "Event", width: 125, editable: editable },
     {
       field: "date",
       headerName: "Date",
-      width: 150,
-      editable: editable,
-      valueGetter: (params) => format(params, "dd/MM/yyyy"),
+      width: 100,
+      valueGetter: (params) => format(new Date(params), "dd/MM/yyyy"),
     },
-    { field: "turnover", headerName: "TO", width: 150, editable: editable },
+    {
+      field: "turnover",
+      headerName: "TO",
+      width: 100,
+      editable: editable,
+      align: "right",
+      headerAlign: "center",
+      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
+    },
     {
       field: "to_weight_vs_month",
       headerName: "TO Weight vs Month",
       width: 150,
+      align: "center",
     },
-    { field: "ff", headerName: "FF", width: 150, editable: editable },
+    {
+      field: "to_budget",
+      headerName: "TO Budget",
+      width: 150,
+      align: "right",
+      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
+    },
+    {
+      field: "to_budget_weight_vs_month",
+      headerName: "TO Budget Weight vs Month",
+      width: 150,
+      align: "center",
+    },
+    {
+      field: "to_forecast_initial_weight",
+      headerName: "TO Forecast Initial Weight",
+      width: 150,
+      align: "right",
+      editable: editable,
+      valueFormatter: (params) => (params ? `${params}%` : ""),
+    },
+    {
+      field: "to_forecast_initial_weight_vs_month",
+      headerName: "TO Forecast Final Weight",
+      width: 150,
+      align: "right",
+    },
+    {
+      field: "to_forecast",
+      headerName: "TO Forecast",
+      width: 150,
+      align: "right",
+      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
+    },
+    {
+      field: "ff",
+      headerName: "FF",
+      width: 75,
+      editable: editable,
+      align: "right",
+      headerAlign: "center",
+      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
+    },
     {
       field: "ff_weight_vs_month",
       headerName: "FF Weight vs Month",
       width: 150,
+      align: "center",
+    },
+    {
+      field: "ff_budget",
+      headerName: "FF Budget",
+      width: 150,
+      align: "right",
+    },
+    {
+      field: "ff_budget_weight_vs_month",
+      headerName: "FF Budget Weight vs Month",
+      width: 150,
+      align: "center",
     },
   ];
 
@@ -82,16 +375,24 @@ export default function SalesDataGrid({ rows, loading, editable }) {
   }
 
   return (
-    <DataGrid
-      rows={rows}
+    <StyledDataGrid
+      rows={dataGridRows}
       columns={columns}
+      columnVisibilityModel={{
+        to_budget: extended,
+        ff_budget: extended,
+        to_budget_weight_vs_month: extended,
+        ff_budget_weight_vs_month: extended,
+        to_forecast_initial_weight: extended,
+        to_forecast_final_weight: extended,
+      }}
       density="compact"
       editMode="row"
       rowModesModel={rowModesModel}
       onRowModesModelChange={handleRowModesModelChange}
       onRowEditStop={handleRowEditStop}
       processRowUpdate={processRowUpdate}
-      autoHeight={false}
+      getRowClassName={getRowClassName}
     />
   );
 }
