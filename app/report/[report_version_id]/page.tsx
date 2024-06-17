@@ -1,6 +1,7 @@
 "use client";
 
 import SalesDataGrid from "@/components/DataGridView/SalesDataGrid";
+import { useReportStore } from "@/utils/state/store";
 import { supabase } from "@/utils/supabase/client";
 import { Drawer, Tab, Tabs, TextField } from "@mui/material";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
@@ -11,14 +12,13 @@ import { useEffect, useState } from "react";
 
 const ReportPage = ({ params }) => {
   const { report_version_id } = params;
+  const { selectedReport } = useReportStore();
   const [reportVersions, setReportVersions] = useState([]);
   const [selectedYear, setSelectedYear] = useState(null);
   const [daysData, setDaysData] = useState({});
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [searchValue, setSearchValue] = useState("");
-  const [cutoffDate, setCutoffDate] = useState(null);
-  const [fileData, setFileData] = useState(null);
+  const [cutoffDate, setCutoffDate] = useState(dayjs("2023-01-01"));
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
@@ -79,7 +79,6 @@ const ReportPage = ({ params }) => {
         fetchDaysData(allVersionsData);
       }
     } catch (error) {
-      setError(error.message);
       setLoading(false);
     }
   };
@@ -110,7 +109,6 @@ const ReportPage = ({ params }) => {
       setDaysData(groupedDaysData);
       setLoading(false);
     } catch (error) {
-      setError(error.message);
       setLoading(false);
     }
   };
@@ -132,7 +130,6 @@ const ReportPage = ({ params }) => {
   };
 
   async function handleCutoffDateChange(e) {
-    console.log("update", new Date(e));
     setCutoffDate(dayjs(e));
     await supabase
       .from("report_versions")
@@ -144,7 +141,9 @@ const ReportPage = ({ params }) => {
     <div>
       {reportVersions.length > 0 && (
         <div className="sticky top-12 z-10 bg-white flex items-center justify-between px-5">
-          <h1 className="text-xl">{reportVersions[0].reports.name}</h1>
+          <h1 className="text-sm">
+            {reportVersions[0].reports.name} {selectedReport}
+          </h1>
           <div className="flex space-x-2">
             <Drawer
               anchor="right"
@@ -162,6 +161,7 @@ const ReportPage = ({ params }) => {
                   key={version.year}
                   label={version.year}
                   value={version.year}
+                  sx={{ fontSize: "1rem" }}
                 />
               ))}
             </Tabs>

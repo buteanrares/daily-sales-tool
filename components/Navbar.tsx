@@ -18,12 +18,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import AssessmentIcon from "@mui/icons-material/Assessment";
 
 export default function Navbar() {
-  const { selectedReport } = useReportStore();
   const [user, setUser] = useState(null);
-  const [role, setRole] = useState("User");
   const [anchorEl, setAnchorEl] = useState(null);
+  const [role, setRole] = useState("User");
+  const [initials, setInitials] = useState("");
   const router = useRouter();
   const pathname = usePathname();
 
@@ -34,18 +35,18 @@ export default function Navbar() {
       setUser(data.user);
       if (!data.user && pathname !== "/auth/signin") {
         router.push("/auth/signin");
+      } else {
+        const res = await supabase
+          .from("profiles")
+          .select("*")
+          .eq("id", data.user?.id)
+          .single();
+        setInitials(res.data.first_name[0] + res.data.last_name[0]);
+        setRole(res.data.role);
       }
     };
 
     checkUser();
-
-    // if (user) {
-    //   supabase
-    //     .from("profiles")
-    //     .select("role")
-    //     .single()
-    //     .then((res) => console.log(res));
-    // }
   }, [router, pathname]);
 
   if (!user && pathname === "/auth/signin") {
@@ -68,24 +69,20 @@ export default function Navbar() {
 
   return (
     <AppBar position="sticky" className="z-50">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" className="mx-0">
         <Toolbar disableGutters variant="dense" className="h-3">
-          <Typography className="mr-10 font-semibold">
-            DAILY SALES TOOL
-          </Typography>
+          <div className="flex">
+            <AssessmentIcon />
+            <Typography className="mr-20">DAILY SALES TOOL</Typography>
+          </div>
           <Box sx={{ marginRight: 2, display: { xs: "none", md: "flex" } }}>
-            <Link href={`/`}>HOME</Link>
+            <Link href={`/`}>Home</Link>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Link href={`/versioning`}>VERSIONING</Link>
-          </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              {selectedReport}
-            </Button>
+            {role === "Admin" && <Link href={`/versioning`}>Versioning</Link>}
           </Box>
           <Button onClick={handleAvatarClick} sx={{ padding: 0 }}>
-            <Avatar sx={{ bgcolor: "#1976D2", marginX: 5 }}>RB</Avatar>
+            <Avatar sx={{ bgcolor: "#1976D2", marginX: 5 }}>{initials}</Avatar>
           </Button>
           <Menu
             anchorEl={anchorEl}
@@ -94,7 +91,7 @@ export default function Navbar() {
           >
             <MenuItem onClick={handleLogout}>Logout</MenuItem>
           </Menu>
-          <Image src={via} alt="logo" />
+          <Image src={via} className="scale-75" alt="logo" />
         </Toolbar>
       </Container>
     </AppBar>

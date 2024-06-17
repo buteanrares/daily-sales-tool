@@ -43,17 +43,29 @@ export default function SalesDataGrid({
           ff: 0,
           to_budget: 0,
           ff_budget: 0,
-          to_forecast_initial_weight: 0,
+          // to_forecast_initial_weight: 0,
         };
       }
 
       monthData[month].turnover += row.turnover || 0;
       monthData[month].ff += row.ff || 0;
-      monthData[month].to_budget += row.to_budget || 0;
+      // monthData[month].to_budget += row.to_budget || 0;
       monthData[month].ff_budget += row.ff_budget || 0;
-      monthData[month].to_forecast_initial_weight +=
-        row.to_forecast_initial_weight || 0;
+      // monthData[month].to_forecast_initial_weight +=
+      //   row.to_forecast_initial_weight || 0;
     });
+    monthData["January"].to_budget = 12000000;
+    monthData["February"].to_budget = 8000000;
+    monthData["March"].to_budget = 9000000;
+    monthData["April"].to_budget = 12000000;
+    monthData["May"].to_budget = 12000000;
+    monthData["June"].to_budget = 15000000;
+    monthData["July"].to_budget = 16000000;
+    monthData["August"].to_budget = 19000000;
+    monthData["September"].to_budget = 12000000;
+    monthData["October"].to_budget = 13000000;
+    monthData["November"].to_budget = 17500000;
+    monthData["December"].to_budget = 23000000;
 
     return monthData;
   };
@@ -93,7 +105,7 @@ export default function SalesDataGrid({
             (row.to_forecast_initial_weight / totalToForecastInitialWeight) *
             100
           ).toFixed(2) + "%"
-        : "0%";
+        : "5%";
 
     return {
       to_weight_vs_month: toWeightVsMonth,
@@ -271,21 +283,48 @@ export default function SalesDataGrid({
   };
 
   const columns: GridColDef[] = [
-    { field: "quarter", headerName: "Quarter", width: 75 },
-    { field: "month", headerName: "Month", width: 75 },
-    { field: "week", headerName: "Week", width: 50 },
     {
-      field: "weekend",
-      headerName: "Weekend",
-      width: 80,
-      renderCell: (params) => (params.value ? "Weekend" : ""),
+      field: "quarter",
+      headerName: "Quarter",
+      width: 75,
+      headerAlign: "center",
+      align: "center",
     },
-    { field: "weekday", headerName: "Weekday", width: 100 },
-    { field: "event", headerName: "Event", width: 125, editable: editable },
+    {
+      field: "month",
+      headerName: "Month",
+      width: 75,
+      headerAlign: "center",
+      align: "center",
+    },
+    {
+      field: "week",
+      headerName: "Week",
+      width: 50,
+      headerAlign: "center",
+      align: "center",
+    },
+    {
+      field: "weekday",
+      headerName: "Weekday",
+      width: 100,
+      headerAlign: "center",
+      align: "center",
+    },
+    {
+      field: "event",
+      headerName: "Event",
+      width: 125,
+      editable: editable,
+      headerAlign: "center",
+      align: "center",
+    },
     {
       field: "date",
       headerName: "Date",
       width: 100,
+      headerAlign: "center",
+      align: "center",
       valueGetter: (params) => format(new Date(params), "dd/MM/yyyy"),
     },
     {
@@ -301,6 +340,7 @@ export default function SalesDataGrid({
       field: "to_weight_vs_month",
       headerName: "TO Weight vs Month",
       width: 150,
+      headerAlign: "center",
       align: "center",
     },
     {
@@ -308,6 +348,7 @@ export default function SalesDataGrid({
       headerName: "TO Budget",
       width: 150,
       align: "right",
+      headerAlign: "center",
       valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
     },
     {
@@ -315,12 +356,15 @@ export default function SalesDataGrid({
       headerName: "TO Budget Weight vs Month",
       width: 150,
       align: "center",
+      headerAlign: "center",
     },
     {
       field: "to_forecast_initial_weight",
       headerName: "TO Forecast Initial Weight",
       width: 150,
       align: "right",
+      headerAlign: "center",
+
       editable: editable,
       valueFormatter: (params) => (params ? `${params}%` : ""),
     },
@@ -329,12 +373,15 @@ export default function SalesDataGrid({
       headerName: "TO Forecast Final Weight",
       width: 150,
       align: "right",
+      headerAlign: "center",
     },
     {
       field: "to_forecast",
       headerName: "TO Forecast",
       width: 150,
       align: "right",
+      headerAlign: "center",
+
       valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
     },
     {
@@ -351,18 +398,21 @@ export default function SalesDataGrid({
       headerName: "FF Weight vs Month",
       width: 150,
       align: "center",
+      headerAlign: "center",
     },
     {
       field: "ff_budget",
       headerName: "FF Budget",
       width: 150,
       align: "right",
+      headerAlign: "center",
     },
     {
       field: "ff_budget_weight_vs_month",
       headerName: "FF Budget Weight vs Month",
       width: 150,
       align: "center",
+      headerAlign: "center",
     },
   ];
 
@@ -385,6 +435,8 @@ export default function SalesDataGrid({
         ff_budget_weight_vs_month: extended,
         to_forecast_initial_weight: extended,
         to_forecast_final_weight: extended,
+        to_forecast: extended,
+        to_forecast_initial_weight_vs_month: extended,
       }}
       density="compact"
       editMode="row"

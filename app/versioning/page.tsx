@@ -1,21 +1,23 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import {
-  Button,
-  MenuItem,
-  Select,
-  FormControl,
-  InputLabel,
-} from "@mui/material";
 import { supabase } from "@/utils/supabase/client";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
-import AddIcon from "@mui/icons-material/Add";
-import * as XLSX from "xlsx";
+import {
+  Button,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+} from "@mui/material";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import * as XLSX from "xlsx";
 
 async function getReports() {
-  const { data: reports, error } = await supabase.from("reports").select(`
+  const { data: reports, error } = await supabase
+    .from("reports")
+    .select(
+      `
           id, 
           name, 
           abbreviation,
@@ -25,7 +27,9 @@ async function getReports() {
             version, 
             visible
           )
-        `);
+        `
+    )
+    .order("name", { ascending: true });
 
   if (error) {
     console.error("Error fetching reports:", error);
@@ -161,7 +165,9 @@ export default function Versioning() {
               let to_budget = null;
               let ff_budget = null;
 
-              const index = (currentDate - startDate) / (1000 * 60 * 60 * 24);
+              const index = Math.round(
+                (currentDate - startDate) / (1000 * 60 * 60 * 24)
+              );
               turnover = fileData[`TO ${year}`][index] || 0;
               ff = fileData[`FF ${year}`][index] || 0;
 
@@ -195,11 +201,11 @@ export default function Versioning() {
   return (
     <div className="px-10 py-8 flex justify-between">
       <div className="flex-row space-y-5 w-2/5">
-        <h1 className="text-2xl font-bold mb-5">Report Versioning</h1>
+        <h1 className="text-2xl font-bold mb-5">Versioning</h1>
 
         {/* Select Report */}
         <FormControl fullWidth>
-          <InputLabel>Select Report</InputLabel>
+          <InputLabel>Select Center</InputLabel>
           <Select
             variant="standard"
             value={selectedReport}
@@ -253,7 +259,7 @@ export default function Versioning() {
 
         {/* Buttons */}
         <div className="space-x-3">
-          {selectedReport && (
+          {selectedReport && selectedYears && (
             <>
               <Button variant="contained" component="label">
                 Upload File

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Container, TextField, Button, Typography, Box } from "@mui/material";
 import { supabase } from "@/utils/supabase/client";
-import via from "@/public/via.svg";
+import logo from "@/public/logo.jpg";
 import Image from "next/image";
 
 const SignIn = () => {
@@ -47,8 +47,8 @@ const SignIn = () => {
         height: "75vh",
       }}
     >
-      <Box sx={{ transform: "scale(2)", mb: 15 }}>
-        <Image src={via} alt="logo" />
+      <Box sx={{ transform: "scale(0.3)", mb: 15 }}>
+        <Image src={logo} alt="logo" />
       </Box>
       <Box sx={{ width: "100%", textAlign: "center" }}>
         <Typography variant="h4" component="h1" gutterBottom>

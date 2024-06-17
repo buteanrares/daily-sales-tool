@@ -15,6 +15,8 @@ import toast from "react-hot-toast";
 const CreateAccount = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [role, setRole] = useState("User");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -39,6 +41,8 @@ const CreateAccount = () => {
         id: user.user.id,
         email: user.user.email,
         role,
+        first_name: firstName,
+        last_name: lastName,
       });
 
       if (updateError) {
@@ -47,6 +51,8 @@ const CreateAccount = () => {
       toast.success(`Account ${email} created successfully`);
       setEmail("");
       setPassword("");
+      setFirstName("");
+      setLastName("");
     } catch (error) {
       setError(error.message);
     } finally {
@@ -81,6 +87,22 @@ const CreateAccount = () => {
           margin="normal"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+        />
+        <TextField
+          label="First name"
+          variant="outlined"
+          fullWidth
+          margin="normal"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+        <TextField
+          label="Last name"
+          variant="outlined"
+          fullWidth
+          margin="normal"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
         />
         <TextField
           label="Role"
