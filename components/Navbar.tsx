@@ -69,31 +69,29 @@ export default function Navbar() {
 
   return (
     <AppBar position="sticky" className="z-50">
-      <Container maxWidth="xl" className="mx-0">
-        <Toolbar disableGutters variant="dense" className="h-3">
-          <div className="flex">
-            <AssessmentIcon />
-            <Typography className="mr-20">DAILY SALES TOOL</Typography>
-          </div>
-          <Box sx={{ marginRight: 2, display: { xs: "none", md: "flex" } }}>
-            <Link href={`/`}>Home</Link>
-          </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {role === "Admin" && <Link href={`/versioning`}>Versioning</Link>}
-          </Box>
-          <Button onClick={handleAvatarClick} sx={{ padding: 0 }}>
-            <Avatar sx={{ bgcolor: "#1976D2", marginX: 5 }}>{initials}</Avatar>
-          </Button>
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            <MenuItem onClick={handleLogout}>Logout</MenuItem>
-          </Menu>
-          <Image src={via} className="scale-75" alt="logo" />
-        </Toolbar>
-      </Container>
+      <Toolbar disableGutters variant="dense" className="h-3 mx-5">
+        <div className="flex">
+          <AssessmentIcon />
+          <Typography className="mr-20">DAILY SALES TOOL</Typography>
+        </div>
+        <Box sx={{ marginRight: 2, display: { xs: "none", md: "flex" } }}>
+          <Link href={`/`}>Home</Link>
+        </Box>
+        <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          {role === "Admin" && <Link href={`/versioning`}>Versioning</Link>}
+        </Box>
+        <Button onClick={handleAvatarClick} sx={{ padding: 0 }}>
+          <Avatar sx={{ bgcolor: "#1976D2", marginX: 5 }}>{initials}</Avatar>
+        </Button>
+        <Menu
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem onClick={handleLogout}>Logout</MenuItem>
+        </Menu>
+        <Image src={via} className="scale-75" alt="logo" />
+      </Toolbar>
     </AppBar>
   );
 }

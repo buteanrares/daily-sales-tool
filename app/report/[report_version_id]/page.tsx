@@ -3,7 +3,7 @@
 import SalesDataGrid from "@/components/DataGridView/SalesDataGrid";
 import { useReportStore } from "@/utils/state/store";
 import { supabase } from "@/utils/supabase/client";
-import { Drawer, Tab, Tabs, TextField } from "@mui/material";
+import { Tab, Tabs, TextField } from "@mui/material";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { format, getQuarter, getWeek } from "date-fns";
@@ -144,27 +144,17 @@ const ReportPage = ({ params }) => {
           <h1 className="text-sm">
             {reportVersions[0].reports.name} {selectedReport}
           </h1>
-          <div className="flex space-x-2">
-            <Drawer
-              anchor="right"
-              open={drawerOpen}
-              onClose={handleDrawerClose}
-            >
-              <div className="flex flex-col space-y-3 w-[500px] ml-5 mt-5">
-                <h1 className="text-2xl font-bold mb-5">Load year</h1>
-                {/* Implement your year loading functionality here */}
-              </div>
-            </Drawer>
-            <Tabs value={selectedYear} onChange={handleTabChange}>
-              {reportVersions.map((version) => (
-                <Tab
-                  key={version.year}
-                  label={version.year}
-                  value={version.year}
-                  sx={{ fontSize: "1rem" }}
-                />
-              ))}
-            </Tabs>
+          <Tabs value={selectedYear} onChange={handleTabChange}>
+            {reportVersions.map((version) => (
+              <Tab
+                key={version.year}
+                label={version.year}
+                value={version.year}
+                sx={{ fontSize: "1rem" }}
+              />
+            ))}
+          </Tabs>
+          <div className="flex space-x-4">
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DatePicker
                 format="DD/MM/YYYY"
@@ -190,9 +180,6 @@ const ReportPage = ({ params }) => {
                 onChange={handleFilterChange}
                 className="w-36"
               />
-              {/* <Button onClick={handleDrawerOpen}>
-                <SystemUpdateAltIcon />
-              </Button> */}
             </div>
           </div>
         </div>

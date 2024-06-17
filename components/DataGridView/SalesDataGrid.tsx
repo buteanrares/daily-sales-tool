@@ -30,6 +30,64 @@ export default function SalesDataGrid({
   const [dataGridRows, setDataGridRows] = useState(rows);
   const [rowModesModel, setRowModesModel] = useState<GridRowModesModel>({});
 
+  const computeTotalsByMonth = (rows) => {
+    const totalsByMonth = {
+      January: 0,
+      February: 0,
+      March: 0,
+      April: 0,
+      May: 0,
+      June: 0,
+      July: 0,
+      August: 0,
+      September: 0,
+      October: 0,
+      November: 0,
+      December: 0,
+    };
+
+    rows.forEach((row) => {
+      const date = new Date(row.date);
+      const month = format(date, "MMMM");
+
+      if (
+        row.to_forecast_initial_weight !== null &&
+        !isNaN(parseFloat(row.to_forecast_initial_weight))
+      ) {
+        totalsByMonth[month] += parseFloat(row.to_forecast_initial_weight);
+      }
+    });
+
+    return totalsByMonth;
+  };
+
+  const updateRowsWithWeightedPercentage = (rows, totalsByMonth) => {
+    rows.forEach((row) => {
+      const date = new Date(row.date);
+      const month = format(date, "MMMM");
+
+      if (
+        row.to_forecast_initial_weight !== null &&
+        !isNaN(parseFloat(row.to_forecast_initial_weight))
+      ) {
+        const totalForMonth = totalsByMonth[month];
+        if (totalForMonth !== 0) {
+          row.to_forecast_final_weight =
+            (
+              (parseFloat(row.to_forecast_initial_weight) / totalForMonth) *
+              100
+            ).toFixed(2) + "%";
+        } else {
+          row.to_forecast_final_weight = "0%";
+        }
+      } else {
+        row.to_forecast_final_weight = null;
+      }
+    });
+
+    return rows;
+  };
+
   const calculateMonthData = (rows) => {
     const monthData = {};
 
@@ -43,17 +101,17 @@ export default function SalesDataGrid({
           ff: 0,
           to_budget: 0,
           ff_budget: 0,
-          // to_forecast_initial_weight: 0,
+          to_forecast_initial_weight: 0,
         };
       }
 
       monthData[month].turnover += row.turnover || 0;
       monthData[month].ff += row.ff || 0;
-      // monthData[month].to_budget += row.to_budget || 0;
       monthData[month].ff_budget += row.ff_budget || 0;
-      // monthData[month].to_forecast_initial_weight +=
-      //   row.to_forecast_initial_weight || 0;
+      monthData[month].to_forecast_initial_weight +=
+        row.to_forecast_initial_weight || 0;
     });
+
     monthData["January"].to_budget = 12000000;
     monthData["February"].to_budget = 8000000;
     monthData["March"].to_budget = 9000000;
@@ -99,20 +157,26 @@ export default function SalesDataGrid({
         ? ((row.ff_budget / totalFFBudget) * 100).toFixed(2) + "%"
         : "0%";
 
-    const toForecastInitialWeightVsMonth =
+    const toForecastInitialWeight =
+      row.turnover > 0
+        ? ((row.turnover / monthData[month].to_budget) * 100).toFixed(2)
+        : 0;
+
+    const toForecastFinalWeight =
       totalToForecastInitialWeight !== 0
         ? (
             (row.to_forecast_initial_weight / totalToForecastInitialWeight) *
             100
           ).toFixed(2) + "%"
-        : "5%";
+        : "0%";
 
     return {
       to_weight_vs_month: toWeightVsMonth,
       ff_weight_vs_month: ffWeightVsMonth,
       to_budget_weight_vs_month: toBudgetWeightVsMonth,
       ff_budget_weight_vs_month: ffBudgetWeightVsMonth,
-      to_forecast_initial_weight_vs_month: toForecastInitialWeightVsMonth,
+      to_forecast_initial_weight: toForecastInitialWeight,
+      to_forecast_final_weight: toForecastFinalWeight,
     };
   };
 
@@ -137,10 +201,7 @@ export default function SalesDataGrid({
   useEffect(() => {
     const monthData = calculateMonthData(rows);
 
-    const { totalTurnover, totalTurnoverSameMonth } =
-      calculateTotalToUpUntilDate(rows, cutoffDate);
-
-    const updatedRows = rows.map((row) => {
+    let updatedRows = rows.map((row) => {
       const date = new Date(row.date);
       const month = format(date, "MMMM");
       const week = getWeek(date);
@@ -153,11 +214,12 @@ export default function SalesDataGrid({
         ff_weight_vs_month,
         to_budget_weight_vs_month,
         ff_budget_weight_vs_month,
-        to_forecast_initial_weight_vs_month,
+        to_forecast_initial_weight,
+        to_forecast_final_weight,
       } = calculateWeights(row, monthData);
 
-      const to_forecast_initial_weight_vs_month_number = parseFloat(
-        to_forecast_initial_weight_vs_month.replace("%", "")
+      const to_forecast_final_weight_number = parseFloat(
+        to_forecast_final_weight.replace("%", "")
       );
 
       const targetDate = new Date(cutoffDate);
@@ -172,18 +234,22 @@ export default function SalesDataGrid({
         weekday,
         to_weight_vs_month,
         to_budget_weight_vs_month,
-        to_forecast_initial_weight_vs_month,
+        to_forecast_initial_weight:
+          date <= targetDate ? to_forecast_initial_weight : 0,
+        to_forecast_final_weight,
         to_forecast:
           date <= targetDate
             ? row.turnover
             : (
-                (to_forecast_initial_weight_vs_month_number / 100) *
-                (totalTurnoverSameMonth - totalTurnover)
+                (to_forecast_final_weight_number / 100) *
+                monthData[`${month}`].to_budget
               ).toFixed(2),
         ff_weight_vs_month,
         ff_budget_weight_vs_month,
       };
     });
+    const totalsByMonth = computeTotalsByMonth(updatedRows);
+    updatedRows = updateRowsWithWeightedPercentage(updatedRows, totalsByMonth);
     setDataGridRows(updatedRows);
   }, [rows]);
 
@@ -223,6 +289,8 @@ export default function SalesDataGrid({
     const updatedRows = dataGridRows.map((row) =>
       row.id === newRow.id ? updatedRow : row
     );
+
+    const totals = computeTotalsByMonth(dataGridRows);
     const monthData = calculateMonthData(updatedRows);
     const { totalTurnoverSameMonth, totalTurnover } =
       calculateTotalToUpUntilDate(rows, cutoffDate);
@@ -238,11 +306,11 @@ export default function SalesDataGrid({
       const {
         to_weight_vs_month,
         ff_weight_vs_month,
-        to_forecast_initial_weight_vs_month,
-      } = calculateWeights(row, monthData);
+        to_forecast_final_weight,
+      } = calculateWeights(row, monthData, totals[`${month}`]);
 
       const to_forecast_initial_weight_vs_month_number = parseFloat(
-        to_forecast_initial_weight_vs_month.replace("%", "")
+        to_forecast_final_weight.replace("%", "")
       );
 
       const targetDate = new Date(cutoffDate);
@@ -257,7 +325,7 @@ export default function SalesDataGrid({
         weekday,
         to_weight_vs_month,
         ff_weight_vs_month,
-        to_forecast_initial_weight_vs_month,
+        to_forecast_final_weight,
         to_forecast:
           date <= targetDate
             ? row.turnover
@@ -369,7 +437,7 @@ export default function SalesDataGrid({
       valueFormatter: (params) => (params ? `${params}%` : ""),
     },
     {
-      field: "to_forecast_initial_weight_vs_month",
+      field: "to_forecast_final_weight",
       headerName: "TO Forecast Final Weight",
       width: 150,
       align: "right",
@@ -434,9 +502,8 @@ export default function SalesDataGrid({
         to_budget_weight_vs_month: extended,
         ff_budget_weight_vs_month: extended,
         to_forecast_initial_weight: extended,
-        to_forecast_final_weight: extended,
         to_forecast: extended,
-        to_forecast_initial_weight_vs_month: extended,
+        to_forecast_final_weight: extended,
       }}
       density="compact"
       editMode="row"

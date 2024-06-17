@@ -72,12 +72,8 @@ const Home = () => {
       const version = selectedCenter.report_versions.find(
         (v) => v.year == selectedYear && v.version == selectedVersion
       );
-      const selectedReport = reports.find(
-        (report) => report.id === selectedCenter.id
-      );
-      const abbreviation = selectedReport ? selectedReport.abbreviation : "";
 
-      const selectedReportInfo = `${abbreviation} ${selectedYear} ${selectedVersion}`;
+      const selectedReportInfo = `${selectedYear} ${selectedVersion}`;
       setSelectedReport(selectedReportInfo);
       router.push(`/report/${version.id}`);
     }
