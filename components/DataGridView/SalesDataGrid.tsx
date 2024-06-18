@@ -26,84 +26,104 @@ export default function SalesDataGrid({
   editable,
   extended,
   cutoffDate,
+  reportVersionId,
 }) {
   const [dataGridRows, setDataGridRows] = useState(rows);
   const [rowModesModel, setRowModesModel] = useState<GridRowModesModel>({});
 
-  const computeTotalsByMonth = (rows) => {
-    const totalsByMonth = {
-      January: 0,
-      February: 0,
-      March: 0,
-      April: 0,
-      May: 0,
-      June: 0,
-      July: 0,
-      August: 0,
-      September: 0,
-      October: 0,
-      November: 0,
-      December: 0,
+  const calculateMonthData = (rows) => {
+    // Initialize monthData with hardcoded to_budget values
+    const monthData = {
+      January: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 12000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      February: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 8000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      March: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 9000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      April: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 12000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      May: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 12000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      June: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 15000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      July: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 16000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      August: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 19000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      September: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 12000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      October: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 13000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      November: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 17500000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
+      December: {
+        turnover: 0,
+        ff: 0,
+        to_budget: 23000000,
+        ff_budget: 0,
+        to_forecast_initial_weight: 0,
+      },
     };
 
+    // Iterate over rows to accumulate values
     rows.forEach((row) => {
       const date = new Date(row.date);
       const month = format(date, "MMMM");
-
-      if (
-        row.to_forecast_initial_weight !== null &&
-        !isNaN(parseFloat(row.to_forecast_initial_weight))
-      ) {
-        totalsByMonth[month] += parseFloat(row.to_forecast_initial_weight);
-      }
-    });
-
-    return totalsByMonth;
-  };
-
-  const updateRowsWithWeightedPercentage = (rows, totalsByMonth) => {
-    rows.forEach((row) => {
-      const date = new Date(row.date);
-      const month = format(date, "MMMM");
-
-      if (
-        row.to_forecast_initial_weight !== null &&
-        !isNaN(parseFloat(row.to_forecast_initial_weight))
-      ) {
-        const totalForMonth = totalsByMonth[month];
-        if (totalForMonth !== 0) {
-          row.to_forecast_final_weight =
-            (
-              (parseFloat(row.to_forecast_initial_weight) / totalForMonth) *
-              100
-            ).toFixed(2) + "%";
-        } else {
-          row.to_forecast_final_weight = "0%";
-        }
-      } else {
-        row.to_forecast_final_weight = null;
-      }
-    });
-
-    return rows;
-  };
-
-  const calculateMonthData = (rows) => {
-    const monthData = {};
-
-    rows.forEach((row) => {
-      const date = new Date(row.date);
-      const month = format(date, "MMMM");
-
-      if (!monthData[month]) {
-        monthData[month] = {
-          turnover: 0,
-          ff: 0,
-          to_budget: 0,
-          ff_budget: 0,
-          to_forecast_initial_weight: 0,
-        };
-      }
 
       monthData[month].turnover += row.turnover || 0;
       monthData[month].ff += row.ff || 0;
@@ -112,118 +132,17 @@ export default function SalesDataGrid({
         row.to_forecast_initial_weight || 0;
     });
 
-    monthData["January"].to_budget = 12000000;
-    monthData["February"].to_budget = 8000000;
-    monthData["March"].to_budget = 9000000;
-    monthData["April"].to_budget = 12000000;
-    monthData["May"].to_budget = 12000000;
-    monthData["June"].to_budget = 15000000;
-    monthData["July"].to_budget = 16000000;
-    monthData["August"].to_budget = 19000000;
-    monthData["September"].to_budget = 12000000;
-    monthData["October"].to_budget = 13000000;
-    monthData["November"].to_budget = 17500000;
-    monthData["December"].to_budget = 23000000;
-
     return monthData;
   };
 
-  const calculateWeights = (row, monthData) => {
-    const date = new Date(row.date);
-    const month = format(date, "MMMM");
-
-    const totalTurnover = monthData[month]?.turnover || 1;
-    const totalFF = monthData[month]?.ff || 1;
-    const totalToBudget = monthData[month]?.to_budget || 1;
-    const totalFFBudget = monthData[month]?.ff_budget || 1;
-    const totalToForecastInitialWeight =
-      monthData[month]?.to_forecast_initial_weight || 1;
-
-    const toWeightVsMonth =
-      totalTurnover !== 0
-        ? ((row.turnover / totalTurnover) * 100).toFixed(2) + "%"
-        : "0%";
-
-    const ffWeightVsMonth =
-      totalFF !== 0 ? ((row.ff / totalFF) * 100).toFixed(2) + "%" : "0%";
-
-    const toBudgetWeightVsMonth =
-      totalToBudget !== 0
-        ? ((row.to_budget / totalToBudget) * 100).toFixed(2) + "%"
-        : "0%";
-
-    const ffBudgetWeightVsMonth =
-      totalFFBudget !== 0
-        ? ((row.ff_budget / totalFFBudget) * 100).toFixed(2) + "%"
-        : "0%";
-
-    const toForecastInitialWeight =
-      row.turnover > 0
-        ? ((row.turnover / monthData[month].to_budget) * 100).toFixed(2)
-        : 0;
-
-    const toForecastFinalWeight =
-      totalToForecastInitialWeight !== 0
-        ? (
-            (row.to_forecast_initial_weight / totalToForecastInitialWeight) *
-            100
-          ).toFixed(2) + "%"
-        : "0%";
-
-    return {
-      to_weight_vs_month: toWeightVsMonth,
-      ff_weight_vs_month: ffWeightVsMonth,
-      to_budget_weight_vs_month: toBudgetWeightVsMonth,
-      ff_budget_weight_vs_month: ffBudgetWeightVsMonth,
-      to_forecast_initial_weight: toForecastInitialWeight,
-      to_forecast_final_weight: toForecastFinalWeight,
-    };
-  };
-
-  const calculateTotalToUpUntilDate = (rows, date) => {
-    const targetDate = new Date(date);
-    const targetMonth = targetDate.getMonth();
-
-    const totalTurnover = rows
-      .filter((entity) => new Date(entity.date) <= targetDate)
-      .reduce((sum, entity) => sum + entity.turnover, 0);
-
-    const totalTurnoverSameMonth = rows
-      .filter((entity) => {
-        const entityDate = new Date(entity.date);
-        return entityDate.getMonth() === targetMonth;
-      })
-      .reduce((sum, entity) => sum + entity.turnover, 0);
-
-    return { totalTurnover, totalTurnoverSameMonth };
-  };
-
-  useEffect(() => {
-    const monthData = calculateMonthData(rows);
-
-    let updatedRows = rows.map((row) => {
+  const formatRowDates = (rows) => {
+    rows = rows.map((row) => {
       const date = new Date(row.date);
       const month = format(date, "MMMM");
       const week = getWeek(date);
       const quarter = `Q${getQuarter(date)}`;
       const weekend = isWeekend(date);
       const weekday = format(date, "EEEE");
-
-      const {
-        to_weight_vs_month,
-        ff_weight_vs_month,
-        to_budget_weight_vs_month,
-        ff_budget_weight_vs_month,
-        to_forecast_initial_weight,
-        to_forecast_final_weight,
-      } = calculateWeights(row, monthData);
-
-      const to_forecast_final_weight_number = parseFloat(
-        to_forecast_final_weight.replace("%", "")
-      );
-
-      const targetDate = new Date(cutoffDate);
-      targetDate.setDate(targetDate.getDate() + 1);
 
       return {
         ...row,
@@ -232,25 +151,343 @@ export default function SalesDataGrid({
         quarter,
         weekend,
         weekday,
-        to_weight_vs_month,
-        to_budget_weight_vs_month,
-        to_forecast_initial_weight:
-          date <= targetDate ? to_forecast_initial_weight : 0,
-        to_forecast_final_weight,
-        to_forecast:
-          date <= targetDate
-            ? row.turnover
-            : (
-                (to_forecast_final_weight_number / 100) *
-                monthData[`${month}`].to_budget
-              ).toFixed(2),
-        ff_weight_vs_month,
-        ff_budget_weight_vs_month,
       };
     });
-    const totalsByMonth = computeTotalsByMonth(updatedRows);
-    updatedRows = updateRowsWithWeightedPercentage(updatedRows, totalsByMonth);
-    setDataGridRows(updatedRows);
+
+    return rows;
+  };
+
+  const calculateToWeightVsMonth = (rows) => {
+    const monthData = calculateMonthData(rows);
+    const updatedRows = rows.map((row) => {
+      if (monthData[row.month] && monthData[row.month].turnover) {
+        const to_weight_vs_month =
+          (row.turnover / monthData[row.month].turnover) * 100;
+        return {
+          ...row,
+          to_weight_vs_month,
+        };
+      } else {
+        return {
+          ...row,
+          to_weight_vs_month: null,
+        };
+      }
+    });
+
+    return updatedRows;
+  };
+
+  const calculateFFWeightVsMonth = (rows) => {
+    const monthData = calculateMonthData(rows);
+    const updatedRows = rows.map((row) => {
+      if (monthData[row.month] && monthData[row.month].ff) {
+        const ff_weight_vs_month = (row.ff / monthData[row.month].ff) * 100;
+        return {
+          ...row,
+          ff_weight_vs_month,
+        };
+      } else {
+        return {
+          ...row,
+          ff_weight_vs_month: null,
+        };
+      }
+    });
+
+    return updatedRows;
+  };
+
+  const calculateToBudgetWeightVsMonth = (rows) => {
+    const monthData = calculateMonthData(rows);
+    const updatedRows = rows.map((row) => {
+      const month = row.month;
+      const monthlyData = monthData[month];
+
+      if (monthlyData && monthlyData.to_budget) {
+        const to_budget_weight_vs_month =
+          (row.to_budget / monthlyData.to_budget) * 100;
+        return {
+          ...row,
+          to_budget_weight_vs_month,
+        };
+      } else {
+        return {
+          ...row,
+          to_budget_weight_vs_month: null,
+        };
+      }
+    });
+
+    return updatedRows;
+  };
+
+  const calculateFFBudgetWeightVsMonth = (rows) => {
+    const monthData = calculateMonthData(rows);
+    const updatedRows = rows.map((row) => {
+      const month = row.month;
+      const monthlyData = monthData[month];
+
+      if (monthlyData && monthlyData.ff_budget) {
+        const ff_budget_weight_vs_month =
+          (row.ff_budget / monthlyData.ff_budget) * 100;
+        return {
+          ...row,
+          ff_budget_weight_vs_month,
+        };
+      } else {
+        return {
+          ...row,
+          ff_budget_weight_vs_month: null,
+        };
+      }
+    });
+
+    return updatedRows;
+  };
+
+  const calculateToForecastInitialWeight = async (rows) => {
+    const monthData = calculateMonthData(rows);
+    const updatedRows = await Promise.all(
+      rows.map(async (row) => {
+        const rowDate = new Date(row.date);
+        const cutoff = new Date(cutoffDate);
+
+        rowDate.setHours(0, 0, 0, 0); // Timezone offset
+
+        if (rowDate <= cutoff) {
+          const month = row.month;
+          const monthlyBudget = monthData[month].to_budget;
+          const toForecastInitialWeight =
+            (row.to_forecast / monthlyBudget) * 100;
+          await supabase
+            .from("days")
+            .update({
+              to_forecast_initial_weight: toForecastInitialWeight,
+            })
+            .eq("id", row.id);
+          return {
+            ...row,
+            to_forecast_initial_weight: toForecastInitialWeight,
+          };
+        } else {
+          const { data } = await supabase
+            .from("days")
+            .select("to_forecast_initial_weight")
+            .eq("id", row.id)
+            .single();
+          return {
+            ...row,
+            to_forecast_initial_weight: data.to_forecast_initial_weight,
+          };
+        }
+      })
+    );
+
+    return updatedRows;
+  };
+
+  const calculateToForecastBeforeCutoffDate = (rows) => {
+    const updatedRows = rows.map((row) => {
+      const rowDate = new Date(row.date);
+      const cutoff = new Date(cutoffDate);
+
+      rowDate.setHours(0, 0, 0, 0); // Timezone offset
+
+      if (rowDate <= cutoff) {
+        return {
+          ...row,
+          to_forecast: row.turnover,
+        };
+      }
+      return row;
+    });
+
+    return updatedRows;
+  };
+
+  const calculateToForecastFinalWeight = (rows) => {
+    const monthData = calculateMonthData(rows);
+    const updatedRows = rows.map((row) => {
+      const monthlyTotalToForecastInitialWeight =
+        monthData[row.month].to_forecast_initial_weight;
+
+      if (monthlyTotalToForecastInitialWeight !== 0) {
+        const toForecastFinalWeight =
+          (row.to_forecast_initial_weight /
+            monthlyTotalToForecastInitialWeight) *
+          100;
+        return {
+          ...row,
+          to_forecast_final_weight: toForecastFinalWeight,
+        };
+      } else {
+        return {
+          ...row,
+        };
+      }
+    });
+
+    return updatedRows;
+  };
+
+  const calculateToForecastAfterCutoffDate = (rows) => {
+    const monthData = calculateMonthData(rows);
+    const updatedRows = rows.map((row) => {
+      const rowDate = new Date(row.date);
+      const cutoff = new Date(cutoffDate);
+
+      rowDate.setHours(0, 0, 0, 0); // Timezone offset
+      if (rowDate > cutoff && row.to_forecast_final_weight) {
+        const to_forecast =
+          (row.to_forecast_final_weight / 100) * monthData[row.month].to_budget;
+        return {
+          ...row,
+          to_forecast,
+        };
+      }
+      return { ...row };
+    });
+    return updatedRows;
+  };
+
+  const calculateToVarByDay = async (rows) => {
+    const { data: previousYearDays, error } = await supabase
+      .from("days")
+      .select("date, turnover")
+      .eq("report_version_id", reportVersionId - 1); // Assuming reportVersionId is defined
+
+    if (error) {
+      console.error("Error fetching previous year's days data:", error.message);
+      return rows;
+    }
+
+    const updatedRows = rows.map((row) => {
+      const rowDate = new Date(row.date);
+      const previousYearDate = new Date(rowDate);
+      previousYearDate.setFullYear(previousYearDate.getFullYear() - 1);
+
+      // Find complementary day in previous year's data
+      const complementaryDay = previousYearDays.find((day) => {
+        const dayDate = new Date(day.date);
+        return (
+          dayDate.getDate() === previousYearDate.getDate() &&
+          dayDate.getMonth() === previousYearDate.getMonth() &&
+          dayDate.getFullYear() === previousYearDate.getFullYear()
+        );
+      });
+
+      if (complementaryDay?.turnover > 0 && row.to_forecast) {
+        const to_var_day =
+          ((row.to_forecast - complementaryDay.turnover) /
+            complementaryDay.turnover) *
+          100;
+        return {
+          ...row,
+          to_var_day,
+        };
+      } else {
+        return {
+          ...row,
+          to_var_day: null,
+        };
+      }
+    });
+
+    return updatedRows;
+  };
+
+  const calculateToVarByWeek = async (rows) => {
+    const { data: previousYearDays, error } = await supabase
+      .from("days")
+      .select("date, turnover")
+      .eq("report_version_id", reportVersionId - 1); // Assuming reportVersionId is defined
+
+    if (error) {
+      console.error("Error fetching previous year's days data:", error.message);
+      return rows;
+    }
+
+    const rowsByWeek = new Map();
+    rows.forEach((row) => {
+      const rowDate = new Date(row.date);
+      const weekNumber = getWeek(rowDate);
+      if (!rowsByWeek.has(weekNumber)) {
+        rowsByWeek.set(weekNumber, []);
+      }
+      rowsByWeek.get(weekNumber).push(row);
+    });
+
+    const updatedRows = rows.map((row) => {
+      const rowDate = new Date(row.date);
+      const weekNumber = getWeek(rowDate);
+      const weekRows = rowsByWeek.get(weekNumber);
+
+      if (weekRows && weekRows.length > 0) {
+        const lastDayOfWeek = weekRows.reduce((latest, current) => {
+          const currentDate = new Date(current.date);
+          return currentDate > latest ? currentDate : latest;
+        }, new Date(0));
+
+        if (rowDate.getTime() === lastDayOfWeek.getTime()) {
+          const previousYearDate = new Date(lastDayOfWeek);
+          previousYearDate.setFullYear(previousYearDate.getFullYear() - 1);
+
+          // Find complementary week day in previous year's data
+          const complementaryDay = previousYearDays.find((day) => {
+            const dayDate = new Date(day.date);
+            return (
+              dayDate.getDate() === previousYearDate.getDate() &&
+              dayDate.getMonth() === previousYearDate.getMonth() &&
+              dayDate.getFullYear() === previousYearDate.getFullYear()
+            );
+          });
+
+          if (complementaryDay?.turnover > 0 && row.to_forecast) {
+            const to_var_week =
+              ((row.to_forecast - complementaryDay.turnover) /
+                complementaryDay.turnover) *
+              100;
+            return {
+              ...row,
+              to_var_week,
+            };
+          } else {
+            return {
+              ...row,
+              to_var_week: null,
+            };
+          }
+        }
+      }
+
+      return {
+        ...row,
+        to_var_week: null,
+      };
+    });
+
+    return updatedRows;
+  };
+
+  // Init and calculate on initial rows change
+  useEffect(() => {
+    const processRows = async () => {
+      let updatedRows = formatRowDates(rows);
+      updatedRows = calculateToWeightVsMonth(updatedRows);
+      updatedRows = calculateToBudgetWeightVsMonth(updatedRows);
+      updatedRows = calculateToForecastBeforeCutoffDate(updatedRows);
+      updatedRows = await calculateToForecastInitialWeight(updatedRows);
+      updatedRows = calculateToForecastFinalWeight(updatedRows);
+      updatedRows = calculateToForecastAfterCutoffDate(updatedRows);
+      updatedRows = await calculateToVarByDay(updatedRows);
+      updatedRows = await calculateToVarByWeek(updatedRows);
+      updatedRows = calculateFFWeightVsMonth(updatedRows);
+      updatedRows = calculateFFBudgetWeightVsMonth(updatedRows);
+      setDataGridRows(updatedRows);
+    };
+
+    processRows();
   }, [rows]);
 
   const handleRowEditStop: GridEventListener<"rowEditStop"> = (
@@ -270,6 +507,7 @@ export default function SalesDataGrid({
     );
 
     const updatedRow = { ...newRow, isNew: false };
+
     const { error } = await supabase
       .from("days")
       .update({
@@ -282,62 +520,28 @@ export default function SalesDataGrid({
       })
       .eq("id", newRow.id)
       .single();
+
     if (error) {
       throw new Error(error.message);
     }
 
-    const updatedRows = dataGridRows.map((row) =>
-      row.id === newRow.id ? updatedRow : row
-    );
+    const index = dataGridRows.findIndex((row) => row.id === newRow.id);
+    if (index !== -1) {
+      let updatedRows = [...dataGridRows];
+      updatedRows[index] = updatedRow;
+      updatedRows = await triggerRecalculations(updatedRows);
+      setDataGridRows(updatedRows);
+    }
 
-    const totals = computeTotalsByMonth(dataGridRows);
-    const monthData = calculateMonthData(updatedRows);
-    const { totalTurnoverSameMonth, totalTurnover } =
-      calculateTotalToUpUntilDate(rows, cutoffDate);
-
-    const recalculatedRows = updatedRows.map((row) => {
-      const date = new Date(row.date);
-      const month = format(date, "MMMM");
-      const week = getWeek(date);
-      const quarter = `Q${getQuarter(date)}`;
-      const weekend = isWeekend(date);
-      const weekday = format(date, "EEEE");
-
-      const {
-        to_weight_vs_month,
-        ff_weight_vs_month,
-        to_forecast_final_weight,
-      } = calculateWeights(row, monthData, totals[`${month}`]);
-
-      const to_forecast_initial_weight_vs_month_number = parseFloat(
-        to_forecast_final_weight.replace("%", "")
-      );
-
-      const targetDate = new Date(cutoffDate);
-      targetDate.setDate(targetDate.getDate() + 1);
-
-      return {
-        ...row,
-        month,
-        week,
-        quarter,
-        weekend,
-        weekday,
-        to_weight_vs_month,
-        ff_weight_vs_month,
-        to_forecast_final_weight,
-        to_forecast:
-          date <= targetDate
-            ? row.turnover
-            : (
-                (to_forecast_initial_weight_vs_month_number / 100) *
-                (totalTurnoverSameMonth - totalTurnover)
-              ).toFixed(2),
-      };
-    });
-
-    setDataGridRows(recalculatedRows);
     return updatedRow;
+  };
+
+  const triggerRecalculations = async (rows) => {
+    let updatedRows = calculateToForecastBeforeCutoffDate(rows);
+    updatedRows = await calculateToForecastInitialWeight(updatedRows);
+    updatedRows = calculateToForecastFinalWeight(updatedRows);
+    updatedRows = calculateToForecastAfterCutoffDate(updatedRows);
+    return updatedRows;
   };
 
   const handleRowModesModelChange = (newRowModesModel: GridRowModesModel) => {
@@ -410,6 +614,11 @@ export default function SalesDataGrid({
       width: 150,
       headerAlign: "center",
       align: "center",
+      valueFormatter: (params) => {
+        if (typeof params === "number" && params > 0) {
+          return `${params.toFixed(2)}%`;
+        } else return "";
+      },
     },
     {
       field: "to_budget",
@@ -425,6 +634,12 @@ export default function SalesDataGrid({
       width: 150,
       align: "center",
       headerAlign: "center",
+      valueFormatter: (params) => {
+        if (params == null) {
+          return "";
+        }
+        return `${params.toFixed(2)}%`;
+      },
     },
     {
       field: "to_forecast_initial_weight",
@@ -433,7 +648,13 @@ export default function SalesDataGrid({
       align: "center",
       headerAlign: "center",
       editable: editable,
-      valueFormatter: (params) => (params ? `${params}%` : ""),
+      valueFormatter: (params) => {
+        if (typeof params === "number") {
+          return `${params.toFixed(2)}%`;
+        } else {
+          return "";
+        }
+      },
     },
     {
       field: "to_forecast_final_weight",
@@ -441,6 +662,11 @@ export default function SalesDataGrid({
       width: 150,
       align: "center",
       headerAlign: "center",
+      valueFormatter: (params) => {
+        if (typeof params === "number" && params > 0) {
+          return `${params.toFixed(2)}%`;
+        } else return "";
+      },
     },
     {
       field: "to_forecast",
@@ -448,8 +674,32 @@ export default function SalesDataGrid({
       width: 150,
       align: "right",
       headerAlign: "center",
-
-      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
+      valueFormatter: (params) =>
+        params ? Intl.NumberFormat("en-US").format(params) : params,
+    },
+    {
+      field: "to_var_day",
+      headerName: "VAR by Day",
+      width: 100,
+      align: "center",
+      headerAlign: "center",
+      valueFormatter: (params) => {
+        if (typeof params === "number") {
+          return `${params.toFixed(2)}%`;
+        } else return "";
+      },
+    },
+    {
+      field: "to_var_week",
+      headerName: "VAR by Week",
+      width: 100,
+      align: "center",
+      headerAlign: "center",
+      valueFormatter: (params) => {
+        if (typeof params === "number") {
+          return `${params.toFixed(2)}%`;
+        } else return "";
+      },
     },
     {
       field: "ff",
@@ -466,6 +716,11 @@ export default function SalesDataGrid({
       width: 150,
       align: "center",
       headerAlign: "center",
+      valueFormatter: (params) => {
+        if (typeof params === "number" && params > 0) {
+          return `${params.toFixed(2)}%`;
+        } else return "";
+      },
     },
     {
       field: "ff_budget",
@@ -473,6 +728,7 @@ export default function SalesDataGrid({
       width: 150,
       align: "right",
       headerAlign: "center",
+      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
     },
     {
       field: "ff_budget_weight_vs_month",
@@ -480,6 +736,11 @@ export default function SalesDataGrid({
       width: 150,
       align: "center",
       headerAlign: "center",
+      valueFormatter: (params) => {
+        if (typeof params === "number" && params > 0) {
+          return `${params.toFixed(2)}%`;
+        } else return "";
+      },
     },
   ];
 
@@ -503,6 +764,8 @@ export default function SalesDataGrid({
         to_forecast_initial_weight: extended,
         to_forecast: extended,
         to_forecast_final_weight: extended,
+        to_var_day: extended,
+        to_var_week: extended,
       }}
       density="compact"
       editMode="row"
@@ -511,6 +774,9 @@ export default function SalesDataGrid({
       onRowEditStop={handleRowEditStop}
       processRowUpdate={processRowUpdate}
       getRowClassName={getRowClassName}
+      isCellEditable={(params) =>
+        new Date(params.row.date) > new Date(cutoffDate)
+      }
     />
   );
 }
