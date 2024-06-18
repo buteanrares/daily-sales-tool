@@ -40,6 +40,7 @@ const SignIn = () => {
     <Container
       maxWidth="sm"
       sx={{
+        marginY: "200px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -47,12 +48,9 @@ const SignIn = () => {
         height: "75vh",
       }}
     >
-      <Box sx={{ transform: "scale(0.3)", mb: 15 }}>
-        <Image src={logo} alt="logo" />
-      </Box>
       <Box sx={{ width: "100%", textAlign: "center" }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Sign In
+          DAILY SALES TOOL
         </Typography>
         {error && (
           <Typography color="error" gutterBottom>
@@ -86,6 +84,9 @@ const SignIn = () => {
           >
             {loading ? "Signing In..." : "Sign In"}
           </Button>
+        </Box>
+        <Box sx={{ transform: "scale(0.1)", mb: 15 }}>
+          <Image src={logo} alt="logo" />
         </Box>
       </Box>
     </Container>

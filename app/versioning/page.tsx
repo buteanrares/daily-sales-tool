@@ -97,12 +97,16 @@ export default function Versioning() {
         const relevantHeaders = [
           "TO 2018",
           "FF 2018",
+          "Event 2018",
           "TO 2019",
           "FF 2019",
+          "Event 2018",
           "TO 2022",
           "FF 2022",
+          "Event 2022",
           "TO 2023",
           "FF 2023",
+          "Event 2023",
           "TO Budget 2023",
           "FF Budget 2023",
         ];
@@ -113,12 +117,16 @@ export default function Versioning() {
         const fileData = {
           "TO 2018": [],
           "FF 2018": [],
+          "Event 2018": [],
           "TO 2019": [],
           "FF 2019": [],
+          "Event 2019": [],
           "TO 2022": [],
           "FF 2022": [],
+          "Event 2022": [],
           "TO 2023": [],
           "FF 2023": [],
+          "Event 2023": [],
           "TO Budget 2023": [],
           "FF Budget 2023": [],
         };
@@ -168,6 +176,7 @@ export default function Versioning() {
               const index = Math.round(
                 (currentDate - startDate) / (1000 * 60 * 60 * 24)
               );
+
               turnover = fileData[`TO ${year}`][index] || 0;
               ff = fileData[`FF ${year}`][index] || 0;
 
@@ -176,10 +185,13 @@ export default function Versioning() {
                 ff_budget = fileData[`FF Budget ${year}`][index] || 0;
               }
 
+              const event = fileData[`Event ${year}`][index];
+
               daysData.push({
                 report_id: data.report_id,
                 report_version_id: data.id,
                 date: `${year}-${month}-${day}`,
+                event,
                 turnover,
                 ff,
                 to_budget,

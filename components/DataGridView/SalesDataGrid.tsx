@@ -430,9 +430,8 @@ export default function SalesDataGrid({
       field: "to_forecast_initial_weight",
       headerName: "TO Forecast Initial Weight",
       width: 150,
-      align: "right",
+      align: "center",
       headerAlign: "center",
-
       editable: editable,
       valueFormatter: (params) => (params ? `${params}%` : ""),
     },
@@ -440,7 +439,7 @@ export default function SalesDataGrid({
       field: "to_forecast_final_weight",
       headerName: "TO Forecast Final Weight",
       width: 150,
-      align: "right",
+      align: "center",
       headerAlign: "center",
     },
     {
