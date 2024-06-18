@@ -19,7 +19,6 @@ const ReportPage = ({ params }) => {
   const [loading, setLoading] = useState(true);
   const [searchValue, setSearchValue] = useState("");
   const [cutoffDate, setCutoffDate] = useState(dayjs("2023-01-01"));
-  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     if (report_version_id) {
@@ -121,14 +120,6 @@ const ReportPage = ({ params }) => {
     setSelectedYear(newValue);
   };
 
-  const handleDrawerOpen = () => {
-    setDrawerOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setDrawerOpen(false);
-  };
-
   async function handleCutoffDateChange(e) {
     setCutoffDate(dayjs(e));
     await supabase
@@ -148,9 +139,8 @@ const ReportPage = ({ params }) => {
             {reportVersions.map((version) => (
               <Tab
                 key={version.year}
-                label={version.year}
+                label={<p className="text-sm">{version.year}</p>}
                 value={version.year}
-                sx={{ fontSize: "1rem" }}
               />
             ))}
           </Tabs>
@@ -189,6 +179,7 @@ const ReportPage = ({ params }) => {
           <SalesDataGrid
             rows={daysData[selectedYear].filter((item) => {
               const lowerCaseSearch = searchValue?.toLowerCase();
+              console.log(lowerCaseSearch);
 
               const date = new Date(item.date);
               const quarter = `q${getQuarter(date)}`;
@@ -196,25 +187,21 @@ const ReportPage = ({ params }) => {
               const dayMonth = format(date, "dd/MM");
               const week = getWeek(date).toString();
 
-              // Check for quarter match
-              if (searchValue.startsWith("q") || searchValue.startsWith("Q")) {
+              // Guard case search is for quarter and starts with q
+              if (lowerCaseSearch === "q") return true;
+
+              if (searchValue.startsWith("q") || searchValue.startsWith("Q"))
+                // Check for quarter match
                 return quarter === lowerCaseSearch;
-              }
 
               // Check for month match
-              if (month.includes(lowerCaseSearch)) {
-                return true;
-              }
+              if (month.includes(lowerCaseSearch)) return true;
 
               // Check for day/month match
-              if (dayMonth.includes(lowerCaseSearch)) {
-                return true;
-              }
+              if (dayMonth.includes(lowerCaseSearch)) return true;
 
               // Check for week match
-              if (week === searchValue) {
-                return true;
-              }
+              if (week === searchValue) return true;
 
               return false;
             })}
@@ -222,6 +209,7 @@ const ReportPage = ({ params }) => {
             editable={selectedYear >= 2023}
             extended={selectedYear >= 2023}
             cutoffDate={cutoffDate}
+            reportVersionId={report_version_id}
           />
         </div>
       )}
