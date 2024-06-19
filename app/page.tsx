@@ -162,8 +162,9 @@ const Home = () => {
         color="primary"
         onClick={handleViewReport}
         disabled={!selectedVersion}
+        className="mt-5"
       >
-        View Report
+        LOAD THE VERSION
       </Button>
     </div>
   );

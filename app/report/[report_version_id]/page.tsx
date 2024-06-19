@@ -6,7 +6,7 @@ import { supabase } from "@/utils/supabase/client";
 import { Tab, Tabs, TextField } from "@mui/material";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { format, getQuarter, getWeek } from "date-fns";
+import { format, getISOWeek, getQuarter } from "date-fns";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 
@@ -179,13 +179,12 @@ const ReportPage = ({ params }) => {
           <SalesDataGrid
             rows={daysData[selectedYear].filter((item) => {
               const lowerCaseSearch = searchValue?.toLowerCase();
-              console.log(lowerCaseSearch);
 
               const date = new Date(item.date);
               const quarter = `q${getQuarter(date)}`;
               const month = format(date, "MMMM")?.toLowerCase();
               const dayMonth = format(date, "dd/MM");
-              const week = getWeek(date).toString();
+              const week = getISOWeek(date).toString();
 
               // Guard case search is for quarter and starts with q
               if (lowerCaseSearch === "q") return true;

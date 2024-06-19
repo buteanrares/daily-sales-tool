@@ -100,7 +100,7 @@ export default function Versioning() {
           "Event 2018",
           "TO 2019",
           "FF 2019",
-          "Event 2018",
+          "Event 2019",
           "TO 2022",
           "FF 2022",
           "Event 2022",

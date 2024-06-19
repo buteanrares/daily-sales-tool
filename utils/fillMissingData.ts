@@ -1,5 +1,4 @@
-import { format, getDay, getQuarter, getWeek, parse } from "date-fns";
-import { supabase } from "./supabase/client";
+import { format, getDay, getISOWeek, getQuarter, parse } from "date-fns";
 
 export const fillMissingData = (data: any) => {
   const processRow = (row) => {
@@ -7,7 +6,7 @@ export const fillMissingData = (data: any) => {
 
     const weekend = getDay(date) === 0 || getDay(date) === 6;
     const month = format(date, "MMMM");
-    const week = getWeek(date);
+    const week = getISOWeek(date);
     const weekday = format(date, "EEEE");
     const quarter = getQuarter(date);
 

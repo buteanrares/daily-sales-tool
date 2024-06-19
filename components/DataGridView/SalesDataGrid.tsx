@@ -8,7 +8,7 @@ import {
   GridRowModel,
   GridRowModesModel,
 } from "@mui/x-data-grid";
-import { format, getQuarter, getWeek, isWeekend } from "date-fns";
+import { format, getQuarter, getISOWeek, isWeekend } from "date-fns";
 import { useEffect, useState } from "react";
 
 const StyledDataGrid = styled(DataGrid)`
@@ -139,7 +139,7 @@ export default function SalesDataGrid({
     rows = rows.map((row) => {
       const date = new Date(row.date);
       const month = format(date, "MMMM");
-      const week = getWeek(date);
+      const week = getISOWeek(date);
       const quarter = `Q${getQuarter(date)}`;
       const weekend = isWeekend(date);
       const weekday = format(date, "EEEE");
@@ -170,7 +170,7 @@ export default function SalesDataGrid({
       } else {
         return {
           ...row,
-          to_weight_vs_month: null,
+          to_weight_vs_month: 0,
         };
       }
     });
@@ -268,7 +268,8 @@ export default function SalesDataGrid({
             .eq("id", row.id);
           return {
             ...row,
-            to_forecast_initial_weight: toForecastInitialWeight,
+            to_forecast_initial_weight:
+              Math.round(toForecastInitialWeight * 100) / 100,
           };
         } else {
           const { data } = await supabase
@@ -278,7 +279,8 @@ export default function SalesDataGrid({
             .single();
           return {
             ...row,
-            to_forecast_initial_weight: data.to_forecast_initial_weight,
+            to_forecast_initial_weight:
+              Math.round(data.to_forecast_initial_weight * 100) / 100,
           };
         }
       })
@@ -324,6 +326,7 @@ export default function SalesDataGrid({
       } else {
         return {
           ...row,
+          to_forecast_final_weight: 0,
         };
       }
     });
@@ -355,20 +358,24 @@ export default function SalesDataGrid({
     const { data: previousYearDays, error } = await supabase
       .from("days")
       .select("date, turnover")
-      .eq("report_version_id", reportVersionId - 1); // Assuming reportVersionId is defined
+      .eq("report_version_id", reportVersionId - 1)
+      .order("date", { ascending: true });
 
     if (error) {
       console.error("Error fetching previous year's days data:", error.message);
-      return rows;
+      return rows; // Return original rows if there's an error
     }
 
+    // Map over rows and calculate to_var_day
     const updatedRows = rows.map((row) => {
+      if (row.to_forecast && typeof row.to_forecast !== "number")
+        return { ...row };
       const rowDate = new Date(row.date);
       const previousYearDate = new Date(rowDate);
       previousYearDate.setFullYear(previousYearDate.getFullYear() - 1);
 
       // Find complementary day in previous year's data
-      const complementaryDay = previousYearDays.find((day) => {
+      const complementaryDayIndex = previousYearDays.findIndex((day) => {
         const dayDate = new Date(day.date);
         return (
           dayDate.getDate() === previousYearDate.getDate() &&
@@ -377,93 +384,103 @@ export default function SalesDataGrid({
         );
       });
 
-      if (complementaryDay?.turnover > 0 && row.to_forecast) {
-        const to_var_day =
-          ((row.to_forecast - complementaryDay.turnover) /
-            complementaryDay.turnover) *
-          100;
-        return {
-          ...row,
-          to_var_day,
-        };
-      } else {
-        return {
-          ...row,
-          to_var_day: null,
-        };
-      }
-    });
+      let toVarDay = null;
 
-    return updatedRows;
-  };
+      if (
+        complementaryDayIndex !== -1 &&
+        complementaryDayIndex + 1 < previousYearDays.length
+      ) {
+        const complementaryNextDay =
+          previousYearDays[complementaryDayIndex + 1];
 
-  const calculateToVarByWeek = async (rows) => {
-    const { data: previousYearDays, error } = await supabase
-      .from("days")
-      .select("date, turnover")
-      .eq("report_version_id", reportVersionId - 1); // Assuming reportVersionId is defined
+        if (complementaryNextDay) {
+          const toForecast = row.to_forecast;
+          const previousTurnover = complementaryNextDay.turnover;
 
-    if (error) {
-      console.error("Error fetching previous year's days data:", error.message);
-      return rows;
-    }
-
-    const rowsByWeek = new Map();
-    rows.forEach((row) => {
-      const rowDate = new Date(row.date);
-      const weekNumber = getWeek(rowDate);
-      if (!rowsByWeek.has(weekNumber)) {
-        rowsByWeek.set(weekNumber, []);
-      }
-      rowsByWeek.get(weekNumber).push(row);
-    });
-
-    const updatedRows = rows.map((row) => {
-      const rowDate = new Date(row.date);
-      const weekNumber = getWeek(rowDate);
-      const weekRows = rowsByWeek.get(weekNumber);
-
-      if (weekRows && weekRows.length > 0) {
-        const lastDayOfWeek = weekRows.reduce((latest, current) => {
-          const currentDate = new Date(current.date);
-          return currentDate > latest ? currentDate : latest;
-        }, new Date(0));
-
-        if (rowDate.getTime() === lastDayOfWeek.getTime()) {
-          const previousYearDate = new Date(lastDayOfWeek);
-          previousYearDate.setFullYear(previousYearDate.getFullYear() - 1);
-
-          // Find complementary week day in previous year's data
-          const complementaryDay = previousYearDays.find((day) => {
-            const dayDate = new Date(day.date);
-            return (
-              dayDate.getDate() === previousYearDate.getDate() &&
-              dayDate.getMonth() === previousYearDate.getMonth() &&
-              dayDate.getFullYear() === previousYearDate.getFullYear()
-            );
-          });
-
-          if (complementaryDay?.turnover > 0 && row.to_forecast) {
-            const to_var_week =
-              ((row.to_forecast - complementaryDay.turnover) /
-                complementaryDay.turnover) *
-              100;
-            return {
-              ...row,
-              to_var_week,
-            };
+          if (previousTurnover) {
+            toVarDay = (toForecast / previousTurnover - 1) * 100;
           } else {
-            return {
-              ...row,
-              to_var_week: null,
-            };
+            toVarDay = null;
           }
         }
       }
 
       return {
         ...row,
-        to_var_week: null,
+        to_var_day: toVarDay,
+      };
+    });
+
+    return updatedRows;
+  };
+
+  const calculateToVarByWeek = async (rows) => {
+    // Fetch previous year's days data from Supabase
+    const { data: previousYearDays, error } = await supabase
+      .from("days")
+      .select("date, turnover")
+      .eq("report_version_id", reportVersionId - 1);
+
+    if (error) {
+      console.error("Error fetching previous year's days data:", error.message);
+      return rows; // Return original rows if there's an error
+    }
+
+    // Group rows by week
+    const groupByWeek = (data) => {
+      return data.reduce((acc, row) => {
+        const date = new Date(row.date);
+        const year = date.getFullYear();
+        const week = getISOWeek(date);
+        const key = `${year}-W${week}`;
+
+        if (!acc[key]) {
+          acc[key] = [];
+        }
+        acc[key].push(row);
+        return acc;
+      }, {});
+    };
+
+    const currentYearWeeks = groupByWeek(rows);
+    const previousYearWeeks = groupByWeek(previousYearDays);
+
+    // Calculate variance for each week
+    const updatedRows = rows.map((row) => {
+      const date = new Date(row.date);
+      const year = date.getFullYear();
+      const week = getISOWeek(date);
+      const key = `${year}-W${week}`;
+      const isMonday = date.getUTCDay() === 1;
+
+      if (
+        isMonday &&
+        currentYearWeeks[key] &&
+        previousYearWeeks[`${year - 1}-W${week}`]
+      ) {
+        const currentYearWeekTurnover = currentYearWeeks[key].reduce(
+          (sum, r) => sum + r.to_forecast,
+          0
+        );
+        const previousYearWeekTurnover = previousYearWeeks[
+          `${year - 1}-W${week}`
+        ].reduce((sum, r) => sum + r.turnover, 0);
+
+        if (previousYearWeekTurnover !== 0) {
+          const toVarWeek =
+            ((currentYearWeekTurnover - previousYearWeekTurnover) /
+              previousYearWeekTurnover) *
+            100;
+          return {
+            ...row,
+            to_var_week: toVarWeek,
+          };
+        }
+      }
+
+      return {
+        ...row,
+        to_var_week: null, // or any default value indicating no data
       };
     });
 
@@ -541,6 +558,8 @@ export default function SalesDataGrid({
     updatedRows = await calculateToForecastInitialWeight(updatedRows);
     updatedRows = calculateToForecastFinalWeight(updatedRows);
     updatedRows = calculateToForecastAfterCutoffDate(updatedRows);
+    updatedRows = await calculateToVarByDay(updatedRows);
+    updatedRows = await calculateToVarByWeek(updatedRows);
     return updatedRows;
   };
 
@@ -602,7 +621,7 @@ export default function SalesDataGrid({
     {
       field: "turnover",
       headerName: "TO",
-      width: 100,
+      width: 80,
       editable: editable,
       align: "right",
       headerAlign: "center",
@@ -611,11 +630,11 @@ export default function SalesDataGrid({
     {
       field: "to_weight_vs_month",
       headerName: "TO Weight vs Month",
-      width: 150,
+      width: 80,
       headerAlign: "center",
       align: "center",
       valueFormatter: (params) => {
-        if (typeof params === "number" && params > 0) {
+        if (typeof params === "number") {
           return `${params.toFixed(2)}%`;
         } else return "";
       },
@@ -623,7 +642,7 @@ export default function SalesDataGrid({
     {
       field: "to_budget",
       headerName: "TO Budget",
-      width: 150,
+      width: 100,
       align: "right",
       headerAlign: "center",
       valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
@@ -631,7 +650,7 @@ export default function SalesDataGrid({
     {
       field: "to_budget_weight_vs_month",
       headerName: "TO Budget Weight vs Month",
-      width: 150,
+      width: 80,
       align: "center",
       headerAlign: "center",
       valueFormatter: (params) => {
@@ -644,7 +663,7 @@ export default function SalesDataGrid({
     {
       field: "to_forecast_initial_weight",
       headerName: "TO Forecast Initial Weight",
-      width: 150,
+      width: 80,
       align: "center",
       headerAlign: "center",
       editable: editable,
@@ -659,11 +678,11 @@ export default function SalesDataGrid({
     {
       field: "to_forecast_final_weight",
       headerName: "TO Forecast Final Weight",
-      width: 150,
+      width: 80,
       align: "center",
       headerAlign: "center",
       valueFormatter: (params) => {
-        if (typeof params === "number" && params > 0) {
+        if (typeof params === "number") {
           return `${params.toFixed(2)}%`;
         } else return "";
       },
@@ -671,7 +690,7 @@ export default function SalesDataGrid({
     {
       field: "to_forecast",
       headerName: "TO Forecast",
-      width: 150,
+      width: 100,
       align: "right",
       headerAlign: "center",
       valueFormatter: (params) =>
@@ -680,24 +699,24 @@ export default function SalesDataGrid({
     {
       field: "to_var_day",
       headerName: "VAR by Day",
-      width: 100,
+      width: 80,
       align: "center",
       headerAlign: "center",
       valueFormatter: (params) => {
-        if (typeof params === "number") {
-          return `${params.toFixed(2)}%`;
+        if (typeof params === "number" && !isNaN(params)) {
+          return `${Math.round(params)}%`;
         } else return "";
       },
     },
     {
       field: "to_var_week",
       headerName: "VAR by Week",
-      width: 100,
+      width: 80,
       align: "center",
       headerAlign: "center",
       valueFormatter: (params) => {
-        if (typeof params === "number") {
-          return `${params.toFixed(2)}%`;
+        if (typeof params === "number" && !isNaN(params)) {
+          return `${Math.round(params)}%`;
         } else return "";
       },
     },
@@ -713,7 +732,7 @@ export default function SalesDataGrid({
     {
       field: "ff_weight_vs_month",
       headerName: "FF Weight vs Month",
-      width: 150,
+      width: 100,
       align: "center",
       headerAlign: "center",
       valueFormatter: (params) => {
@@ -768,6 +787,8 @@ export default function SalesDataGrid({
         to_var_week: extended,
       }}
       density="compact"
+      rowHeight={30}
+      autoHeight
       editMode="row"
       rowModesModel={rowModesModel}
       onRowModesModelChange={handleRowModesModelChange}
@@ -777,6 +798,18 @@ export default function SalesDataGrid({
       isCellEditable={(params) =>
         new Date(params.row.date) > new Date(cutoffDate)
       }
+      sx={{
+        "& .MuiDataGrid-columnHeaderTitle": {
+          whiteSpace: "normal",
+          lineHeight: "normal",
+        },
+        "& .MuiDataGrid-columnHeader": {
+          height: "unset !important",
+        },
+        "& .MuiDataGrid-columnHeaders": {
+          maxHeight: "168px !important",
+        },
+      }}
     />
   );
 }
