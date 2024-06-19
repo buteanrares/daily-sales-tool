@@ -591,7 +591,7 @@ export default function SalesDataGrid({
     {
       field: "week",
       headerName: "Week",
-      width: 50,
+      width: 100,
       headerAlign: "center",
       align: "center",
     },
@@ -605,7 +605,7 @@ export default function SalesDataGrid({
     {
       field: "event",
       headerName: "Event",
-      width: 125,
+      width: 250,
       editable: editable,
       headerAlign: "center",
       align: "center",
@@ -621,7 +621,7 @@ export default function SalesDataGrid({
     {
       field: "turnover",
       headerName: "TO",
-      width: 80,
+      width: 120,
       editable: editable,
       align: "right",
       headerAlign: "center",
@@ -635,7 +635,7 @@ export default function SalesDataGrid({
       align: "center",
       valueFormatter: (params) => {
         if (typeof params === "number") {
-          return `${params.toFixed(2)}%`;
+          return `${Math.round(params)}%`;
         } else return "";
       },
     },
@@ -657,7 +657,7 @@ export default function SalesDataGrid({
         if (params == null) {
           return "";
         }
-        return `${params.toFixed(2)}%`;
+        return `${Math.round(params)}%`;
       },
     },
     {
@@ -737,7 +737,7 @@ export default function SalesDataGrid({
       headerAlign: "center",
       valueFormatter: (params) => {
         if (typeof params === "number" && params > 0) {
-          return `${params.toFixed(2)}%`;
+          return `${Math.round(params)}%`;
         } else return "";
       },
     },
@@ -757,11 +757,11 @@ export default function SalesDataGrid({
       headerAlign: "center",
       valueFormatter: (params) => {
         if (typeof params === "number" && params > 0) {
-          return `${params.toFixed(2)}%`;
+          return `${Math.round(params)}%`;
         } else return "";
       },
     },
-  ];
+];
 
   if (loading) {
     return (
