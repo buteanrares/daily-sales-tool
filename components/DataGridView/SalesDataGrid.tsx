@@ -625,7 +625,8 @@ export default function SalesDataGrid({
       editable: editable,
       align: "right",
       headerAlign: "center",
-      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
+      valueFormatter: (params) =>
+        Intl.NumberFormat("en-US").format(Math.round(params)),
     },
     {
       field: "to_weight_vs_month",
@@ -645,7 +646,8 @@ export default function SalesDataGrid({
       width: 100,
       align: "right",
       headerAlign: "center",
-      valueFormatter: (params) => Intl.NumberFormat("en-US").format(params),
+      valueFormatter: (params) =>
+        Intl.NumberFormat("en-US").format(Math.round(params)),
     },
     {
       field: "to_budget_weight_vs_month",
@@ -694,7 +696,7 @@ export default function SalesDataGrid({
       align: "right",
       headerAlign: "center",
       valueFormatter: (params) =>
-        params ? Intl.NumberFormat("en-US").format(params) : params,
+        params ? Intl.NumberFormat("en-US").format(Math.round(params)) : params,
     },
     {
       field: "to_var_day",
@@ -761,7 +763,7 @@ export default function SalesDataGrid({
         } else return "";
       },
     },
-];
+  ];
 
   if (loading) {
     return (
