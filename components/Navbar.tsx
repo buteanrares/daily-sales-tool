@@ -34,15 +34,15 @@ export default function Navbar() {
 
       setUser(data.user);
       if (!data.user && pathname !== "/auth/signin") {
-        router.push("/auth/signin");
-      } else {
+        if (pathname !== "/auth/signin") router.push("/auth/signin");
+      } else if (pathname !== "/auth/signin") {
         const res = await supabase
           .from("profiles")
           .select("*")
           .eq("id", data.user?.id)
           .single();
-        setInitials(res.data.first_name[0] + res.data.last_name[0]);
-        setRole(res.data.role);
+        setInitials(res.data?.first_name[0] + res.data?.last_name[0]);
+        setRole(res.data?.role);
       }
     };
 
@@ -74,12 +74,13 @@ export default function Navbar() {
           <AssessmentIcon />
           <Typography className="mr-20">DAILY SALES TOOL</Typography>
         </div>
-        <Box sx={{ marginRight: 2, display: { xs: "none", md: "flex" } }}>
+        <div className="flex-grow space-x-5 ">
           <Link href={`/`}>Home</Link>
-        </Box>
-        <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
           {role === "Admin" && <Link href={`/versioning`}>Versioning</Link>}
-        </Box>
+          {role === "Admin" && (
+            <Link href={`/admin/create-account`}>Admin</Link>
+          )}
+        </div>
         <Button onClick={handleAvatarClick} sx={{ padding: 0 }}>
           <Avatar sx={{ bgcolor: "#1976D2", marginX: 5 }}>{initials}</Avatar>
         </Button>
