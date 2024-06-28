@@ -78,7 +78,10 @@ export default function Navbar() {
           <Link href={`/`}>Home</Link>
           {role === "Admin" && <Link href={`/versioning`}>Versioning</Link>}
           {role === "Admin" && (
-            <Link href={`/admin/create-account`}>Admin</Link>
+            <>
+              <Link href={`/admin/create-account`}>Admin</Link>
+              <Link href={`/admin/locked-users`}>Locked users</Link>
+            </>
           )}
         </div>
         <Button onClick={handleAvatarClick} sx={{ padding: 0 }}>

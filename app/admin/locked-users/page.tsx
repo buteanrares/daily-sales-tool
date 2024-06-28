@@ -31,18 +31,12 @@ export default function LockedUsers() {
 
   const handleUnlock = async (id) => {
     await supabase.from("profiles").update({ is_locked: false }).eq("id", id);
-
-    // Update the state to remove the unlocked user
     setLockedUsers((prev) => prev.filter((user) => user.id !== id));
   };
 
   return (
     <>
-      <div className="flex items-center align-middle border-5 border-red-500">
-        <Typography variant="h4" className="mt-3">
-          Test
-        </Typography>
-      </div>
+      <h1 className="text-2xl font-bold mt-10 ml-10 mb-5">Locked users</h1>
       <TableContainer component={Paper} className="w-[70%] mx-auto mt-10">
         <Table>
           <TableHead>

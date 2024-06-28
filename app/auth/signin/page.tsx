@@ -118,7 +118,7 @@ const SignIn = () => {
           margin="normal"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          disabled={loading || isLocked}
+          disabled={loading}
         />
         <TextField
           label="Password"
@@ -128,7 +128,7 @@ const SignIn = () => {
           margin="normal"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          disabled={loading || isLocked}
+          disabled={loading}
         />
         <Box mt={2}>
           <Button
@@ -136,13 +136,9 @@ const SignIn = () => {
             color="primary"
             fullWidth
             onClick={handleSignIn}
-            disabled={loading || isLocked}
+            disabled={loading}
           >
-            {loading
-              ? "Signing In..."
-              : isLocked
-              ? "Account Locked"
-              : "Sign In"}
+            {loading ? "Signing In..." : "Sign In"}
           </Button>
         </Box>
         <Box sx={{ transform: "scale(0.1)", mb: 15 }}>
