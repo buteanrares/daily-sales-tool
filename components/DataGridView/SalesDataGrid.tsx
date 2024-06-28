@@ -248,45 +248,89 @@ export default function SalesDataGrid({
 
   const calculateToForecastInitialWeight = async (rows) => {
     const monthData = calculateMonthData(rows);
-    const updatedRows = await Promise.all(
-      rows.map(async (row) => {
-        const rowDate = new Date(row.date);
-        const cutoff = new Date(cutoffDate);
+    const cutoff = new Date(cutoffDate);
+    cutoff.setHours(0, 0, 0, 0); // Timezone offset
 
-        rowDate.setHours(0, 0, 0, 0); // Timezone offset
+    const rowsToUpdate = [];
+    const rowsToRetrieve = [];
 
-        if (rowDate <= cutoff) {
-          const month = row.month;
-          const monthlyBudget = monthData[month].to_budget;
-          const toForecastInitialWeight =
-            (row.to_forecast / monthlyBudget) * 100;
-          await supabase
-            .from("days")
-            .update({
-              to_forecast_initial_weight: toForecastInitialWeight,
-            })
-            .eq("id", row.id);
+    rows.forEach((row) => {
+      const rowDate = new Date(row.date);
+      rowDate.setHours(0, 0, 0, 0); // Timezone offset
+
+      if (rowDate <= cutoff) {
+        const month = row.month;
+        const monthlyBudget = monthData[month].to_budget;
+        const toForecastInitialWeight = (row.to_forecast / monthlyBudget) * 100;
+
+        rowsToUpdate.push({
+          id: row.id,
+          report_id: row.report_id,
+          report_version_id: row.report_version_id,
+          date: row.date,
+          event: row.event,
+          turnover: row.turnover,
+          ff: row.ff,
+          to_budget: row.to_budget,
+          ff_budget: row.ff_budget,
+          to_forecast_initial_weight:
+            Math.round(toForecastInitialWeight * 100) / 100,
+        });
+      } else {
+        rowsToRetrieve.push(row.id);
+      }
+    });
+
+    if (rowsToRetrieve.length > 0) {
+      const { data, error } = await supabase
+        .from("days")
+        .select("id, to_forecast_initial_weight")
+        .in("id", rowsToRetrieve);
+
+      if (error) {
+        console.error("Error retrieving data from Supabase:", error);
+        return [];
+      }
+
+      const idToWeightMap = data.reduce((acc, item) => {
+        acc[item.id] = Math.round(item.to_forecast_initial_weight * 100) / 100;
+        return acc;
+      }, {});
+
+      rowsToUpdate.push(
+        ...rowsToRetrieve.map((id) => {
+          const row = rows.find((r) => r.id === id);
           return {
-            ...row,
-            to_forecast_initial_weight:
-              Math.round(toForecastInitialWeight * 100) / 100,
+            id: row.id,
+            report_id: row.report_id,
+            report_version_id: row.report_version_id,
+            date: row.date,
+            event: row.event,
+            turnover: row.turnover,
+            ff: row.ff,
+            to_budget: row.to_budget,
+            ff_budget: row.ff_budget,
+            to_forecast_initial_weight: idToWeightMap[id],
           };
-        } else {
-          const { data } = await supabase
-            .from("days")
-            .select("to_forecast_initial_weight")
-            .eq("id", row.id)
-            .single();
-          return {
-            ...row,
-            to_forecast_initial_weight:
-              Math.round(data.to_forecast_initial_weight * 100) / 100,
-          };
-        }
-      })
-    );
+        })
+      );
+    }
 
-    return updatedRows;
+    if (rowsToUpdate.length > 0) {
+      const { data, error } = await supabase.from("days").upsert(rowsToUpdate);
+
+      if (error) {
+        console.error("Error updating data in Supabase:", error);
+        return [];
+      }
+    }
+
+    return rows.map((row) => ({
+      ...row,
+      to_forecast_initial_weight:
+        rowsToUpdate.find((updatedRow) => updatedRow.id === row.id)
+          ?.to_forecast_initial_weight || row.to_forecast_initial_weight,
+    }));
   };
 
   const calculateToForecastBeforeCutoffDate = (rows) => {
@@ -480,7 +524,7 @@ export default function SalesDataGrid({
 
       return {
         ...row,
-        to_var_week: null, // or any default value indicating no data
+        to_var_week: null,
       };
     });
 
