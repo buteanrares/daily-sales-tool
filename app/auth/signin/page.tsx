@@ -2,7 +2,16 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Container, TextField, Button, Typography, Box } from "@mui/material";
+import {
+  Container,
+  TextField,
+  Button,
+  Typography,
+  Box,
+  Stepper,
+  Step,
+  StepLabel,
+} from "@mui/material";
 import { supabase } from "@/utils/supabase/client";
 import logo from "@/public/logo.jpg";
 import Image from "next/image";
@@ -14,9 +23,11 @@ const SignIn = () => {
   const [error, setError] = useState("");
   const [attempts, setAttempts] = useState(0);
   const [isLocked, setIsLocked] = useState(false);
+  const [activeStep, setActiveStep] = useState(0);
   const router = useRouter();
 
   const maxAttempts = 3;
+  const steps = ["Sign In", "Verify Your Email"];
 
   const checkAccountLock = async (email) => {
     const { data: profile } = await supabase
@@ -76,7 +87,9 @@ const SignIn = () => {
           return newAttempts;
         });
       } else {
-        router.push("/");
+        // Send the OTP email and move to the verification step
+        await supabase.auth.signInWithOtp({ email });
+        setActiveStep(1);
       }
     } catch (error) {
       setError(error.message);
@@ -101,46 +114,65 @@ const SignIn = () => {
         <Typography variant="h4" component="h1" gutterBottom>
           DAILY SALES TOOL
         </Typography>
+        <Stepper activeStep={activeStep} alternativeLabel className="my-10">
+          {steps.map((label) => (
+            <Step key={label}>
+              <StepLabel>{label}</StepLabel>
+            </Step>
+          ))}
+        </Stepper>
         {error && (
           <Typography color="error" gutterBottom>
             {error}
           </Typography>
         )}
-        {attempts > 0 && attempts < maxAttempts && (
+        {attempts > 0 && attempts < maxAttempts && activeStep === 0 && (
           <Typography color="error" gutterBottom>
             Attempts left: {maxAttempts - attempts}
           </Typography>
         )}
-        <TextField
-          label="Email"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          disabled={loading}
-        />
-        <TextField
-          label="Password"
-          variant="outlined"
-          fullWidth
-          type="password"
-          margin="normal"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          disabled={loading}
-        />
-        <Box mt={2}>
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            onClick={handleSignIn}
-            disabled={loading}
-          >
-            {loading ? "Signing In..." : "Sign In"}
-          </Button>
-        </Box>
+        {activeStep === 0 && (
+          <>
+            <TextField
+              label="Email"
+              variant="outlined"
+              fullWidth
+              margin="normal"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              disabled={loading}
+            />
+            <TextField
+              label="Password"
+              variant="outlined"
+              fullWidth
+              type="password"
+              margin="normal"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              disabled={loading}
+            />
+            <Box mt={2}>
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                onClick={handleSignIn}
+                disabled={loading}
+              >
+                {loading ? "Signing In..." : "Sign In"}
+              </Button>
+            </Box>
+          </>
+        )}
+        {activeStep === 1 && (
+          <>
+            <Typography gutterBottom>
+              A sign-in link has been sent to your email. Please check your
+              email to login into your account.
+            </Typography>
+          </>
+        )}
         <Box sx={{ transform: "scale(0.1)", mb: 15 }}>
           <Image src={logo} alt="logo" />
         </Box>
