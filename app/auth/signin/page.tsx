@@ -11,6 +11,7 @@ import {
   Stepper,
   Step,
   StepLabel,
+  Link,
 } from "@mui/material";
 import { supabase } from "@/utils/supabase/client";
 import logo from "@/public/logo.jpg";
@@ -24,6 +25,7 @@ const SignIn = () => {
   const [attempts, setAttempts] = useState(0);
   const [isLocked, setIsLocked] = useState(false);
   const [activeStep, setActiveStep] = useState(0);
+  const [resetEmailSent, setResetEmailSent] = useState(false);
   const router = useRouter();
 
   const maxAttempts = 3;
@@ -87,9 +89,32 @@ const SignIn = () => {
           return newAttempts;
         });
       } else {
-        // Send the OTP email and move to the verification step
         await supabase.auth.signInWithOtp({ email });
         setActiveStep(1);
+      }
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handlePasswordReset = async () => {
+    setLoading(true);
+    setError("");
+
+    try {
+      const { error: resetError } = await supabase.auth.resetPasswordForEmail(
+        email,
+        {
+          redirectTo: `${window.location.origin}/auth/reset-password`,
+        }
+      );
+
+      if (resetError) {
+        setError(resetError.message);
+      } else {
+        setResetEmailSent(true);
       }
     } catch (error) {
       setError(error.message);
@@ -131,6 +156,11 @@ const SignIn = () => {
             Attempts left: {maxAttempts - attempts}
           </Typography>
         )}
+        {resetEmailSent && (
+          <Typography color="success" gutterBottom>
+            Password reset email sent! Please check your email.
+          </Typography>
+        )}
         {activeStep === 0 && (
           <>
             <TextField
@@ -162,6 +192,16 @@ const SignIn = () => {
               >
                 {loading ? "Signing In..." : "Sign In"}
               </Button>
+            </Box>
+            <Box mt={2}>
+              <Link
+                component="button"
+                variant="body2"
+                onClick={handlePasswordReset}
+                disabled={loading}
+              >
+                Forgot Password?
+              </Link>
             </Box>
           </>
         )}
