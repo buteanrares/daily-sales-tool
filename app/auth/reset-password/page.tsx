@@ -26,8 +26,8 @@ const ResetPassword = () => {
       } else {
         setSuccess(true);
         setTimeout(() => {
-          router.push("/signin"); // Redirect to sign in page after successful password reset
-        }, 2000); // Redirect after 2 seconds
+          router.push("/auth/signin");
+        }, 2000);
       }
     } catch (error) {
       setError(error.message);
