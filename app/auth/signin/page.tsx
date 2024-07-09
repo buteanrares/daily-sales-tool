@@ -95,6 +95,9 @@ const SignIn = () => {
       } else {
         await supabase.auth.signInWithOtp({
           email,
+          options: {
+            emailRedirectTo: process.env.NEXT_PUBLIC_SITE_URL,
+          },
         });
         setActiveStep(1);
       }
