@@ -89,7 +89,9 @@ const SignIn = () => {
           return newAttempts;
         });
       } else {
-        await supabase.auth.signInWithOtp({ email });
+        await supabase.auth.signInWithOtp({
+          email,
+        });
         setActiveStep(1);
       }
     } catch (error) {
