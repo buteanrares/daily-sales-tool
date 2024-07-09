@@ -31,13 +31,9 @@ const SignIn = () => {
   const maxAttempts = 3;
   const steps = ["Sign In", "Verify Your Email"];
 
-  console.log(process?.env?.SITE_URL ?? "site_url undefined");
-  console.log(
-    process?.env?.NEXT_PUBLIC_VERCEL_URL ?? "NEXT_PUBLIC_VERCEL_URL undefined"
-  );
-  console.log(
-    process?.env?.NEXT_PUBLIC_SITE_URL ?? "NEXT_PUBLIC_SITE_URL undefined"
-  );
+  console.log("site_url", process?.env?.SITE_URL);
+  console.log("NEXT_PUBLIC_SITE_URL", process?.env?.NEXT_PUBLIC_SITE_URL);
+  console.log("NEXT_PUBLIC_VERCEL_URL", process?.env?.NEXT_PUBLIC_VERCEL_URL);
 
   const checkAccountLock = async (email) => {
     const { data: profile } = await supabase
