@@ -60,7 +60,7 @@ const SignIn = () => {
     const isLocked = await checkAccountLock(email);
     if (isLocked) {
       setError(
-        "Your account is locked due to multiple failed sign-in attempts."
+        "Your account is locked due to multiple failed sign-in attempts. Contact an Admin to unlock your accont."
       );
       setLoading(false);
       return;
