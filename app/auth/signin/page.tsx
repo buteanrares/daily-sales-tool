@@ -78,12 +78,10 @@ const SignIn = () => {
 
           if (newAttempts >= maxAttempts) {
             if (email) {
-              console.log("locking profile", email);
-
               lockUser(email);
               setIsLocked(true);
               setError(
-                "Your account has been locked due to multiple failed sign-in attempts."
+                "Your account has been locked due to multiple failed sign-in attempts. Contact an Admin to unlock your accont."
               );
             }
           } else {
