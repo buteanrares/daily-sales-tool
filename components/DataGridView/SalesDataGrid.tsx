@@ -385,7 +385,7 @@ export default function SalesDataGrid({
       const cutoff = new Date(cutoffDate);
 
       rowDate.setHours(0, 0, 0, 0); // Timezone offset
-      if (rowDate > cutoff && row.to_forecast_final_weight) {
+      if (rowDate > cutoff && row.to_forecast_final_weight >= 0) {
         const to_forecast =
           (row.to_forecast_final_weight / 100) * monthData[row.month].to_budget;
         return {
@@ -739,8 +739,14 @@ export default function SalesDataGrid({
       width: 100,
       align: "right",
       headerAlign: "center",
-      valueFormatter: (params) =>
-        params ? Intl.NumberFormat("en-US").format(Math.round(params)) : params,
+      valueFormatter: (params) => {
+        if (params === 0) {
+          return ""; // Return an empty string for zero values
+        }
+        return params
+          ? Intl.NumberFormat("en-US").format(Math.round(params))
+          : params;
+      },
     },
     {
       field: "to_var_day",
