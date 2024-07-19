@@ -14,32 +14,30 @@ import toast from "react-hot-toast";
 
 const CreateAccount = () => {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [role, setRole] = useState("User");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleCreateAccount = async () => {
+  const handleInviteUser = async () => {
     setLoading(true);
     setError("");
 
     try {
-      // Sign up the user with email and password
-      const { data: user, error: signUpError } = await supabase.auth.signUp({
-        email,
-        password,
-      });
+      const { data, error: inviteError } =
+        await supabase.auth.admin.inviteUserByEmail(email, {
+          redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/auth/reset-password`,
+        });
 
-      if (signUpError) {
-        throw signUpError;
+      if (inviteError) {
+        throw inviteError;
       }
 
-      // Add role to user metadata
+      // Add user profile information
       const { error: updateError } = await supabase.from("profiles").upsert({
-        id: user.user.id,
-        email: user.user.email,
+        id: data.user.id,
+        email: data.user.email,
         role,
         first_name: firstName,
         last_name: lastName,
@@ -48,9 +46,9 @@ const CreateAccount = () => {
       if (updateError) {
         throw updateError;
       }
-      toast.success(`Account ${email} created successfully`);
+
+      toast.success(`Invite sent to ${email} successfully`);
       setEmail("");
-      setPassword("");
       setFirstName("");
       setLastName("");
     } catch (error) {
@@ -78,15 +76,6 @@ const CreateAccount = () => {
           margin="normal"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          label="Password"
-          variant="outlined"
-          fullWidth
-          type="password"
-          margin="normal"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
         />
         <TextField
           label="First name"
@@ -121,10 +110,10 @@ const CreateAccount = () => {
             variant="contained"
             color="primary"
             fullWidth
-            onClick={handleCreateAccount}
+            onClick={handleInviteUser}
             disabled={loading}
           >
-            {loading ? "Creating..." : "Create Account"}
+            {loading ? "Sending Invite..." : "Send Invite"}
           </Button>
         </Box>
       </Box>

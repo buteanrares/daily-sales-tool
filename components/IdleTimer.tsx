@@ -23,7 +23,6 @@ const IdleTimerComponent = () => {
 
   const handleOnIdle = async () => {
     if (pathName !== "/auth/signin") {
-      console.log("User is idle, logging out...");
       await supabase.auth.signOut();
       router.push("/auth/signin");
     }

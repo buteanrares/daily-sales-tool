@@ -23,17 +23,11 @@ const SignIn = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [attempts, setAttempts] = useState(0);
-  const [isLocked, setIsLocked] = useState(false);
   const [activeStep, setActiveStep] = useState(0);
   const [resetEmailSent, setResetEmailSent] = useState(false);
-  const router = useRouter();
 
   const maxAttempts = 3;
   const steps = ["Sign In", "Verify Your Email"];
-
-  console.log("site_url", process?.env?.SITE_URL);
-  console.log("NEXT_PUBLIC_SITE_URL", process?.env?.NEXT_PUBLIC_SITE_URL);
-  console.log("NEXT_PUBLIC_VERCEL_URL", process?.env?.NEXT_PUBLIC_VERCEL_URL);
 
   const checkAccountLock = async (email) => {
     const { data: profile } = await supabase
@@ -42,7 +36,6 @@ const SignIn = () => {
       .eq("email", email)
       .single();
 
-    setIsLocked(profile.is_locked);
     return profile.is_locked;
   };
 
@@ -60,7 +53,7 @@ const SignIn = () => {
     const isLocked = await checkAccountLock(email);
     if (isLocked) {
       setError(
-        "Your account is locked due to multiple failed sign-in attempts. Contact an Admin to unlock your accont."
+        "Your account is locked due to multiple failed sign-in attempts.\nContact an Admin to unlock your accont."
       );
       setLoading(false);
       return;
@@ -79,7 +72,6 @@ const SignIn = () => {
           if (newAttempts >= maxAttempts) {
             if (email) {
               lockUser(email);
-              setIsLocked(true);
               setError(
                 "Your account has been locked due to multiple failed sign-in attempts. Contact an Admin to unlock your accont."
               );
