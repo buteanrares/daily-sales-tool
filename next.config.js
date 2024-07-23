@@ -1,4 +1,5 @@
 module.exports = {
+  transpilePackages: ["mui-one-time-password-input"],
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if

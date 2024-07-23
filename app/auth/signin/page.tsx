@@ -1,33 +1,36 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import logo from "@/public/logo.jpg";
+import { supabase } from "@/utils/supabase/client";
 import {
-  Container,
-  TextField,
-  Button,
-  Typography,
   Box,
-  Stepper,
+  Button,
+  Container,
+  Link,
   Step,
   StepLabel,
-  Link,
+  Stepper,
+  TextField,
+  Typography,
 } from "@mui/material";
-import { supabase } from "@/utils/supabase/client";
-import logo from "@/public/logo.jpg";
+import { MuiOtpInput } from "mui-one-time-password-input";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [otp, setOtp] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [attempts, setAttempts] = useState(0);
   const [activeStep, setActiveStep] = useState(0);
   const [resetEmailSent, setResetEmailSent] = useState(false);
 
+  const router = useRouter();
   const maxAttempts = 3;
-  const steps = ["Sign In", "Verify Your Email"];
+  const steps = ["Sign In", "Verify OTP"];
 
   const checkAccountLock = async (email) => {
     const { data: profile } = await supabase
@@ -36,7 +39,7 @@ const SignIn = () => {
       .eq("email", email)
       .single();
 
-    return profile.is_locked;
+    return profile?.is_locked;
   };
 
   const lockUser = async (email) => {
@@ -53,7 +56,7 @@ const SignIn = () => {
     const isLocked = await checkAccountLock(email);
     if (isLocked) {
       setError(
-        "Your account is locked due to multiple failed sign-in attempts.\nContact an Admin to unlock your accont."
+        "Your account is locked due to multiple failed sign-in attempts.\nContact an Admin to unlock your account."
       );
       setLoading(false);
       return;
@@ -73,7 +76,7 @@ const SignIn = () => {
             if (email) {
               lockUser(email);
               setError(
-                "Your account has been locked due to multiple failed sign-in attempts. Contact an Admin to unlock your accont."
+                "Your account has been locked due to multiple failed sign-in attempts. Contact an Admin to unlock your account."
               );
             }
           } else {
@@ -83,13 +86,42 @@ const SignIn = () => {
           return newAttempts;
         });
       } else {
-        await supabase.auth.signInWithOtp({
+        // Send OTP
+        const { error: otpError } = await supabase.auth.signInWithOtp({
           email,
           options: {
-            emailRedirectTo: process.env.NEXT_PUBLIC_SITE_URL,
+            shouldCreateUser: false,
           },
         });
-        setActiveStep(1);
+
+        if (otpError) {
+          setError(otpError.message);
+        } else {
+          setActiveStep(1);
+        }
+      }
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const verifyOtp = async () => {
+    setLoading(true);
+    setError("");
+
+    try {
+      const { error: verifyError } = await supabase.auth.verifyOtp({
+        email,
+        token: otp,
+        type: "email",
+      });
+
+      if (verifyError) {
+        setError(verifyError.message);
+      } else {
+        router.push("/");
       }
     } catch (error) {
       setError(error.message);
@@ -121,6 +153,8 @@ const SignIn = () => {
       setLoading(false);
     }
   };
+
+  console.log(otp);
 
   return (
     <Container
@@ -207,9 +241,21 @@ const SignIn = () => {
         {activeStep === 1 && (
           <>
             <Typography gutterBottom>
-              A sign-in link has been sent to your email. Please check your
-              email to login into your account.
+              An OTP has been sent to your email. Please enter the OTP below to
+              complete the sign-in process.
             </Typography>
+            <MuiOtpInput length={6} value={otp} onChange={(e) => setOtp(e)} />
+            <Box mt={2}>
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                onClick={verifyOtp}
+                disabled={loading}
+              >
+                {loading ? "Verifying..." : "Verify OTP"}
+              </Button>
+            </Box>
           </>
         )}
         <Box sx={{ transform: "scale(0.1)", mb: 15 }}>

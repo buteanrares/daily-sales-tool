@@ -3,12 +3,64 @@
 import SalesDataGrid from "@/components/DataGridView/SalesDataGrid";
 import { useReportStore } from "@/utils/state/store";
 import { supabase } from "@/utils/supabase/client";
-import { Tab, Tabs, TextField } from "@mui/material";
+import {
+  Stack,
+  Switch,
+  Tab,
+  Tabs,
+  TextField,
+  Typography,
+  styled,
+} from "@mui/material";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { format, getISOWeek, getQuarter } from "date-fns";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
+
+const AntSwitch = styled(Switch)(({ theme }) => ({
+  width: 28,
+  height: 16,
+  padding: 0,
+  display: "flex",
+  "&:active": {
+    "& .MuiSwitch-thumb": {
+      width: 15,
+    },
+    "& .MuiSwitch-switchBase.Mui-checked": {
+      transform: "translateX(9px)",
+    },
+  },
+  "& .MuiSwitch-switchBase": {
+    padding: 2,
+    "&.Mui-checked": {
+      transform: "translateX(12px)",
+      color: "#fff",
+      "& + .MuiSwitch-track": {
+        opacity: 1,
+        backgroundColor: theme.palette.mode === "dark" ? "#177ddc" : "#1890ff",
+      },
+    },
+  },
+  "& .MuiSwitch-thumb": {
+    boxShadow: "0 2px 4px 0 rgb(0 35 11 / 20%)",
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    transition: theme.transitions.create(["width"], {
+      duration: 200,
+    }),
+  },
+  "& .MuiSwitch-track": {
+    borderRadius: 16 / 2,
+    opacity: 1,
+    backgroundColor:
+      theme.palette.mode === "dark"
+        ? "rgba(255,255,255,.35)"
+        : "rgba(0,0,0,.25)",
+    boxSizing: "border-box",
+  },
+}));
 
 const ReportPage = ({ params }) => {
   const { report_version_id } = params;
@@ -19,6 +71,7 @@ const ReportPage = ({ params }) => {
   const [loading, setLoading] = useState(true);
   const [searchValue, setSearchValue] = useState("");
   const [cutoffDate, setCutoffDate] = useState(dayjs("2023-01-01"));
+  const [showTO, setShowTO] = useState(true);
 
   useEffect(() => {
     if (report_version_id) {
@@ -145,6 +198,15 @@ const ReportPage = ({ params }) => {
             ))}
           </Tabs>
           <div className="flex space-x-4">
+            <Stack direction="row" spacing={1} alignItems="center">
+              <Typography>FF</Typography>
+              <AntSwitch
+                defaultChecked
+                onChange={(e) => setShowTO(e.target.checked)}
+                inputProps={{ "aria-label": "ant design" }}
+              />
+              <Typography>TO</Typography>
+            </Stack>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DatePicker
                 format="DD/MM/YYYY"
@@ -209,6 +271,7 @@ const ReportPage = ({ params }) => {
             extended={selectedYear >= 2023}
             cutoffDate={cutoffDate}
             reportVersionId={report_version_id}
+            showTO={showTO}
           />
         </div>
       )}

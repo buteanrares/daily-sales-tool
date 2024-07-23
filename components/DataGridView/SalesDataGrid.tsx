@@ -27,6 +27,7 @@ export default function SalesDataGrid({
   extended,
   cutoffDate,
   reportVersionId,
+  showTO,
 }) {
   const [dataGridRows, setDataGridRows] = useState(rows);
   const [rowModesModel, setRowModesModel] = useState<GridRowModesModel>({});
@@ -828,15 +829,19 @@ export default function SalesDataGrid({
       rows={dataGridRows}
       columns={columns}
       columnVisibilityModel={{
-        to_budget: extended,
-        ff_budget: extended,
-        to_budget_weight_vs_month: extended,
-        ff_budget_weight_vs_month: extended,
-        to_forecast_initial_weight: extended,
-        to_forecast: extended,
-        to_forecast_final_weight: extended,
-        to_var_day: extended,
-        to_var_week: extended,
+        turnover: showTO,
+        to_weight_vs_month: showTO,
+        to_budget: extended && showTO,
+        to_budget_weight_vs_month: extended && showTO,
+        to_forecast_initial_weight: extended && showTO,
+        to_forecast_final_weight: extended && showTO,
+        to_forecast: extended && showTO,
+        to_var_day: extended && showTO,
+        to_var_week: extended && showTO,
+        ff: !showTO,
+        ff_weight_vs_month: !showTO,
+        ff_budget: extended && !showTO,
+        ff_budget_weight_vs_month: extended && !showTO,
       }}
       density="compact"
       rowHeight={30}
